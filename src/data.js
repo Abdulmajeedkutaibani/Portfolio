@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'Clock-App',
-    subtitle: 'React.js / API / CSS ',
+    subtitle: 'React.js / CSS / API ',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
     image: './clock-app-home.jpeg',

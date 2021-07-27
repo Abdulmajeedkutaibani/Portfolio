@@ -1,0 +1,61 @@
+.social-widgets {
+  position: fixed;
+  width: 3.5%;
+  top: 40.5%;
+  transition: all 0.3s linear;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
+}
+.social-widgets li {
+  height: 60px;
+  position: relative;
+}
+.social-widgets li a {
+  color: white;
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 60px;
+  padding-left: 25%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  transition: all 0.3s linear;
+}
+.social-widgets li:nth-child(1) a {
+  background: #4267b2;
+}
+.social-widgets li:nth-child(2) a {
+  background: #1da1f2;
+}
+.social-widgets li:nth-child(3) a {
+  background: #e1306c;
+}
+.ocial-widgets li:nth-child(4) a {
+  background: #4179bf;
+}
+.social-widgets li:nth-child(5) a {
+  background: #333;
+}
+.social-widgets li:nth-child(6) a {
+  background: #ff0000;
+}
+.social-widgets li a i {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  font-size: 27px;
+}
+.social-widgets ul li a span {
+  display: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.social-widgets a:hover {
+  z-index: 1;
+  width: 200px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+.social-widgets ul li:hover a span {
+  padding-left: 30%;
+  display: block;
+}
