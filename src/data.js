@@ -1,5 +1,13 @@
 export const projects = [
   {
+    title: 'Clock-App',
+    subtitle: 'React.js / API / CSS ',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
+    image: './clock-app-home.jpeg',
+    link: 'https://majeed-clock-app.netlify.app',
+  },
+  {
     title: 'MajeedPay',
     subtitle: 'React.js / CSS',
     description:
@@ -8,18 +16,9 @@ export const projects = [
     link: 'https://majeedpay.netlify.app',
   },
   {
-    title: 'Clock-App',
-    subtitle: 'React.js / API / CSS ',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
-    image: './clock-app.webp',
-    link: 'https://majeed-clock-app.netlify.app',
-  },
-  {
-    title: 'DevChat',
-    subtitle: 'React and Firebase',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
+    title: 'AKAudio',
+    subtitle: 'Coming Soon',
+    description: 'Coming Soon...',
     image: './E-commerce.webp',
   },
 ];
@@ -42,8 +41,8 @@ export const testimonials = [
 ];
 
 export const skills = [
-  'HTML',
-  'CSS',
+  'HTML/CSS',
+  'Tailwind CSS',
   'JavaScript',
   'React',
   'Git',
