@@ -1,10 +1,36 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'gmail',
+        'template_483jufz',
+        e.target,
+        'user_NNzRSU120RVW9ClfzQCnr'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          window.alert(
+            'Thank you for contacting me , I will be in touch with you as soon as I can ;)'
+          );
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <section id='contact' className='relative'>
       <div className='container px-5 py-10 mx-auto flex justify-center sm:flex-nowrap flex-wrap'>
         <form
+          onSubmit={sendEmail}
           netlify
           name='contact'
           className='lg:w-1/3 md:w-1/2 flex flex-col w-full md:py-8 mt-8 md:mt-0'
