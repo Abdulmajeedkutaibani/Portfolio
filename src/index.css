@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.main-container {
+  overflow: hidden;
+}
 .project {
   min-height: 315px;
+  min-width: 350px;
 }

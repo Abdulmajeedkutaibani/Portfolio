@@ -6,7 +6,7 @@ import Skills from './components/Skills';
 import SocialWidgets from './components/SocialWidgets';
 function App() {
   return (
-    <main className='text-gray-400 bg-gray-900 body-font'>
+    <main className='main-container text-gray-400 bg-gray-900 body-font'>
       <SocialWidgets />
       <Navbar />
       <About />
