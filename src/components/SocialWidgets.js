@@ -10,13 +10,16 @@ const SocialWidgets = () => {
     <nav className='social-widgets'>
       <ul>
         <li>
-          <a href='#'>
+          <a
+            href='https://www.linkedin.com/in/abdulmajeed-k-a60477153/'
+            target='_blank'
+          >
             <FaLinkedin className='text-2xl' />
             <span>Linkedin</span>
           </a>
         </li>
         <li>
-          <a href='#'>
+          <a href='https://github.com/Abdulmajeedkutaibani' target='_blank'>
             <FaGithub className='text-2xl' />
             <span>Github</span>
           </a>
@@ -28,7 +31,10 @@ const SocialWidgets = () => {
           </a>
         </li>
         <li>
-          <a href='https://drive.google.com/file/d/19YGpyPiSW6US0WUlCG_1Pygo-vDdg01Z/view?usp=sharing'>
+          <a
+            href='https://drive.google.com/file/d/19YGpyPiSW6US0WUlCG_1Pygo-vDdg01Z/view?usp=sharing'
+            target='_blank'
+          >
             <FaPortrait className='text-2xl' />
             <span>Resume</span>
           </a>

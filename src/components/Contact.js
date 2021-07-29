@@ -28,7 +28,7 @@ const Contact = () => {
 
   return (
     <section id='contact' className='relative'>
-      <div className='container px-5 py-10 mx-auto flex justify-center sm:flex-nowrap flex-wrap'>
+      <div className='container px-5 pt-24 pb-20 mx-auto flex justify-center sm:flex-nowrap flex-wrap'>
         <form
           onSubmit={sendEmail}
           name='contact'
