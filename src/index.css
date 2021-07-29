@@ -91,7 +91,7 @@ body {
     margin-right: 0;
     margin-bottom: 1rem;
   }
-  .footer .footer__item:last-child {
+  .footer__item:last-child {
     text-align: left;
   }
 }
