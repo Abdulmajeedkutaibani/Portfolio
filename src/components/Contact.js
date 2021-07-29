@@ -1,7 +1,23 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+// import { userSchema } from './Validation/UserValidation';
 
 const Contact = () => {
+  // const createUser = async (e) => {
+  //   e.preventDefault();
+
+  //   let formData = {
+  //     name: e.target[0].value,
+  //     email: e.target[1].value,
+  //     message: e.target[2].value,
+  //   };
+  //   const isValid = await userSchema.isValid(formData);
+  //   console.log(isValid);
+  //   if (isValid === true) {
+  //     return sendEmail();
+  //   }
+  // };
+
   const sendEmail = (e) => {
     e.preventDefault();
 

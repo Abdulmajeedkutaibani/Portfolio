@@ -8,46 +8,46 @@ const About = () => {
           <h1 className='title-font sm:text-6xl text-5xl mb-5 font-medium text-white'>
             Welcome, I'm Abdulmajeed.K
           </h1>
-          <div class='primary-sub mb-8'>
-            <div class='primary-sub__word'>
-              <div class='primary-sub__top'>I'm</div>
-              <div class='primary-sub__bottom'>I'm</div>
+          <div className='primary-sub mb-8'>
+            <div className='primary-sub__word'>
+              <div className='primary-sub__top'>I'm</div>
+              <div className='primary-sub__bottom'>I'm</div>
             </div>
-            <div class='primary-sub__word'>
-              <div class='primary-sub__top'>a</div>
-              <div class='primary-sub__bottom'>a</div>
+            <div className='primary-sub__word'>
+              <div className='primary-sub__top'>a</div>
+              <div className='primary-sub__bottom'>a</div>
             </div>
-            <div class='primary-sub__word'>
-              <div class='primary-sub__top'>front-end</div>
-              <div class='primary-sub__bottom'>frontend</div>
+            <div className='primary-sub__word'>
+              <div className='primary-sub__top'>front-end</div>
+              <div className='primary-sub__bottom'>front-end</div>
             </div>
-            <div class='primary-sub__word'>
-              <div class='primary-sub__top'>web</div>
-              <div class='primary-sub__bottom'>web</div>
+            <div className='primary-sub__word'>
+              <div className='primary-sub__top'>web</div>
+              <div className='primary-sub__bottom'>web</div>
             </div>
-            <div class='primary-sub__word'>
-              <div class='primary-sub__top'>developer</div>
-              <div class='primary-sub__bottom'>developer</div>
+            <div className='primary-sub__word'>
+              <div className='primary-sub__top'>developer</div>
+              <div className='primary-sub__bottom'>developer</div>
             </div>
-            <div class='primary-sub__word'>
-              <div class='primary-sub__top'>currently</div>
-              <div class='primary-sub__bottom'>currently</div>
+            <div className='primary-sub__word'>
+              <div className='primary-sub__top'>currently</div>
+              <div className='primary-sub__bottom'>currently</div>
             </div>
-            <div class='primary-sub__word'>
-              <div class='primary-sub__top'>based</div>
-              <div class='primary-sub__bottom'>based</div>
+            <div className='primary-sub__word'>
+              <div className='primary-sub__top'>based</div>
+              <div className='primary-sub__bottom'>based</div>
             </div>
-            <div class='primary-sub__word'>
-              <div class='primary-sub__top'>in</div>
-              <div class='primary-sub__bottom'>in</div>
+            <div className='primary-sub__word'>
+              <div className='primary-sub__top'>in</div>
+              <div className='primary-sub__bottom'>in</div>
             </div>
-            <div class='primary-sub__word'>
-              <div class='primary-sub__top'>Istanbul,</div>
-              <div class='primary-sub__bottom'>Istanbul,</div>
+            <div className='primary-sub__word'>
+              <div className='primary-sub__top'>Istanbul,</div>
+              <div className='primary-sub__bottom'>Istanbul,</div>
             </div>
-            <div class='primary-sub__word'>
-              <div class='primary-sub__top'>Turkey</div>
-              <div class='primary-sub__bottom'>Turkey</div>
+            <div className='primary-sub__word'>
+              <div className='primary-sub__top'>Turkey</div>
+              <div className='primary-sub__bottom'>Turkey</div>
             </div>
           </div>
           <div className='flex justify-center mt-4'>
