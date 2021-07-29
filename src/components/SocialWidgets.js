@@ -22,9 +22,9 @@ const SocialWidgets = () => {
           </a>
         </li>
         <li>
-          <a href='#'>
+          <a href='mailto:abodymeo@gmail.com'>
             <HiOutlineMail className='text-2xl' />
-            <span>Github</span>
+            <span>Email</span>
           </a>
         </li>
         <li>

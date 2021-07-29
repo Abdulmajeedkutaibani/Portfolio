@@ -29,7 +29,7 @@
   background: #333;
 }
 .social-widgets li:nth-child(3) a {
-  background: #6fc2b0;
+  background: rgb(16, 185, 129);
 }
 .social-widgets li:nth-child(4) a {
   border-bottom-right-radius: 25px;
