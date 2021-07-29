@@ -86,3 +86,12 @@ body {
   color: #fff;
   text-decoration: none;
 }
+@media screen and (max-width: 768px) {
+  .footer__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .footer .footer__item:last-child {
+    text-align: left;
+  }
+}

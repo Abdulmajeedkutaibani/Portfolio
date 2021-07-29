@@ -11,8 +11,8 @@ const Skills = () => {
             Skills &amp; Technologies
           </h1>
           <p className='text-xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto font-sans'>
-            // I love my coding journey with all it's ups and downs, and I will
-            definetly keep learning and making this list longer
+            // I love my coding journey with all of it's ups and downs, and I
+            will definetly keep learning and making this list longer.
           </p>
         </div>
         <div className='flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2'>
