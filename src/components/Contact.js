@@ -31,9 +31,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          window.alert(
-            'Thank you for contacting me , I will be in touch with you as soon as I can ;)'
-          );
+          window.alert('Message Sent.' < br > 'Thank You For Your Time.');
         },
         (error) => {
           console.log(error.text);
