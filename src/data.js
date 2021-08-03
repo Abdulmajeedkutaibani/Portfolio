@@ -41,6 +41,7 @@ export const testimonials = [
 
 export const skills = [
   'HTML/CSS',
+  'SASS',
   'Tailwind CSS Framework',
   'JavaScript',
   'React.js',
