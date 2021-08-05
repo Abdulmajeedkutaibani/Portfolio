@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowRightIcon } from '@heroicons/react/solid';
+import './socialwidgets.css';
+import { FaGithub } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
@@ -22,10 +24,17 @@ const Navbar = () => {
           </a> */}
         </nav>
         <a
+          href='https://github.com/Abdulmajeedkutaibani'
+          target='_blank'
+          className='github-icon'
+        >
+          <FaGithub className='text-3xl hover:text-white mr-4 mb-1' />
+        </a>
+        <a
           href='#contact'
           className='inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-xl mt-4 md:mt-0'
         >
-          Hire Me
+          work with me
           <ArrowRightIcon className='w-4 h-4 ml-1' />
         </a>
       </div>
