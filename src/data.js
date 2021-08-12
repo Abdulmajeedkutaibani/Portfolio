@@ -1,5 +1,16 @@
 export const projects = [
   {
+    title: 'Planets',
+    subtitle: 'React.js / SASS',
+    description: `This is an 8-page planets fact site that is fun for everyone to visit. 
+    The user is able to:
+-View the optimal layout for the app depending on their device's screen size
+-See hover states for all interactive elements on the page
+-View each planet page and toggle between the "Overview", "Internal Structure", and "Surface Geology" tabs.`,
+    image: './planets-image.jpeg',
+    link: 'https://our-planets.netlify.app',
+  },
+  {
     title: 'Clock-App',
     subtitle: 'React.js / CSS / API',
     description: `I challenged myself to build a clock application. it looks simple but it has a lot of details. I used React.js and React Custom Hooks to build this application, and I used external APIs to set the data based on the visitor's location and generate random programming quotes.`,

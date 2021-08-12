@@ -1,5 +1,6 @@
 import React from 'react';
 import { CodeIcon } from '@heroicons/react/solid';
+import { HiStar } from 'react-icons/hi';
 import { projects } from '../data';
 
 const Projects = () => {
@@ -17,6 +18,10 @@ const Projects = () => {
           </p>
         </div>
         <div className='flex flex-wrap -m-6'>
+          <div className='new-badge'>
+            <HiStar className='w-15 mr-2' />
+            <span>NEW</span>
+          </div>
           {projects.map((project) => (
             <a
               href={project.link}
