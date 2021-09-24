@@ -1,5 +1,18 @@
 export const projects = [
   {
+    title: 'AKAudio',
+    subtitle: 'React.js / Tailwind CSS / React-hooks / React-router',
+    description: `AKAudio is an all-in-one stop to fulfill your audio needs.
+
+This website has been my biggest project so far and the most challenging. I had to solve many problems that I had'nt encountered before and also needed to pay much attention to the smallest of details.
+
+I feel that after building this website my confidence in my coding ability and in my ability to learn and apply has skyrocketed! 🚀 😃
+
+check it out! and any feedback is much appreciated. 😁 👍🏼`,
+    image: './E-commerce.webp',
+    link: 'https://akaudio.netlify.app/',
+  },
+  {
     title: 'Planets',
     subtitle: 'React.js / SASS',
     description: `This is an 8-page planets fact site that is fun for everyone to visit. 
@@ -24,12 +37,6 @@ export const projects = [
 I used React.js for rendering the view and creating the #UI and I used #react_router for routing and I also used #Yup for form building and form validation.`,
     image: './majeedpay-image.webp',
     link: 'https://majeedpay.netlify.app',
-  },
-  {
-    title: 'AKAudio',
-    subtitle: 'Coming Soon',
-    description: 'Coming Soon...',
-    image: './E-commerce.webp',
   },
 ];
 
