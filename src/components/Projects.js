@@ -35,10 +35,10 @@ const Projects = () => {
               <div className='flex relative project '>
                 <img
                   alt='gallery'
-                  className='absolute inset-0 w-full h-full object-cover border-2 border-green-800 object-center rounded-3xl'
+                  className='absolute inset-0 w-full h-full object-cover border-2 border-green-800 object-center rounded-lg'
                   src={project.image}
                 />
-                <div className='px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 rounded-3xl'>
+                <div className='px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 rounded-lg'>
                   <h2 className='tracking-widest text-xl title-font font-medium text-green-400 mb-1 '>
                     {project.subtitle}
                   </h2>
