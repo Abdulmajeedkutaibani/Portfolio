@@ -3,7 +3,7 @@ export const projects = [
     title: 'AKAudio',
     subtitle: 'React.js / Tailwind CSS / React-hooks / React-router',
     description: `AKAudio is an all-in-one stop to fulfill your audio needs.
-
+    
 This website has been my biggest project so far and the most challenging. I had to solve many problems that I had'nt encountered before and also needed to pay much attention to the smallest of details.
 
 I feel that after building this website my confidence in my coding ability and in my ability to learn and apply has skyrocketed! 🚀 😃

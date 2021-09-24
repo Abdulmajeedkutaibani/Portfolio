@@ -19,8 +19,12 @@ const Projects = () => {
         </div>
         <div className='flex flex-wrap -m-6'>
           <div className='new-badge'>
-            <HiStar className='w-15 mr-2' />
+            <HiStar className='w-15 mr-1' />
             <span>NEW</span>
+          </div>
+          <div className='best-badge'>
+            <HiStar className='w-15 mr-1' />
+            <span>favorite</span>
           </div>
           {projects.map((project) => (
             <a
