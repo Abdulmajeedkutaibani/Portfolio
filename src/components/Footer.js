@@ -9,13 +9,13 @@ const Footer = () => {
       <div className='footer__item'>
         <div className='footer__contact'>
           Email:{' '}
-          <a href='mailto:realmartinzane@gmail.com' className='footer__link'>
+          <a href='mailto:abodymeo@gmail.com' className='footer__link'>
             abodymeo@gmail.com
           </a>
         </div>
         <div className='footer__contact'>
           Tel:{' '}
-          <a href='tel: +46729726764' className='footer__link'>
+          <a href='tel: +905527264403' className='footer__link'>
             +905527264403
           </a>
         </div>
