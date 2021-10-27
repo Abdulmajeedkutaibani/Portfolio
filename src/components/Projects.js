@@ -1,6 +1,7 @@
 import React from 'react';
 import { CodeIcon } from '@heroicons/react/solid';
 import { HiStar } from 'react-icons/hi';
+import { MdOutlineFavorite } from 'react-icons/md';
 import { projects } from '../data';
 
 const Projects = () => {
@@ -22,8 +23,8 @@ const Projects = () => {
             <HiStar className='w-15 mr-1' />
             <span>NEW</span>
           </div>
-          <div className='best-badge'>
-            <HiStar className='w-15 mr-1' />
+          <div className='best-badge bg-yellow-300 pl-1'>
+            <MdOutlineFavorite className='w-15 mr-1 text-red-600' />
             <span>favorite</span>
           </div>
           {projects.map((project) => (
@@ -35,11 +36,11 @@ const Projects = () => {
               <div className='flex relative project '>
                 <img
                   alt='gallery'
-                  className='absolute inset-0 w-full h-full object-cover border-2 border-green-800 object-center rounded-lg'
+                  className='absolute inset-0 w-full h-full object-cover border-2 border-blue-300 object-center rounded-lg'
                   src={project.image}
                 />
                 <div className='px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 rounded-lg'>
-                  <h2 className='tracking-widest text-xl title-font font-medium text-green-400 mb-1 '>
+                  <h2 className='tracking-widest text-xl title-font font-medium text-blue-400 mb-1 '>
                     {project.subtitle}
                   </h2>
                   <h1 className='title-font text-2xl font-medium text-white mb-3'>

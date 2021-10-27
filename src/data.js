@@ -1,5 +1,19 @@
 export const projects = [
   {
+    title: 'AK Notes',
+    subtitle:
+      'React.js / Material UI / React-hooks / React-router/ Firebase (Firestore, Authentication, Storage)',
+    description: `AK Notes is Full-Stack Web-App for taking and saving Notes and Reminders that everyone can benifit from.
+
+This website has been my biggest project so far and the most challenging. I had to solve many problems that I had'nt encountered before and also needed to pay much attention to the smallest of details.
+
+I feel that after building this website my confidence in my coding ability and in my ability to learn and apply has skyrocketed! 🚀 😃
+
+check it out! and any feedback is much appreciated. 😁 👍🏼`,
+    image: './AKNotes.png',
+    link: 'https://aknotes-app.netlify.app/',
+  },
+  {
     title: 'AKAudio',
     subtitle: 'React.js / Tailwind CSS / React-hooks / React-router',
     description: `AKAudio is an all-in-one stop to fulfill your audio needs.
@@ -59,6 +73,7 @@ export const testimonials = [
 
 export const skills = [
   'HTML/CSS',
+  'Material UI',
   'SASS',
   'Tailwind CSS Framework',
   'Bootstrap 5',
