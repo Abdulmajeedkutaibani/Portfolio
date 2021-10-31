@@ -1,8 +1,13 @@
 export const projects = [
   {
     title: 'AK Notes',
-    subtitle:
-      'React.js / Material UI / React-hooks / React-router/ Firebase (Firestore, Authentication, Storage)',
+    subtitle: [
+      'React.js',
+      'Material UI',
+      'React-hooks',
+      'React-router',
+      'Firebase (Firestore, Authentication, Storage)',
+    ],
     description: `AK Notes is a Full-Stack Web-App for taking and saving Notes and Reminders that everyone can benefit from.
 
 This project helped me solidify my Material UI and Firebase learning and practice Form building and validation.

@@ -31,7 +31,7 @@ const Projects = () => {
             <a
               href={project.link}
               key={project.image}
-              className='sm:w-1/2 m-auto w-100 p-4'
+              className='sm:w-1/2 m-auto w-100 p-4 '
             >
               <div className='flex relative project '>
                 <img
@@ -46,7 +46,7 @@ const Projects = () => {
                   <h1 className='title-font text-2xl font-medium text-white mb-3'>
                     {project.title}
                   </h1>
-                  <p className='leading-relaxed text-base'>
+                  <p className='leading-relaxed text-base '>
                     {project.description}
                   </p>
                 </div>

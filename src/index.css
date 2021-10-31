@@ -129,3 +129,49 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.modal {
+  position: 'absolute';
+  top: '50%';
+  left: '50%';
+  transform: 'translate(-50%, -50%)';
+  maxwidth: 400;
+  width: '50%';
+  minwidth: 100;
+  bgcolor: 'background.paper';
+  border: '2px solid #000';
+  borderradius: '8px';
+  boxshadow: 24;
+  p: 4;
+}
+
+.project__technology {
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid #22262a;
+  padding: 5px;
+  color: #81a0bf;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
