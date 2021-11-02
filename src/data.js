@@ -1,5 +1,6 @@
 export const projects = [
   {
+    id: 0,
     title: 'AK Notes',
     subtitle: [
       'React.js',
@@ -12,26 +13,40 @@ export const projects = [
 
 This project helped me solidify my Material UI and Firebase learning and practice Form building and validation.
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Add/Remove products from the cart
-- Edit product quantities in the cart
-- Fill in all fields in the checkout
-- Receive form validations if fields are missed or incorrect during checkout
-- See correct checkout totals depending on the products in the cart
-- Shipping always adds $50 to the order
-- VAT is calculated as 20% of the product total, excluding shipping
-- See an order confirmation modal after checking out with an order summary
-- Keep track of what's in the cart, even after refreshing the browser.
+To build this project I used:
+-React.js
+-React-hooks
+-React-router
+-Material UI
+-Firebase (Firestore, Authentication, Storage)
+-React-hook-form
+-Yup form validation
 
+Users are able to:
+- View the optimal layout for the app depending on their device's screen size.
+- The Simplicity of the app makes it easy for everyone to use it.
+- See hover states for all interactive elements on the page.
+- Know the date through the app.
+- Create an account in the app using Email and Password.
+- Login to the app with their Email and password.
+- View their account information.
+- Upload a user profile photo.
+- Delete the account.
+- Create new notes/reminders.
+- When choosing a note category, the notecard will have a border color indicating the selected category.
+- All user information and data are stored on the server and not lost when the app is reloaded.
+- Users can Delete their notes.
+- Only the users can view their own notes.
+- None-users are required to Sign up to use the app.
 
 check it out! and any feedback is much appreciated.`,
     image: './AKNotes.png',
     link: 'https://aknotes-app.netlify.app/',
   },
   {
+    id: 1,
     title: 'AKAudio',
-    subtitle: 'React.js / Tailwind CSS / React-hooks / React-router',
+    subtitle: ['React.js', 'Tailwind CSS', 'React-hooks', 'React-router'],
     description: `AKAudio is an all-in-one stop to fulfill your audio needs.
 
 This website has been my biggest project so far. I had to solve many problems that I had'nt encountered before and also needed to pay much attention to the smallest of details.
@@ -43,8 +58,9 @@ check it out! and any feedback is much appreciated. 😁 👍🏼`,
     link: 'https://akaudio.netlify.app/',
   },
   {
+    id: 2,
     title: 'Planets',
-    subtitle: 'React.js / SASS',
+    subtitle: ['React.js', 'SASS'],
     description: `This is an 8-page planets fact site that is fun for everyone to visit. 
     The user is able to:
 -View the optimal layout for the app depending on their device's screen size
@@ -54,15 +70,17 @@ check it out! and any feedback is much appreciated. 😁 👍🏼`,
     link: 'https://our-planets.netlify.app',
   },
   {
+    id: 3,
     title: 'Clock-App',
-    subtitle: 'React.js / CSS / API',
+    subtitle: ['React.js', 'CSS', 'API'],
     description: `I challenged myself to build a clock application. it looks simple but it has a lot of details. I used React.js and React Custom Hooks to build this application, and I used external APIs to set the data based on the visitor's location and generate random programming quotes.`,
     image: './clock-app-home.jpeg',
     link: 'https://majeed-clock-app.netlify.app',
   },
   {
+    id: 4,
     title: 'MajeedPay',
-    subtitle: 'React.js / CSS',
+    subtitle: ['React.js', 'CSS'],
     description: `This project is a 4-page website built with HTML, CSS, JavaScript, React.Js.
 I used React.js for rendering the view and creating the #UI and I used #react_router for routing and I also used #Yup for form building and form validation.`,
     image: './majeedpay-image.webp',

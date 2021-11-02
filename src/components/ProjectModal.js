@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Modal, Typography, Button, Box } from '@mui/material/';
 import { useState } from 'react';
 import AKnotes from '../../src/AKNotes.png';
@@ -11,7 +11,7 @@ const style = {
   left: '50%',
   width: '93%',
   maxWidth: '1000px',
-
+  maxHeight: '500px',
   transform: 'translate(-50%, -50%)',
   display: 'flex',
   outline: 'none',
@@ -20,13 +20,13 @@ const style = {
   boxShadow: 24,
 };
 
-const ProjectModal = () => {
-  const [open, setOpen] = useState(true);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+const ProjectModal = ({ showModal, setShowModal }) => {
+  const handleClose = () => setShowModal(false);
+
   return (
     <Modal
-      open={open}
+      id='modal-pop'
+      open={showModal}
       onClose={handleClose}
       aria-labelledby='modal-modal-title'
       aria-describedby='modal-modal-description'
@@ -36,14 +36,17 @@ const ProjectModal = () => {
           <img
             alt='gallery'
             className='inset-0 w-full h-full object-cover  '
-            src={AKnotes}
+            src={projects[0].image}
           />
         </div>
         <div className='flex w-1/2 h-full overflow-x-auto'>
           <div className='px-4 pt-3 relative '>
-            <h2 className='tracking-widest text-small title-font font-medium text-blue-400 '>
-              Project
-            </h2>
+            <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+              <h2 className='tracking-widest text-small title-font font-medium text-blue-400 '>
+                Project
+              </h2>
+              <Button onClick={handleClose}>Close</Button>
+            </Box>
             <Typography
               variant='h6'
               sx={{
@@ -53,7 +56,7 @@ const ProjectModal = () => {
                 fontFamily: 'Staatliches,sans-serif',
               }}
             >
-              AK Notes
+              {projects[0].title}
             </Typography>
             <Box sx={{ mb: 2 }}>
               {projects[0].subtitle.map((subtitles) => {
@@ -77,26 +80,20 @@ const ProjectModal = () => {
             </Typography>
             <Typography
               sx={{
-                fontSize: '14px',
+                fontSize: '15px',
                 color: '#94a4b4',
                 letterSpacing: '1px',
-                overflow: 'x-auto',
+                overflowX: 'auto',
                 width: '90%',
                 height: '35%',
+                maxHeight: '200px',
                 fontFamily: 'Inconsolata,sans-serif',
                 mt: '1rem',
-                overflowX: 'auto',
                 whiteSpace: 'pre-line',
-                mb: 7,
+                mb: 5,
               }}
             >
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              nulla vitae culpa placeat impedit! Facere accusantium, cupiditate,
-              corrupti culpa reprehenderit vitae facilis, ipsum voluptas sit
-              optio explicabo molestias expedita omnis dolorum eveniet. Vel,
-              dolorem vitae. Ducimus exercitationem nemo veritatis repellendus
-              doloribus dignissimos dolorum aspernatur fugit nostrum laborum,
-              architecto repellat consequuntur?
+              {projects[0].description}
             </Typography>
             <div className='flex gap-3 h-7'>
               <Button

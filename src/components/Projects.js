@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CodeIcon } from '@heroicons/react/solid';
 import { HiStar } from 'react-icons/hi';
 import { MdOutlineFavorite } from 'react-icons/md';
 import { projects } from '../data';
+import { Button } from '@mui/material';
 
-const Projects = () => {
+const Projects = ({ onButtonClick }) => {
   return (
     <section id='projects' className='text-gray-400 bg-gray-900 body-font'>
       <div className='container px-5 py-10 mx-auto text-center lg:px-40'>
@@ -28,10 +29,10 @@ const Projects = () => {
             <span>favorite</span>
           </div>
           {projects.map((project) => (
-            <a
-              href={project.link}
+            <Button
+              onClick={() => onButtonClick(true)}
               key={project.image}
-              className='sm:w-1/2 m-auto w-100 p-4 '
+              className='sm:w-1/2 m-auto w-100 p-4'
             >
               <div className='flex relative project '>
                 <img
@@ -46,12 +47,12 @@ const Projects = () => {
                   <h1 className='title-font text-2xl font-medium text-white mb-3'>
                     {project.title}
                   </h1>
-                  <p className='leading-relaxed text-base '>
+                  <p className='leading-relaxed text-base overflow-x-auto max-h-20'>
                     {project.description}
                   </p>
                 </div>
               </div>
-            </a>
+            </Button>
           ))}
         </div>
       </div>
