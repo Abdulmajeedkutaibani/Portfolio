@@ -11,7 +11,7 @@ const SocialWidgets = () => {
       <ul>
         <li>
           <a
-            href='https://www.linkedin.com/in/abdulmajeed-k-a60477153/'
+            href='https://www.linkedin.com/in/abdulmajeed-kutaibani-a60477153'
             target='_blank'
           >
             <FaLinkedin className='text-2xl' />
