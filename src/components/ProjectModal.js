@@ -45,7 +45,24 @@ const ProjectModal = ({ showModal, setShowModal, projectID }) => {
               <h2 className='tracking-widest text-small title-font font-medium text-blue-400 '>
                 Project
               </h2>
-              <Button onClick={handleClose}>Close</Button>
+              <Button
+                sx={{
+                  '&:hover': { opacity: 1 },
+                  opacity: 0.9,
+                  width: 80,
+                  height: 20,
+                  transition: 'all 0.5s',
+                  fontWeight: 'bold',
+                  fontSize: '18px',
+                  fontFamily: 'Staatliches,sans-serif',
+                  gap: '8px',
+                }}
+                variant='contained'
+                color='inherit'
+                onClick={handleClose}
+              >
+                Close
+              </Button>
             </Box>
             <Typography
               variant='h6'

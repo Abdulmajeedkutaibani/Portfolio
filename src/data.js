@@ -54,7 +54,7 @@ This website has been my biggest project so far. I had to solve many problems th
 I feel that after building this website my confidence in my coding ability and in my ability to learn and apply has skyrocketed! 🚀 😃
 
 check it out! and any feedback is much appreciated. 😁 👍🏼`,
-    image: './AKAudio-preview.jpg',
+    image: './AKAudio.png',
     link: 'https://akaudio.netlify.app/',
   },
   {

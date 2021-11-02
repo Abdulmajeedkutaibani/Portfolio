@@ -1,3 +1,4 @@
+import { Box } from '@mui/system';
 import { useState } from 'react';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -18,7 +19,10 @@ function App() {
   };
 
   return (
-    <main className='main-container text-gray-400 bg-gray-900 body-font'>
+    <Box
+      sx={{ background: '#171a1d' }}
+      className='main-container text-gray-400  body-font'
+    >
       <ProjectModal
         showModal={showModal}
         setShowModal={setShowModal}
@@ -31,7 +35,7 @@ function App() {
       <Skills />
       <Contact />
       <Footer />
-    </main>
+    </Box>
   );
 }
 
