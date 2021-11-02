@@ -20,7 +20,7 @@ const style = {
   boxShadow: 24,
 };
 
-const ProjectModal = ({ showModal, setShowModal }) => {
+const ProjectModal = ({ showModal, setShowModal, projectID }) => {
   const handleClose = () => setShowModal(false);
 
   return (
@@ -36,7 +36,7 @@ const ProjectModal = ({ showModal, setShowModal }) => {
           <img
             alt='gallery'
             className='inset-0 w-full h-full object-cover  '
-            src={projects[0].image}
+            src={projects[projectID].image}
           />
         </div>
         <div className='flex w-1/2 h-full overflow-x-auto'>
@@ -56,10 +56,10 @@ const ProjectModal = ({ showModal, setShowModal }) => {
                 fontFamily: 'Staatliches,sans-serif',
               }}
             >
-              {projects[0].title}
+              {projects[projectID].title}
             </Typography>
             <Box sx={{ mb: 2 }}>
-              {projects[0].subtitle.map((subtitles) => {
+              {projects[projectID].subtitle.map((subtitles) => {
                 return (
                   <li className='project__technology'>
                     <p>{subtitles}</p>
@@ -93,7 +93,7 @@ const ProjectModal = ({ showModal, setShowModal }) => {
                 mb: 5,
               }}
             >
-              {projects[0].description}
+              {projects[projectID].description}
             </Typography>
             <div className='flex gap-3 h-7'>
               <Button

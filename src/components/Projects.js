@@ -30,7 +30,7 @@ const Projects = ({ onButtonClick }) => {
           </div>
           {projects.map((project) => (
             <Button
-              onClick={() => onButtonClick(true)}
+              onClick={() => onButtonClick(true, project.id)}
               key={project.image}
               className='sm:w-1/2 m-auto w-100 p-4'
             >

@@ -10,14 +10,20 @@ import SocialWidgets from './components/SocialWidgets';
 
 function App() {
   const [showModal, setShowModal] = useState();
-  const onButtonClick = (opendaModal) => {
+  const [projectID, setProjecttID] = useState(0);
+  const onButtonClick = (opendaModal, selectID) => {
     setShowModal(opendaModal);
+    setProjecttID(selectID);
     console.log('wazuuuub');
   };
 
   return (
     <main className='main-container text-gray-400 bg-gray-900 body-font'>
-      <ProjectModal showModal={showModal} setShowModal={setShowModal} />
+      <ProjectModal
+        showModal={showModal}
+        setShowModal={setShowModal}
+        projectID={projectID}
+      />
       <SocialWidgets />
       <Navbar />
       <About />
