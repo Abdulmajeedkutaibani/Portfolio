@@ -1,19 +1,19 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Modal, Typography, Button, Box } from '@mui/material/';
-import { useState } from 'react';
-import AKnotes from '../../src/AKNotes.png';
-import { FaEye, FaCode } from 'react-icons/fa';
+import { FaEye, FaCode, FaTimes } from 'react-icons/fa';
 import { projects } from '../data';
 
 const style = {
   position: 'absolute',
   top: '50%',
   left: '50%',
-  width: '93%',
-  maxWidth: '1000px',
-  maxHeight: '500px',
+  height: { xs: '95%', sm: '60%' },
+  width: { md: '93%', xs: '90%' },
+  maxWidth: { md: '1000px' },
+  maxHeight: { md: '500px' },
   transform: 'translate(-50%, -50%)',
   display: 'flex',
+  flexDirection: { xs: 'column', sm: 'row' },
   outline: 'none',
   bgcolor: '#343a41',
   border: '2px solid #000',
@@ -25,21 +25,37 @@ const ProjectModal = ({ showModal, setShowModal, projectID }) => {
 
   return (
     <Modal
-      id='modal-pop'
       open={showModal}
       onClose={handleClose}
       aria-labelledby='modal-modal-title'
       aria-describedby='modal-modal-description'
     >
       <Box sx={style}>
-        <div className='w-1/2'>
+        <div className='w-full lg:w-1/2'>
           <img
             alt='gallery'
             className='inset-0 w-full h-full object-cover  '
             src={projects[projectID].image}
           />
         </div>
-        <div className='flex w-1/2 h-full overflow-x-auto'>
+        <Button
+          sx={{
+            display: { xs: 'flex', sm: 'none' },
+            position: 'absolute',
+            right: '15px',
+            top: '15px',
+            transition: 'all 0.5s',
+            fontWeight: 'bold',
+            fontSize: '18px',
+            fontFamily: 'Staatliches,sans-serif',
+          }}
+          variant='contained'
+          color='error'
+          onClick={handleClose}
+        >
+          <FaTimes />
+        </Button>
+        <div className='flex w-full lg:w-1/2 h-full overflow-x-auto'>
           <div className='px-4 pt-3 relative '>
             <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
               <h2 className='tracking-widest text-small title-font font-medium text-blue-400 '>
@@ -47,21 +63,19 @@ const ProjectModal = ({ showModal, setShowModal, projectID }) => {
               </h2>
               <Button
                 sx={{
-                  '&:hover': { opacity: 1 },
-                  opacity: 0.9,
-                  width: 80,
-                  height: 20,
+                  display: { xs: 'none', sm: 'flex' },
+                  position: 'absolute',
+                  right: '15px',
                   transition: 'all 0.5s',
                   fontWeight: 'bold',
                   fontSize: '18px',
                   fontFamily: 'Staatliches,sans-serif',
-                  gap: '8px',
                 }}
                 variant='contained'
-                color='inherit'
+                color='error'
                 onClick={handleClose}
               >
-                Close
+                <FaTimes />
               </Button>
             </Box>
             <Typography
@@ -75,7 +89,7 @@ const ProjectModal = ({ showModal, setShowModal, projectID }) => {
             >
               {projects[projectID].title}
             </Typography>
-            <Box sx={{ mb: 2 }}>
+            <Box sx={{ mb: 1 }}>
               {projects[projectID].subtitle.map((subtitles) => {
                 return (
                   <li className='project__technology'>
@@ -97,7 +111,7 @@ const ProjectModal = ({ showModal, setShowModal, projectID }) => {
             </Typography>
             <Typography
               sx={{
-                fontSize: '15px',
+                fontSize: '16px',
                 color: '#94a4b4',
                 letterSpacing: '1px',
                 overflowX: 'auto',
@@ -113,40 +127,46 @@ const ProjectModal = ({ showModal, setShowModal, projectID }) => {
               {projects[projectID].description}
             </Typography>
             <div className='flex gap-3 h-7'>
-              <Button
-                sx={{
-                  '&:hover': { opacity: 1 },
-                  opacity: 0.9,
-                  width: 100,
-                  transition: 'all 0.5s',
-                  fontWeight: 'bold',
-                  fontSize: '18px',
-                  fontFamily: 'Staatliches,sans-serif',
-                  gap: '8px',
-                }}
-                variant='contained'
-                color='inherit'
-              >
-                <FaEye className='w-8' />
-                DEMO
-              </Button>
-              <Button
-                sx={{
-                  '&:hover': { opacity: 1 },
-                  opacity: 0.9,
-                  width: 100,
-                  transition: 'all 0.5s',
-                  fontWeight: 'bold',
-                  fontSize: '18px',
-                  fontFamily: 'Staatliches,sans-serif',
-                  gap: '8px',
-                }}
-                variant='contained'
-                color='inherit'
-              >
-                <FaCode />
-                CODE
-              </Button>
+              <a href={projects[projectID].link}>
+                <Button
+                  sx={{
+                    '&:hover': { opacity: 1 },
+                    opacity: 0.9,
+                    height: 30,
+                    width: 100,
+                    transition: 'all 0.5s',
+                    fontWeight: 'bold',
+                    fontSize: '18px',
+                    fontFamily: 'Staatliches,sans-serif',
+                    gap: '8px',
+                  }}
+                  variant='contained'
+                  color='inherit'
+                >
+                  <FaEye className='w-8' />
+                  DEMO
+                </Button>
+              </a>
+              <a href=''>
+                <Button
+                  sx={{
+                    '&:hover': { opacity: 1 },
+                    opacity: 0.9,
+                    height: 30,
+                    width: 100,
+                    transition: 'all 0.5s',
+                    fontWeight: 'bold',
+                    fontSize: '18px',
+                    fontFamily: 'Staatliches,sans-serif',
+                    gap: '8px',
+                  }}
+                  variant='contained'
+                  color='inherit'
+                >
+                  <FaCode />
+                  CODE
+                </Button>
+              </a>
             </div>
           </div>
         </div>
