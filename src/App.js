@@ -33,7 +33,7 @@ function App() {
       <About />
       <Projects onButtonClick={onButtonClick} />
       <Skills />
-      {/* <Contact /> */}
+      <Contact />
       <Footer />
     </Box>
   );
