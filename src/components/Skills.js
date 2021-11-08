@@ -8,7 +8,7 @@ import {
   FaReact,
   FaGitAlt,
   FaGithub,
-  FaGit,
+  FaNpm,
 } from 'react-icons/fa';
 import {
   SiMaterialui,
@@ -16,6 +16,8 @@ import {
   SiJavascript,
   SiFirebase,
   SiScaleway,
+  SiStyledcomponents,
+  SiRedux,
 } from 'react-icons/si';
 
 const Skills = () => {
@@ -76,6 +78,14 @@ const Skills = () => {
           </div>
           <div className='p-2 sm:w-1/2 w-full'>
             <div className='bg-gray-800 rounded flex p-4 h-full items-center'>
+              <SiStyledcomponents className='text-pink-400 w-10 h-10 flex-shrink-0 mr-4' />
+              <span className='title-font font-medium text-2xl text-white'>
+                Styled Components
+              </span>
+            </div>
+          </div>
+          <div className='p-2 sm:w-1/2 w-full'>
+            <div className='bg-gray-800 rounded flex p-4 h-full items-center'>
               <SiJavascript className='text-yellow-300  w-10 h-10 flex-shrink-0 mr-4' />
               <span className='title-font font-medium text-2xl text-white'>
                 JavaScript
@@ -84,9 +94,17 @@ const Skills = () => {
           </div>
           <div className='p-2 sm:w-1/2 w-full'>
             <div className='bg-gray-800 rounded flex p-4 h-full items-center'>
-              <FaReact className='text-blue-300 w-10 h-10 flex-shrink-0 mr-4' />
+              <FaReact className='text-blue-400 w-10 h-10 flex-shrink-0 mr-4' />
               <span className='title-font font-medium text-2xl text-white'>
                 React.js
+              </span>
+            </div>
+          </div>
+          <div className='p-2 sm:w-1/2 w-full'>
+            <div className='bg-gray-800 rounded flex p-4 h-full items-center'>
+              <SiRedux className='text-purple-400 w-10 h-10 flex-shrink-0 mr-4' />
+              <span className='title-font font-medium text-2xl text-white'>
+                Redux
               </span>
             </div>
           </div>
@@ -95,6 +113,14 @@ const Skills = () => {
               <SiFirebase className='text-yellow-400 w-10 h-10 flex-shrink-0 mr-4' />
               <span className='title-font font-medium text-2xl text-white'>
                 Firebase
+              </span>
+            </div>
+          </div>
+          <div className='p-2 sm:w-1/2 w-full'>
+            <div className='bg-gray-800 rounded flex p-4 h-full items-center'>
+              <FaNpm className='text-red-400 w-10 h-10 flex-shrink-0 mr-4' />
+              <span className='title-font font-medium text-2xl text-white'>
+                Npm
               </span>
             </div>
           </div>
