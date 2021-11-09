@@ -127,7 +127,7 @@ const ProjectModal = ({ showModal, setShowModal, projectID }) => {
               {projects[projectID].description}
             </Typography>
             <div className='flex gap-3 h-7'>
-              <a href={projects[projectID].link}>
+              <a href={projects[projectID].link} target='_blank'>
                 <Button
                   sx={{
                     '&:hover': { opacity: 1 },
