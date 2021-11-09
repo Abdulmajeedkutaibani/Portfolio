@@ -42,6 +42,7 @@ Users are able to:
 check it out! and any feedback is much appreciated.`,
     image: './AKNotes.png',
     link: 'https://aknotes-app.netlify.app/',
+    github: 'https://github.com/Abdulmajeedkutaibani/Notes-app',
   },
   {
     id: 1,
@@ -56,6 +57,7 @@ I feel that after building this website my confidence in my coding ability and i
 check it out! and any feedback is much appreciated. 😁 👍🏼`,
     image: './AKAudio.png',
     link: 'https://akaudio.netlify.app/',
+    github: 'https://github.com/Abdulmajeedkutaibani/AKAudio',
   },
   {
     id: 2,
@@ -68,6 +70,7 @@ check it out! and any feedback is much appreciated. 😁 👍🏼`,
 -View each planet page and toggle between the "Overview", "Internal Structure", and "Surface Geology" tabs.`,
     image: './planets-image.jpeg',
     link: 'https://our-planets.netlify.app',
+    github: 'https://github.com/Abdulmajeedkutaibani/planets',
   },
   {
     id: 3,
@@ -76,6 +79,7 @@ check it out! and any feedback is much appreciated. 😁 👍🏼`,
     description: `I challenged myself to build a clock application. it looks simple but it has a lot of details. I used React.js and React Custom Hooks to build this application, and I used external APIs to set the data based on the visitor's location and generate random programming quotes.`,
     image: './clock-app-home.jpeg',
     link: 'https://majeed-clock-app.netlify.app',
+    github: 'https://github.com/Abdulmajeedkutaibani/Clock-App',
   },
   {
     id: 4,
@@ -85,6 +89,7 @@ check it out! and any feedback is much appreciated. 😁 👍🏼`,
 I used React.js for rendering the view and creating the #UI and I used #react_router for routing and I also used #Yup for form building and form validation.`,
     image: './majeedpay-image.webp',
     link: 'https://majeedpay.netlify.app',
+    github: 'https://github.com/Abdulmajeedkutaibani/Majeed-Pay',
   },
 ];
 

@@ -147,7 +147,7 @@ const ProjectModal = ({ showModal, setShowModal, projectID }) => {
                   DEMO
                 </Button>
               </a>
-              <a href=''>
+              <a href={projects[projectID].github}>
                 <Button
                   sx={{
                     '&:hover': { opacity: 1 },
