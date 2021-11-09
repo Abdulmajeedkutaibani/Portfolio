@@ -32,7 +32,7 @@ const SocialWidgets = () => {
         </li>
         <li>
           <a
-            href='https://drive.google.com/file/d/1ngm-vpXnIcdtWLlg5swXltBTgeO1dB1G/view?usp=sharing'
+            href='https://drive.google.com/file/d/1OuEgPdFbvkDiCMsrLYnCcJ0vcIAihuDT/view?usp=sharing'
             target='_blank'
           >
             <FaPortrait className='text-2xl' />
