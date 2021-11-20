@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { CodeIcon } from '@heroicons/react/solid';
 import { HiStar } from 'react-icons/hi';
 import { MdOutlineFavorite } from 'react-icons/md';
+import { FaTools } from 'react-icons/fa';
 import { projects } from '../data';
 import { Button, Box } from '@mui/material';
 
@@ -33,14 +34,21 @@ const Projects = ({ onButtonClick }) => {
               <div className='flex gap-1 absolute'>
                 {project.id == 0 ? (
                   <div className='new-badge'>
-                    <HiStar className='w-15 mr-1' />
-                    <span>NEW</span>
+                    <HiStar className=' mr-1' />
+                    <span>NEWEST</span>
                   </div>
                 ) : null}
-                {project.id == 0 ? (
+
+                {project.id == 2 ? (
                   <div className='best-badge bg-yellow-300 pl-1'>
                     <MdOutlineFavorite className='w-15 mr-1 text-red-600' />
                     <span>favorite</span>
+                  </div>
+                ) : null}
+                {project.id == 1 ? (
+                  <div className='advanced-badge bg-yellow-300 pl-1'>
+                    <FaTools className='mr-2 text-blue-600' />
+                    <span>Advanced</span>
                   </div>
                 ) : null}
               </div>

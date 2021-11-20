@@ -1,6 +1,29 @@
 export const projects = [
   {
     id: 0,
+    title: 'Product Page',
+    subtitle: ['React.js', 'Styled Components', 'Redux Toolkit', 'React-icons'],
+    description: `This is a small product webpage that I've built to practice my knowledge of Redux toolkit and styled components.
+
+Users are able to:
+
+- View the optimal layout for the site depending on their device's screen size.
+- See hover states for all interactive elements on the page.
+- Switch the large product image by clicking on the small thumbnail images.
+- Add items to the cart.
+- View the cart and remove items from it.
+
+What I learned:
+- Learned Redux Toolkit and applied it heavily in the page.
+- Learned Styled components and did not use any extra css files or css libraries.
+
+check it out! and any feedback is much appreciated.`,
+    image: './desktop-preview.jpg',
+    link: 'https://sneakers-product-page.netlify.app/',
+    github: 'https://github.com/Abdulmajeedkutaibani/Product-page',
+  },
+  {
+    id: 1,
     title: 'AK Notes',
     subtitle: [
       'React.js',
@@ -45,7 +68,7 @@ check it out! and any feedback is much appreciated.`,
     github: 'https://github.com/Abdulmajeedkutaibani/Notes-app',
   },
   {
-    id: 1,
+    id: 2,
     title: 'AKAudio',
     subtitle: ['React.js', 'Tailwind CSS', 'React-hooks', 'React-router'],
     description: `AKAudio is an all-in-one stop to fulfill your audio needs.
@@ -60,7 +83,7 @@ check it out! and any feedback is much appreciated. 😁 👍🏼`,
     github: 'https://github.com/Abdulmajeedkutaibani/AKAudio',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Planets',
     subtitle: ['React.js', 'SASS'],
     description: `This is an 8-page planets fact site that is fun for everyone to visit. 
@@ -73,7 +96,7 @@ check it out! and any feedback is much appreciated. 😁 👍🏼`,
     github: 'https://github.com/Abdulmajeedkutaibani/planets',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Clock-App',
     subtitle: ['React.js', 'CSS', 'API'],
     description: `I challenged myself to build a clock application. it looks simple but it has a lot of details. I used React.js and React Custom Hooks to build this application, and I used external APIs to set the data based on the visitor's location and generate random programming quotes.`,
@@ -82,7 +105,7 @@ check it out! and any feedback is much appreciated. 😁 👍🏼`,
     github: 'https://github.com/Abdulmajeedkutaibani/Clock-App',
   },
   {
-    id: 4,
+    id: 5,
     title: 'MajeedPay',
     subtitle: ['React.js', 'CSS'],
     description: `This project is a 4-page website built with HTML, CSS, JavaScript, React.Js.
