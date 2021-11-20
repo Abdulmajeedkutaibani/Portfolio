@@ -14,7 +14,7 @@ Users are able to:
 - View the shopping cart and remove items from it.
 
 What I learned:
-- Learned how to create an e-commerce products cart with Redux.
+- Learned how to create an e-commerce shopping cart with Redux.
 - Learned Styled components and did not use any extra css files or css libraries.
 
 check it out! and any feedback is much appreciated.`,
