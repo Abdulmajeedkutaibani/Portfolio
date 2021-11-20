@@ -11,7 +11,7 @@ Users are able to:
 - See hover states for all interactive elements on the page.
 - Switch the large product image by clicking on the small thumbnail images.
 - Add items to the cart.
-- View the cart and remove items from it.
+- View the shopping cart and remove items from it.
 
 What I learned:
 - Learned how to create an e-commerce products cart with Redux.
