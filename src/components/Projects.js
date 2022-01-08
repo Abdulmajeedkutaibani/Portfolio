@@ -4,15 +4,12 @@ import { HiStar } from 'react-icons/hi';
 import { MdOutlineFavorite } from 'react-icons/md';
 import { FaTools } from 'react-icons/fa';
 import { projects } from '../data';
-import { Button, Box } from '@mui/material';
+import { Box } from '@mui/material';
+import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion';
 
 const Projects = ({ onButtonClick }) => {
   return (
-    <Box
-      sx={{ background: '#171a1d' }}
-      id='projects'
-      className='text-gray-400  body-font'
-    >
+    <Box id='projects' className='text-gray-400  body-font'>
       <div className='container px-5 py-10 mx-auto text-center lg:px-40'>
         <div className='flex flex-col w-full mb-20'>
           <CodeIcon className='mx-auto inline-block w-10 mb-4' />
@@ -55,7 +52,7 @@ const Projects = ({ onButtonClick }) => {
               <div className='flex relative h-full w-full overflow-hidden'>
                 <img
                   alt='gallery'
-                  className='absolute inset-0 w-full h-full object-cover border-2 border-gray-900 shadow-lg  object-center rounded-lg hover:opacity-60 transform scale-100 hover:scale-110 duration-200'
+                  className='absolute inset-0 w-full h-full object-cover border-2 border-gray-900 shadow-lg  object-center rounded-lg hover:opacity-60 transform scale-100 hover:scale-110 duration-200 opacity-70'
                   src={project.image}
                 />
               </div>

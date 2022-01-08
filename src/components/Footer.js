@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className='footer'>
       <div className='footer__item'>
-        © 2021 Abdulmajeed Kutaibani. All Rights Reserved.
+        © 2022 Abdulmajeed Kutaibani. All Rights Reserved.
       </div>
       <div className='footer__item'>
         <div className='footer__contact'>

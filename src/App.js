@@ -1,6 +1,6 @@
 import { Box } from '@mui/system';
 import { useState } from 'react';
-import About from './components/About';
+import About from './components/Hero';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
@@ -20,7 +20,9 @@ function App() {
 
   return (
     <Box
-      sx={{ background: '#171a1d' }}
+      sx={{
+        backgroundImage: 'linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)',
+      }}
       className='main-container text-gray-400  body-font'
     >
       <ProjectModal
