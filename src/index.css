@@ -10,7 +10,7 @@ body {
 .canvas-wrapper {
   height: 800px;
   /* cursor: pointer; */
-  width: 800px;
+  width: 100%;
   /* z-index: 1; */
 }
 .main-container {

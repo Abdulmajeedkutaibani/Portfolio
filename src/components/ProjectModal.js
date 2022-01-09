@@ -92,7 +92,7 @@ const ProjectModal = ({ showModal, setShowModal, projectID }) => {
             <Box sx={{ mb: 1 }}>
               {projects[projectID].subtitle.map((subtitles) => {
                 return (
-                  <li className='project__technology'>
+                  <li className='project__technology' key={projectID}>
                     <p>{subtitles}</p>
                   </li>
                 );

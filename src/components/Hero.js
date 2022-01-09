@@ -9,33 +9,8 @@ import { Html, useProgress } from '@react-three/drei';
 import { gsap } from 'gsap';
 
 const About = () => {
-  const { progress } = useProgress();
-  function Loader() {
-    return (
-      <Html center className=' text-red-600'>
-        {progress} % loaded
-      </Html>
-    );
-  }
-
-  useEffect(() => {
-    gsap.to('.canvas-wrapper', {
-      y: 40,
-      duration: 1.5,
-      repeat: -1,
-      // ease: 'power3',
-      yoyo: true,
-    });
-    gsap.to('.canvas-wrapper', {
-      y: -40,
-      duration: 1.5,
-      repeat: -1,
-      // ease: 'power3',
-      yoyo: true,
-    });
-  }, []);
   return (
-    <section id='about' className='h-screen w-screen bg-gray-800 relative '>
+    <section id='about' className='h-screen w-screen relative '>
       <div className='container mx-auto flex px-10 py-20 md:flex-row flex-col items-center'>
         <div className='lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center'>
           <h1 className='title-font sm:text-6xl text-5xl mb-5 font-medium text-white'>
@@ -84,32 +59,21 @@ const About = () => {
             </div>
           </div>
           <div className='flex justify-center mt-4'>
-            <motion.a
+            <a
               href='#contact'
               className='inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-xl'
             >
               Work With Me
-            </motion.a>
+            </a>
 
-            <motion.a
+            <a
               href='#projects'
               animate={{ rotate: 360 }}
               className='ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-xl'
             >
               See My Past Work
-            </motion.a>
+            </a>
           </div>
-        </div>
-        <div className='canvas-wrapper absolute top-0 right-0'>
-          <Canvas className='drone ' camera={{ position: [-10, 3, 10] }}>
-            <OrbitControls enableZoom={false} />
-            <spotLight position={[10, 15, 10]} angle={0.3} intensity={1} />
-            <ambientLight intensity={1} color={'purple'} />
-            <Suspense fallback={<Loader />}>
-              <Drone />
-              <Environment preset='warehouse' />
-            </Suspense>
-          </Canvas>
         </div>
       </div>
     </section>

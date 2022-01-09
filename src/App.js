@@ -8,6 +8,7 @@ import ProjectModal from './components/ProjectModal';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import SocialWidgets from './components/SocialWidgets';
+import { DroneComponent } from './components/DroneComponent';
 
 function App() {
   const [showModal, setShowModal] = useState();
@@ -30,6 +31,7 @@ function App() {
         setShowModal={setShowModal}
         projectID={projectID}
       />
+      <DroneComponent />
       <SocialWidgets />
       <Navbar />
       <About />
