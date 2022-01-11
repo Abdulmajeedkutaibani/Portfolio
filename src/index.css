@@ -8,10 +8,12 @@ body {
   letter-spacing: 1px;
 }
 .canvas-wrapper {
-  height: 800px;
-  /* cursor: pointer; */
-  width: 100%;
-  /* z-index: 1; */
+  height: 600px;
+  width: 600px;
+  /* top: 200px;
+  right: 0; */
+}
+.drone {
 }
 .main-container {
   overflow: hidden;
@@ -204,6 +206,7 @@ header {
 
 #projects {
   background-image: linear-gradient(to top, #434343 0%, black 100%);
+  z-index: 0;
 }
 
 #contact {

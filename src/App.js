@@ -21,17 +21,19 @@ function App() {
 
   return (
     <Box
-      sx={{
-        backgroundImage: 'linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)',
-      }}
-      className='main-container text-gray-400  body-font'
+      sx={
+        {
+          // backgroundImage: 'linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)',
+        }
+      }
+      className='main-container text-gray-400  body-font overflow-hidden'
     >
+      {/* <DroneComponent /> */}
       <ProjectModal
         showModal={showModal}
         setShowModal={setShowModal}
         projectID={projectID}
       />
-      <DroneComponent />
       <SocialWidgets />
       <Navbar />
       <About />

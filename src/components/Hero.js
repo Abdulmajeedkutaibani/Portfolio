@@ -7,12 +7,13 @@ import Cyberpunk from './Cyberpunk';
 import Drone from './Drone';
 import { Html, useProgress } from '@react-three/drei';
 import { gsap } from 'gsap';
+import { DroneComponent } from './DroneComponent';
 
 const About = () => {
   return (
     <section id='about' className='h-screen w-screen relative '>
-      <div className='container mx-auto flex px-10 py-20 md:flex-row flex-col items-center'>
-        <div className='lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center'>
+      <div className='container mx-auto flex px-10  md:flex-row flex-col items-center'>
+        <div className='lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left  md:mb-0 items-center text-center'>
           <h1 className='title-font sm:text-6xl text-5xl mb-5 font-medium text-white'>
             Welcome, I'm Abdulmajeed.K
           </h1>
@@ -75,6 +76,7 @@ const About = () => {
             </a>
           </div>
         </div>
+        <DroneComponent />
       </div>
     </section>
   );
