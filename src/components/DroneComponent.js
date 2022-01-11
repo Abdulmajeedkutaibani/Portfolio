@@ -39,19 +39,15 @@ export const DroneComponent = () => {
   }, []);
   return (
     <motion.div
-      initial={{ x: 500 }}
-      animate={{ x: 0 }}
+      initial={{ x: 600, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
       transition={{
-        // repeat: Infinity,
-        // repeatType: 'reverse',
         duration: 1.5,
+        delay: 1,
       }}
-      className='canvas-wrapper z-10 cursor-pointer'
+      className='canvas-wrapper z-10 cursor-pointer w-screen h-3/5 lg:w-full lg:h-full lg:absolute left-1/4'
     >
-      {/* <motion.p className='pr-10 text-8xl transform -rotate-90 self-end absolute left-1/2 -translate-x-1/2'>
-        👉
-      </motion.p> */}
-      <Canvas dpr={[1, 2]} camera={{ position: [0, 0.5, 2.5], fov: 60 }}>
+      <Canvas dpr={[1, 2]} camera={{ position: [0, 0.5, 2.5], fov: 70 }}>
         <OrbitControls enableZoom={false} />
         <spotLight position={[0, 0, 0]} angle={1} intensity={1} />
         {/* <AnimationAction /> */}

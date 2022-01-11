@@ -12,8 +12,8 @@ import { DroneComponent } from './DroneComponent';
 const About = () => {
   return (
     <section id='about' className='h-screen w-screen relative '>
-      <div className='container mx-auto flex px-10  md:flex-row flex-col items-center'>
-        <div className='lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left  md:mb-0 items-center text-center'>
+      <div className='container mx-auto h-screen flex  px-10  lg:flex-row flex-col-reverse items-center justify-end lg:justify-start'>
+        <div className=' w-full lg:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start lg:text-left  md:mb-0 items-center text-center z-20'>
           <h1 className='title-font sm:text-6xl text-5xl mb-5 font-medium text-white'>
             Welcome, I'm Abdulmajeed.K
           </h1>
