@@ -14,12 +14,10 @@ body {
   right: 0; */
 /* } */
 
-.drone {
-}
 .main-container {
   overflow: hidden;
+  transition: all 1s;
 }
-
 .primary-sub {
   color: #94a4b4;
   line-height: 1;
@@ -197,22 +195,56 @@ body {
   transition: all 0.5s;
 }
 
-section {
-  background-image: linear-gradient(to bottom, #434343 0%, black 100%);
-}
+/* section {
+  background-image: linear-gradient(to bottom, #a8edea 0%, #fed6e3 100%);
+} */
 
-header {
-  background-image: linear-gradient(to top, #434343 0%, black 100%);
+/* header {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
 
 #projects {
-  background-image: linear-gradient(to top, #434343 0%, black 100%);
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
   z-index: 0;
 }
 
 #contact {
-  background-image: linear-gradient(to top, #434343 0%, black 100%);
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
 .footer {
-  background-image: linear-gradient(to bottom, #434343 0%, black 100%);
+  background-image: linear-gradient(to bottom, #a8edea 0%, #fed6e3 100%);
+}*/
+#navbar,
+#projects,
+#contact,
+#about,
+#skills {
+  transition: background 0.2s linear;
 }
+
+/* container "the whole button" styles */
+
+/* animations */
+
+/*
+ {
+  transition: background 1s ease-out;
+}
+
+.light-mode-bg-bottom {
+  background-image: linear-gradient(to bottom, #a8edea 0%, #fed6e3 100%);
+}
+.light-mode-bg-top {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  transition: all 1s ease-out;
+}
+.dark-mode-bg-bottom {
+  background-image: linear-gradient(to bottom, #434343 0%, black 100%);
+  transition: all 1s ease-out;
+  opacity: 2;
+}
+.dark-mode-bg-top {
+  background-image: linear-gradient(to top, #434343 0%, black 100%);
+  transition: all 1s ease-out;
+  opacity: 2;
+} */

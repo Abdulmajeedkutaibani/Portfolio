@@ -6,10 +6,12 @@ import { FaTools } from 'react-icons/fa';
 import { projects } from '../data';
 import { Box } from '@mui/material';
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion';
+import CubeModel from './CubeModel';
 
 const Projects = ({ onButtonClick }) => {
   return (
-    <Box id='projects' className='text-gray-400  body-font'>
+    <Box id='projects' className='dark:bg-gray-800 text-gray-400  body-font'>
+      <CubeModel />
       <div className='container px-5 py-10 mx-auto text-center lg:px-40'>
         <div className='flex flex-col w-full mb-20'>
           <CodeIcon className='mx-auto inline-block w-10 mb-4' />
