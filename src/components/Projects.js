@@ -10,11 +10,14 @@ import CubeModel from './CubeModel';
 
 const Projects = ({ onButtonClick }) => {
   return (
-    <Box id='projects' className=' text-gray-400  body-font bg-white'>
+    <Box
+      id='projects'
+      className=' text-gray-400  body-font bg-white overflow-hidden'
+    >
       <motion.div
         animate={{ x: [400, 100, 700, 300], y: [0, 1500, 1800, 3000] }}
         transition={{ duration: 20, yoyo: Infinity }}
-        className='w-12 h-12 bg-yellow-300 opacity-50 absolute z-0'
+        className='w-12 h-12 bg-yellow-300 opacity-50 absolute z-0 hidden lg:block'
       ></motion.div>
       {/* <motion.div className='w-12 h-12 bg-purple-300 opacity-50 absolute'></motion.div>
       <motion.div className='w-12 h-12 bg-blue-300 opacity-50 absolute'></motion.div> */}
@@ -32,10 +35,10 @@ const Projects = ({ onButtonClick }) => {
         </div>
         <div className='flex flex-wrap -m-6'>
           {projects.map((project) => (
-            <Box
+            <motion.Box
               onClick={() => onButtonClick(true, project.id)}
               key={project.image}
-              className=' project-post sm:w-1/2 h-72 lg:h-96 lg:w-96 m-auto p-4 cursor-pointer'
+              className='project-post md:w-1/2 h-72 lg:h-96 lg:w-96 m-auto p-4 cursor-pointer'
             >
               <div className='flex gap-1 absolute'>
                 {project.id == 0 ? (
@@ -74,7 +77,7 @@ const Projects = ({ onButtonClick }) => {
                   src={project.image}
                 />
               </div>
-            </Box>
+            </motion.Box>
           ))}
         </div>
       </div>
