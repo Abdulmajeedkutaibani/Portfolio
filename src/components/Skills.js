@@ -25,7 +25,7 @@ import {
 
 const Skills = () => {
   return (
-    <section id='skills' className='dark:bg-gray-800'>
+    <section id='skills' className='dark:bg-gray-800 bg-white -mt-16'>
       <div className='container px-5 py-10 mx-auto'>
         <div className='text-center mb-20'>
           <ChipIcon className='w-10 inline-block mb-4' />

@@ -5,7 +5,10 @@ import { Model3D } from './Model3D.js';
 
 const About = () => {
   return (
-    <section id='about' className='h-screen w-screen relative dark:bg-gray-900'>
+    <section
+      id='about'
+      className='h-screen w-screen relative dark:bg-gray-900 bg-white overflow-hidden'
+    >
       <div className='container mx-auto h-screen flex  px-10  lg:flex-row flex-col-reverse items-center justify-end lg:justify-start'>
         <div className=' w-full lg:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start lg:text-left  md:mb-0 items-center text-center z-20'>
           <h1 className='title-font sm:text-6xl text-5xl mb-5 font-medium dark:text-white text-gray-900'>
@@ -63,7 +66,6 @@ const About = () => {
 
             <a
               href='#projects'
-              animate={{ rotate: 360 }}
               className='ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-xl'
             >
               See My Past Work

@@ -10,9 +10,16 @@ import CubeModel from './CubeModel';
 
 const Projects = ({ onButtonClick }) => {
   return (
-    <Box id='projects' className='dark:bg-gray-800 text-gray-400  body-font'>
-      <CubeModel />
-      <div className='container px-5 py-10 mx-auto text-center lg:px-40'>
+    <Box id='projects' className=' text-gray-400  body-font bg-white'>
+      <motion.div
+        animate={{ x: [400, 100, 700, 300], y: [0, 1500, 1800, 3000] }}
+        transition={{ duration: 20, yoyo: Infinity }}
+        className='w-12 h-12 bg-yellow-300 opacity-50 absolute z-0'
+      ></motion.div>
+      {/* <motion.div className='w-12 h-12 bg-purple-300 opacity-50 absolute'></motion.div>
+      <motion.div className='w-12 h-12 bg-blue-300 opacity-50 absolute'></motion.div> */}
+
+      <div className='container px-5 py-10 mx-auto text-center lg:px-11'>
         <div className='flex flex-col w-full mb-20'>
           <CodeIcon className='mx-auto inline-block w-10 mb-4' />
           <h1 className='sm:text-4xl text-3xl font-medium title-font mb-4 text-white'>
@@ -28,7 +35,7 @@ const Projects = ({ onButtonClick }) => {
             <Box
               onClick={() => onButtonClick(true, project.id)}
               key={project.image}
-              className='sm:w-1/2 h-72 lg:h-96 w-96 m-auto p-4 cursor-pointer'
+              className=' project-post sm:w-1/2 h-72 lg:h-96 lg:w-96 m-auto p-4 cursor-pointer'
             >
               <div className='flex gap-1 absolute'>
                 {project.id == 0 ? (
@@ -51,10 +58,19 @@ const Projects = ({ onButtonClick }) => {
                   </div>
                 ) : null}
               </div>
-              <div className='flex relative h-full w-full overflow-hidden'>
+              <div className='flex relative h-full w-full overflow-hidden rounded-lg'>
+                <div className='project-info-card flex flex-col justify-center w-full h-full dark:bg-gray-800 bg-white z-10 opacity-0 p-10'>
+                  <h4 className=' text-xl mb-4'>{project.title}</h4>
+                  <p className=' text-lg overflow-hidden'>
+                    {project.subtitle.join(' ')}
+                  </p>
+                </div>
+                <div className='project-slide-1 w-full h-full  z-20 absolute'></div>
+                <div className='project-slide-2 w-full h-full z-20 absolute '></div>
+
                 <img
                   alt='gallery'
-                  className='absolute inset-0 w-full h-full object-cover border-2 border-gray-900 shadow-lg  object-center rounded-lg hover:opacity-60 transform scale-100 hover:scale-110 duration-200 opacity-70'
+                  className='absolute inset-0 w-full h-full object-cover border-2 border-gray-900 shadow-lg  object-center rounded-lg hover:opacity-60 transform scale-100  duration-200 '
                   src={project.image}
                 />
               </div>

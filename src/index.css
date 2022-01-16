@@ -6,6 +6,7 @@ body {
   font-family: Staatliches, sans-serif;
   word-spacing: 2px;
   letter-spacing: 1px;
+  overflow-x: hidden;
 }
 /* .canvas-wrapper {
   height: 50%;
@@ -172,6 +173,7 @@ body {
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
+  background: #22262a;
 }
 
 /* Track */
@@ -221,10 +223,79 @@ body {
 #skills {
   transition: background 0.2s linear;
 }
+#about {
+  background-image: url('./components/images/scattered-forcefields\ \(1\).svg');
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position-x: right;
+}
 
+#skills {
+  background-image: url('./components/images/scattered-forcefields\ \(1\).svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contact {
+  background-image: url('./components/images/scattered-forcefields\ \(1\).svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+.dark #skills,
+.dark #projects {
+  background: #181818;
+}
+.dark #skills {
+  background: #181818;
+  background-image: url(./components//images//pluse-bg-addup.png);
+}
+
+.dark #contact,
+.dark #about {
+  background-image: url(./components//images/green-dots.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.checkbox:checked + .label .ball {
+  /* background: purple; */
+  transform: translateX(-40px);
+  background: white;
+}
+.checkbox + .label {
+  transition: background 0.3s linear;
+}
+.checkbox:checked + .label {
+  background-color: rgb(17 24 39);
+  transition: background 0.1s linear;
+}
+
+.project-info-card {
+  transition: all 0.4s ease;
+}
+.project-post:hover .project-info-card {
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+.project-slide-1 {
+  transform: translate(-80%, 80%) rotate(45deg) scale(1.4);
+  background: linear-gradient(45deg, #2371ae 0, #bb47d4);
+  transition: all 0.4s ease-in-out;
+}
+.project-post:hover .project-slide-1 {
+  transform: translate(80%, -80%) rotate(45deg) scale(1.4);
+  transition: transform 0.5s ease-in-out;
+}
+.project-slide-2 {
+  transform: translate(80%, -80%) rotate(45deg) scale(1.4);
+  background: linear-gradient(-45deg, #2371ae 0, #bb47d4);
+  transition: all 0.4s ease-in-out;
+}
+.project-post:hover .project-slide-2 {
+  transform: translate(-80%, 80%) rotate(45deg) scale(1.4);
+  transition: transform 0.5s ease-in-out;
+}
 /* container "the whole button" styles */
-
-/* animations */
 
 /*
  {
@@ -247,4 +318,4 @@ body {
   background-image: linear-gradient(to top, #434343 0%, black 100%);
   transition: all 1s ease-out;
   opacity: 2;
-} */
+} */ ;

@@ -6,13 +6,13 @@ import Cube from './Cube';
 
 const CubeModel = () => {
   return (
-    <motion.div
-      animate={{
-        x: [700, -100, 1000, -150, 300],
-        y: ['0vh', '100vh', '400vh', '500vh'],
-      }}
-      transition={{ duration: 30, delay: 2, yoyo: Infinity }}
-      className='z-0 cursor-pointer w-32 h-32 absolute  -top-56 border-full'
+    <div
+      // animate={{
+      //   x: [100, 200],
+      //   // y: ['0vh', '100vh', '400vh', '500vh'],
+      // }}
+      // transition={{ duration: 1 }}
+      className='z-20 cursor-pointer w-32 h-32 absolute '
     >
       <Canvas dpr={[1, 2]} camera={{ position: [0, 0.5, 2.5], fov: 20 }}>
         <OrbitControls enableZoom={false} />
@@ -25,7 +25,7 @@ const CubeModel = () => {
           <Cube position={[0, 0, 0]} />
         </Suspense>
       </Canvas>
-    </motion.div>
+    </div>
   );
 };
 

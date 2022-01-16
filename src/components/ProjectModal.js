@@ -31,7 +31,7 @@ const ProjectModal = ({ showModal, setShowModal, projectID }) => {
       aria-describedby='modal-modal-description'
     >
       <Box sx={style}>
-        <div className='w-full lg:w-1/2'>
+        <div className='w-full lg:w-1/2 '>
           <img
             alt='gallery'
             className='inset-0 w-full h-full object-cover  '

@@ -42,10 +42,7 @@ Thank You For Your Time.`);
   };
 
   return (
-    <section
-      id='contact'
-      className='dark:bg-gray-800 h-screen light-mode-bg-top'
-    >
+    <section id='contact' className='dark:bg-gray-800 h-screen bg-white'>
       <div className='container px-5 pt-24 pb-20 mx-auto flex justify-center sm:flex-nowrap flex-wrap'>
         <form
           onSubmit={sendEmail}
