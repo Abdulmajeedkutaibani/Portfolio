@@ -22,17 +22,25 @@ import {
   SiTypescript,
   SiNextdotjs,
 } from 'react-icons/si';
+import { motion } from 'framer-motion/dist/framer-motion';
 
 const Skills = () => {
   return (
     <section id='skills' className='dark:bg-gray-800 bg-white -mt-16'>
-      <div className='container px-5 py-10 mx-auto'>
-        <div className='text-center mb-20'>
+      <div className='container px-5 py-10 mx-auto relative'>
+        <motion.div
+          animate={{ y: [-10, 10] }}
+          transition={{ yoyo: Infinity, duration: 3 }}
+          className=' w-14 h-14 bg-gradient-to-tl from-indigo-300 to-pink-600 mt-20 right-14 absolute p-1.5 rounded-full'
+        >
+          <div className='w-full h-full bg-transparent rounded-full'></div>
+        </motion.div>
+        <div className='text-center mb-16 skills-header mt-20'>
           <ChipIcon className='w-10 inline-block mb-4' />
-          <h1 className='sm:text-4xl text-3xl font-medium title-font text-white mb-4'>
+          <h1 className='sm:text-4xl text-3xl font-medium title-font text-lightBlack mb-4 dark:text-white'>
             Skills &amp; Technologies
           </h1>
-          <p className='text-xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto font-sans'>
+          <p className='text-xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto font-sans dark:text-green-400 text-purple-700'>
             // I love my coding journey with all of it's ups and downs, and I
             will definetly keep learning and making this list longer.
           </p>

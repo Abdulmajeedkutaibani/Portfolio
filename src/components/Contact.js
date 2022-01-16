@@ -52,7 +52,7 @@ Thank You For Your Time.`);
           <h2 className='text-white sm:text-4xl text-3xl mb-1 font-medium title-font'>
             work with me
           </h2>
-          <p className='leading-relaxed mb-5 font-sans text-xl'>
+          <p className='leading-relaxed mb-5 font-sans text-xl dark:text-green-400'>
             // Leave a message if you have any work opportunities. Feedback is
             also much appreciated.
           </p>

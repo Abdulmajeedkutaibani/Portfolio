@@ -227,9 +227,14 @@ body {
   background-image: url('./components/images/scattered-forcefields\ \(1\).svg');
   background-repeat: no-repeat;
   background-size: 75%;
-  background-position-x: right;
+  background-position-x: left;
 }
-
+.dark #about {
+  background-image: url('./components/images/scattered-forcefields\ \(2\).svg');
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position-x: left;
+}
 #skills {
   background-image: url('./components/images/scattered-forcefields\ \(1\).svg');
   background-repeat: no-repeat;
@@ -246,17 +251,38 @@ body {
   background: #181818;
 }
 .dark #skills {
-  background: #181818;
   background-image: url(./components//images//pluse-bg-addup.png);
 }
 
-.dark #contact,
-.dark #about {
+.dark #contact {
   background-image: url(./components//images/green-dots.png);
   background-size: cover;
   background-position: center;
 }
+/* .dark #projects {
+  background-image: url(./components//images/green-dots.png);
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+} */
 
+.triangle {
+  border-color: yellow transparent transparent transparent;
+  border-style: solid;
+  border-width: 200px 200px 200px 200px;
+  height: 0px;
+  width: 0px;
+}
+.dark .projects-header,
+.dark .skills-header {
+  background-image: url(./components//images/green-dots.png);
+  background-size: 47%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* background-position-y: -20px; */
+}
 .checkbox:checked + .label .ball {
   /* background: purple; */
   transform: translateX(-40px);
@@ -279,7 +305,7 @@ body {
 }
 .project-slide-1 {
   transform: translate(-80%, 80%) rotate(45deg) scale(1.4);
-  background: linear-gradient(45deg, #2371ae 0, #bb47d4);
+  background: linear-gradient(45deg, #42dd2d 20%, #d317fd);
   transition: all 0.4s ease-in-out;
 }
 .project-post:hover .project-slide-1 {

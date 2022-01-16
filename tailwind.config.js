@@ -5,7 +5,7 @@ module.exports = {
     fontFamily: {
       sans: ['Inconsolata', 'monospace'],
     },
-    extend: {},
+    extend: { colors: { lightBlack: '#181818' } },
   },
   variants: {
     extend: {},

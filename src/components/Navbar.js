@@ -11,7 +11,7 @@ const Navbar = () => {
       className='bg-green-400 dark:bg-gray-800 top-0 z-40
       bg-gradient-to-r from-green-300 to-pink-200 
       
-      dark:to-green-500 dark:from-purple-900
+      dark:to-green-500 dark:from-red-500
        overflow-hidden w-full'
     >
       <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>

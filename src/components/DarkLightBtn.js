@@ -30,7 +30,7 @@ const DarkLightBtn = () => {
       >
         <FaSun className='text-yellow-300 ml-1 w-6' />
         <FaMoon className='text-white mr-1' />
-        <div className='ball ml-10 absolute bg-black w-8 h-8 rounded-full transition delay-150 ease-linear'></div>
+        <div className='ball ml-10 absolute bg-white w-8 h-8 rounded-full transition delay-150 ease-linear'></div>
       </motion.label>
     </div>
   );

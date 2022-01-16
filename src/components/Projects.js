@@ -21,24 +21,23 @@ const Projects = ({ onButtonClick }) => {
       ></motion.div>
       {/* <motion.div className='w-12 h-12 bg-purple-300 opacity-50 absolute'></motion.div>
       <motion.div className='w-12 h-12 bg-blue-300 opacity-50 absolute'></motion.div> */}
-
-      <div className='container px-5 py-10 mx-auto text-center lg:px-11'>
-        <div className='flex flex-col w-full mb-20'>
+      <div className='  container px-5 py-10 mx-auto text-center lg:px-11'>
+        <div className=' projects-header flex flex-col w-full mb-20'>
           <CodeIcon className='mx-auto inline-block w-10 mb-4' />
-          <h1 className='sm:text-4xl text-3xl font-medium title-font mb-4 text-white'>
+          <h1 className='sm:text-4xl text-3xl font-medium title-font mb-4 dark:text-white text-lightBlack'>
             Projects I've Built
           </h1>
-          <p className='lg:w-2/3 mx-auto leading-relaxed text-xl font-sans'>
+          <p className='lg:w-2/3 mx-auto leading-relaxed text-xl font-sans dark:text-green-400 text-purple-700'>
             // These are my favorite projects I've worked on so far. Have a look
             around and make sure to hit me up!
           </p>
         </div>
-        <div className='flex flex-wrap -m-6'>
+        <div className='flex flex-wrap'>
           {projects.map((project) => (
             <motion.Box
               onClick={() => onButtonClick(true, project.id)}
-              key={project.image}
-              className='project-post md:w-1/2 h-72 lg:h-96 lg:w-96 m-auto p-4 cursor-pointer'
+              key={project.id}
+              className='project-post w-11/12 md:w-1/2 h-72 lg:h-96 lg:w-1/2 max-w-xl m-auto p-4 cursor-pointer'
             >
               <div className='flex gap-1 absolute'>
                 {project.id == 0 ? (
