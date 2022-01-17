@@ -44,8 +44,8 @@ const About = () => {
       </motion.div>
 
       <div className='container mx-auto h-screen flex  px-10  lg:flex-row flex-col-reverse items-center justify-end lg:justify-start'>
-        <div className='dark:bg-gray-800 bg-green-600 dark:bg-opacity-50 bg-opacity-30 rounded-2xl p-6 bg-bl w-full lg:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start lg:text-left  md:mb-0 items-center text-center z-20'>
-          <h1 className='title-font sm:text-6xl text-5xl mb-5 font-medium dark:text-white text-lightBlack'>
+        <div className='dark:bg-gray-800 bg-green-600 dark:bg-opacity-50 bg-opacity-30 rounded-2xl p-6 bg-bl w-full lg:w-1/2   flex flex-col md:items-center  md:mb-0 items-center text-center z-20'>
+          <h1 className='title-font sm:text-6xl text-5xl mb-5 font-medium dark:text-black dark:bg-green-100 text-white bg-lightBlack p-4 rounded-lg text-center'>
             Welcome, I'm Abdulmajeed.K
           </h1>
           <div className='primary-sub mb-8'>
