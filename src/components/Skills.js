@@ -26,7 +26,10 @@ import { motion } from 'framer-motion/dist/framer-motion';
 
 const Skills = () => {
   return (
-    <section id='skills' className='dark:bg-gray-800 bg-white -mt-16'>
+    <section
+      id='skills'
+      className='dark:bg-gray-800 bg-green-100 bg-opacity-10 -mt-28'
+    >
       <div className='container px-5 py-10 mx-auto relative'>
         <motion.div
           animate={{ y: [-10, 10] }}

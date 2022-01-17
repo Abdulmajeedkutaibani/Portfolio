@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { CodeIcon } from '@heroicons/react/solid';
 import { HiStar } from 'react-icons/hi';
 import { MdOutlineFavorite } from 'react-icons/md';
@@ -7,12 +7,18 @@ import { projects } from '../data';
 import { Box } from '@mui/material';
 import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion';
 import CubeModel from './CubeModel';
+import gsap from 'gsap/';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Projects = ({ onButtonClick }) => {
+  useEffect(() => {}, []);
   return (
     <Box
       id='projects'
-      className=' text-gray-400  body-font bg-white overflow-hidden'
+      className=' text-gray-400  body-font bg-green-100 bg-opacity-10 overflow-hidden'
     >
       <motion.div
         animate={{ x: [400, 100, 700, 300], y: [0, 1500, 1800, 3000] }}
@@ -35,9 +41,23 @@ const Projects = ({ onButtonClick }) => {
         <div className='flex flex-wrap'>
           {projects.map((project) => (
             <motion.Box
+              data-aos={
+                project.id == 4
+                  ? 'fade-right'
+                  : project.id == 1
+                  ? 'fade-left'
+                  : project.id == 3
+                  ? 'fade-left'
+                  : project.id == 5
+                  ? 'fade-left'
+                  : 'fade-right'
+              }
+              data-aos-easing='ease-in-out'
+              data-aos-delay='200'
+              data-aos-duration='900'
               onClick={() => onButtonClick(true, project.id)}
               key={project.id}
-              className='project-post w-11/12 md:w-1/2 h-72 lg:h-96 lg:w-1/2 max-w-xl m-auto p-4 cursor-pointer'
+              className={`${project.className} project-post  w-11/12 md:w-1/2 h-72 lg:h-96 lg:w-1/2 max-w-xl m-auto p-4 cursor-pointer`}
             >
               <div className='flex gap-1 absolute'>
                 {project.id == 0 ? (

@@ -9,9 +9,8 @@ const Navbar = () => {
     <header
       id='navbar'
       className='bg-green-400 dark:bg-gray-800 top-0 z-40
-      bg-gradient-to-b from-green-300 to-pink-200 
-      
-      dark:to-pink-500 dark:from-blue-500
+      bg-gradient-to-t from-white to-green-100 
+      dark:to-green-900 dark:from-lightBlack
        overflow-hidden w-full'
     >
       <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
@@ -20,7 +19,7 @@ const Navbar = () => {
             <img src='./favicon.ico' alt='' className='w-14' />
           </a>
         </a>
-        <nav className='md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-xl justify-center'>
+        <nav className='md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-xl dark:text-white justify-center'>
           <a href='#projects' className='mr-5 hover:text-white '>
             Projects
           </a>
