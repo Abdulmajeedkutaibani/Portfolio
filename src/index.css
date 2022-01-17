@@ -229,11 +229,13 @@ body {
   background-size: 75%;
   background-position-x: left;
 }
+
 .dark #about {
-  background-image: url('./components/images/scattered-forcefields\ \(2\).svg');
+  background-image: url('./components/images/scattered-forcefields\ \(7\).svg');
   background-repeat: no-repeat;
-  background-size: 75%;
-  background-position-x: left;
+  background-size: 100%;
+  background-position-x: center;
+  background-position-y: top;
 }
 #skills {
   background-image: url('./components/images/scattered-forcefields\ \(1\).svg');

@@ -31,7 +31,7 @@ const Skills = () => {
         <motion.div
           animate={{ y: [-10, 10] }}
           transition={{ yoyo: Infinity, duration: 3 }}
-          className=' w-14 h-14 bg-gradient-to-tl from-indigo-300 to-pink-600 mt-20 right-14 absolute p-1.5 rounded-full'
+          className=' w-14 h-14 bg-gradient-to-tl from-indigo-300 to-pink-600 mt-20 right-28 absolute p-1.5 rounded-full'
         >
           <div className='w-full h-full bg-transparent rounded-full'></div>
         </motion.div>

@@ -9,9 +9,9 @@ const Navbar = () => {
     <header
       id='navbar'
       className='bg-green-400 dark:bg-gray-800 top-0 z-40
-      bg-gradient-to-r from-green-300 to-pink-200 
+      bg-gradient-to-b from-green-300 to-pink-200 
       
-      dark:to-green-500 dark:from-red-500
+      dark:to-pink-500 dark:from-blue-500
        overflow-hidden w-full'
     >
       <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
@@ -38,7 +38,7 @@ const Navbar = () => {
         </a>
         <a
           href='#contact'
-          className='inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-xl mt-4 md:mt-0'
+          className='inline-flex items-center bg-yellow-300 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-xl mt-4 md:mt-0'
         >
           work with me
           <ArrowRightIcon className='w-4 h-4 ml-1' />
