@@ -21,7 +21,7 @@ function App() {
   return (
     <Box
       id='App'
-      className=' dark dark:text-gray-400 text-gray-900  body-font` m-0 p-0 w-screen'
+      className=' dark:text-gray-400 text-gray-900  body-font` m-0 px-0 w-screen'
     >
       {/* <DroneComponent /> */}
       <ProjectModal

@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section
       id='about'
-      className='h-screen w-screen relative dark:bg-lightBlack bg-white overflow-hidden'
+      className='h-screen w-full relative dark:bg-lightBlack bg-white overflow-hidden'
     >
       <motion.div
         animate={{ y: [-10, 10], rotate: 1080, x: [-20, 20] }}
@@ -28,14 +28,6 @@ const About = () => {
       </motion.div>
 
       <motion.div
-        animate={{ rotate: 1080 }}
-        transition={{ yoyo: Infinity, duration: 30, delay: 5 }}
-        className=' w-14 h-14 bg-gradient-to-tl from-yellow-200 to-red-700 absolute  right-56 bottom-2 p-1.5 rounded-2xl'
-      >
-        <div className='w-full h-full bg-transparent rounded-full'></div>
-      </motion.div>
-
-      <motion.div
         animate={{ y: [-5, 5] }}
         transition={{ yoyo: Infinity, duration: 1.5 }}
         className='w-56 absolute left-20 bottom-4 overflow-hidden'
@@ -44,11 +36,11 @@ const About = () => {
       </motion.div>
 
       <div className='container mx-auto h-screen flex  px-10  lg:flex-row flex-col-reverse items-center justify-end lg:justify-start'>
-        <div className='dark:bg-gray-800 bg-green-600 dark:bg-opacity-50 bg-opacity-30 rounded-2xl p-6 bg-bl w-full lg:w-1/2   flex flex-col md:items-center  md:mb-0 items-center text-center z-20'>
-          <h1 className='title-font sm:text-6xl text-5xl mb-5 font-medium dark:text-black dark:bg-green-100 text-white bg-lightBlack p-4 rounded-lg text-center'>
-            Welcome, I'm Abdulmajeed.K
+        <div className='dark:bg-gray-800 bg-green-600 dark:bg-opacity-50 bg-opacity-30 rounded-2xl p-6 w-full lg:w-1/3 flex flex-col md:items-center  md:mb-0 items-center text-center z-20'>
+          <h1 className='title-font sm:text-3xl text-5xl mb-5 font-medium dark:text-black dark:bg-green-100 text-white bg-lightBlack p-4 rounded-lg text-center'>
+            Welcome 👋🏼<br></br> I'm Abdulmajeed Kutaibani
           </h1>
-          <div className='primary-sub mb-8'>
+          <div className='primary-sub text-2xl mb-8'>
             <div className='primary-sub__word'>
               <div className='primary-sub__top dark:text-green-400 text-purple-700 '>
                 I'm
@@ -81,46 +73,33 @@ const About = () => {
             </div>
             <div className='primary-sub__word'>
               <div className='primary-sub__top dark:text-green-400 text-purple-700'>
-                currently
+                building
               </div>
-              <div className='primary-sub__bottom'>currently</div>
+              <div className='primary-sub__bottom'>building</div>
             </div>
             <div className='primary-sub__word'>
               <div className='primary-sub__top dark:text-green-400 text-purple-700'>
-                based
+                beautiful
               </div>
-              <div className='primary-sub__bottom'>based</div>
+              <div className='primary-sub__bottom'>beautiful</div>
             </div>
             <div className='primary-sub__word'>
               <div className='primary-sub__top dark:text-green-400 text-purple-700'>
-                in
+                web
               </div>
-              <div className='primary-sub__bottom'>in</div>
+              <div className='primary-sub__bottom'>web</div>
             </div>
             <div className='primary-sub__word'>
               <div className='primary-sub__top dark:text-green-400 text-purple-700'>
-                Istanbul,
+                experiences.
               </div>
-              <div className='primary-sub__bottom'>Istanbul,</div>
-            </div>
-            <div className='primary-sub__word'>
-              <div className='primary-sub__top dark:text-green-400 text-purple-700'>
-                Turkey
-              </div>
-              <div className='primary-sub__bottom'>Turkey</div>
+              <div className='primary-sub__bottom'>experiences.</div>
             </div>
           </div>
-          <div className='flex justify-center mt-4'>
-            <a
-              href='#contact'
-              className='inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-xl'
-            >
-              Work With Me
-            </a>
-
+          <div className='flex justify-center h-12 w-full text-center'>
             <a
               href='#projects'
-              className='ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-xl'
+              className='flex w-full text-white bg-green-500 border-0 p-2 focus:outline-none hover:bg-green-600 rounded text-md justify-center items-center'
             >
               See My Past Work
             </a>

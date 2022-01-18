@@ -10,9 +10,9 @@ const DarkLightBtn = () => {
     const checkbox = document.getElementById('checkbox');
     checkbox.addEventListener('change', function () {
       if (this.checked) {
-        document.querySelector('#App').classList.remove('dark');
+        document.querySelector('#root').classList.remove('dark');
       } else {
-        document.querySelector('#App').classList.add('dark');
+        document.querySelector('#root').classList.add('dark');
       }
     });
   };
@@ -26,10 +26,10 @@ const DarkLightBtn = () => {
       <motion.label
         onClick={() => handleDarkMode()}
         htmlFor='checkbox'
-        className='label w-20 h-10 bg-gradient-to-r from-green-300 to-blue-900 flex rounded-3xl items-center justify-between cursor-pointer p-1'
+        className='label w-20 h-10 bg-gradient-to-r from-green-300 to-purple-600 flex rounded-3xl items-center justify-between cursor-pointer p-1'
       >
         <FaSun className='text-yellow-300 ml-1 w-6' />
-        <FaMoon className='text-white mr-1' />
+        <FaMoon className='text-black mr-1' />
         <div className='ball ml-10 absolute bg-white w-8 h-8 rounded-full transition delay-150 ease-linear'></div>
       </motion.label>
     </div>
