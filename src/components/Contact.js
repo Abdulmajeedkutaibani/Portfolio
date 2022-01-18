@@ -52,10 +52,10 @@ Thank You For Your Time.`);
           name='contact'
           className='lg:w-1/3 md:w-1/2 flex flex-col w-full md:py-8 mt-8 md:mt-0'
         >
-          <h2 className='text-white sm:text-4xl text-3xl mb-1 font-medium title-font'>
+          <h2 className='dark:text-white text-lightBlack sm:text-4xl text-3xl mb-1 font-medium title-font'>
             work with me
           </h2>
-          <p className='leading-relaxed mb-5 font-sans text-xl dark:text-green-400'>
+          <p className='leading-relaxed mb-5 font-sans text-xl dark:text-green-400 text-purple-700'>
             // Leave a message if you have any work opportunities. Feedback is
             also much appreciated.
           </p>

@@ -286,14 +286,13 @@ html {
 }
 .checkbox:checked + .label .ball {
   /* background: purple; */
-  transform: translateX(-40px);
+  transform: translateX(-32px);
   background: white;
 }
 .checkbox + .label {
   transition: background 0.3s linear;
 }
 .checkbox:checked + .label {
-  background-color: rgb(17 24 39);
   transition: background 0.1s linear;
 }
 

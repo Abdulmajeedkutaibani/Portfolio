@@ -17,7 +17,7 @@ const DarkLightBtn = () => {
     });
   };
   return (
-    <div>
+    <div className='transform -rotate-90'>
       <input
         type='checkbox'
         className='checkbox absolute opacity-0 '
@@ -26,11 +26,11 @@ const DarkLightBtn = () => {
       <motion.label
         onClick={() => handleDarkMode()}
         htmlFor='checkbox'
-        className='label w-20 h-10 bg-gradient-to-r from-green-300 to-purple-600 flex rounded-3xl items-center justify-between cursor-pointer p-1'
+        className='label w-16 h-8 bg-lightBlack dark:bg-purple-700 flex rounded-3xl items-center justify-between cursor-pointer p-1'
       >
-        <FaSun className='text-yellow-300 ml-1 w-6' />
-        <FaMoon className='text-black mr-1' />
-        <div className='ball ml-10 absolute bg-white w-8 h-8 rounded-full transition delay-150 ease-linear'></div>
+        <FaSun className='text-yellow-300 ml-1 w-4' />
+        <FaMoon className='text-white mr-1 transform rotate-90 w-4' />
+        <div className='ball ml-8 absolute bg-white w-6 h-6 rounded-full transition delay-150 ease-linear'></div>
       </motion.label>
     </div>
   );

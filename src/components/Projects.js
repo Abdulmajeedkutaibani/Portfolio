@@ -109,7 +109,7 @@ const Projects = ({ onButtonClick }) => {
 
                 <img
                   alt='gallery'
-                  className='absolute inset-0 w-full h-full object-cover border-2 border-gray-900 shadow-lg  object-center rounded-lg hover:opacity-60 transform scale-100  duration-200 '
+                  className='absolute inset-0 w-full h-full object-cover shadow-lg  object-center rounded-lg hover:opacity-60 transform scale-100  duration-200 '
                   src={project.image}
                 />
               </div>
