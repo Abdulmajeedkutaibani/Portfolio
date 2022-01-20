@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className=' mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
         <a className='ml-16 title-font font-medium text-white mb-4 md:mb-0'>
           <a href='#about' className=''>
-            <img src='./favicon.ico' alt='' className='w-14' />
+            <img src='./favicon.ico' alt='' className='w-11' />
           </a>
         </a>
         <nav className='md:ml-auto  md:py-1 	flex flex-wrap items-center text-xl dark:text-white justify-center'>

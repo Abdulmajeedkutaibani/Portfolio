@@ -18,7 +18,7 @@ const Projects = ({ onButtonClick }) => {
   return (
     <Box
       id='projects'
-      className=' text-gray-400  body-font bg-green-100 bg-opacity-10 overflow-hidden p-24'
+      className=' text-gray-400  body-font bg-green-100 bg-opacity-10 overflow-hidden pb-24'
     >
       {/* <motion.div
         animate={{ x: [400, 100, 700, 300], y: [0, 1500, 1800, 3000] }}
@@ -27,7 +27,7 @@ const Projects = ({ onButtonClick }) => {
       ></motion.div> */}
       {/* <motion.div className='w-12 h-12 bg-purple-300 opacity-50 absolute'></motion.div>
       <motion.div className='w-12 h-12 bg-blue-300 opacity-50 absolute'></motion.div> */}
-      <div className='  container px-5 py-10 mx-auto text-center lg:px-11 relative'>
+      <div className='   px-5 py-10 mx-auto text-center lg:px-11 relative'>
         <motion.div
           animate={{ rotate: 1080, x: 200, y: 500 }}
           transition={{ yoyo: Infinity, duration: 25, ease: 'InOut' }}

@@ -7,7 +7,7 @@ import { FaPortrait } from 'react-icons/fa';
 
 const SocialWidgets = () => {
   return (
-    <nav className='social-widgets'>
+    <nav className='social-widgets hidden'>
       <ul>
         <li>
           <a
