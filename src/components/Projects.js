@@ -16,7 +16,7 @@ AOS.init();
 const Projects = ({ onButtonClick }) => {
   useEffect(() => {}, []);
   return (
-    <Box
+    <section
       id='projects'
       className=' text-gray-400  body-font bg-green-100 bg-opacity-10 overflow-hidden pb-24'
     >
@@ -46,7 +46,7 @@ const Projects = ({ onButtonClick }) => {
         {/* /////////////////////////////////////// */}
         <div className=' projects-header flex flex-col w-full mb-20'>
           <CodeIcon className='mx-auto inline-block w-10 mb-4' />
-          <h1 className='sm:text-4xl text-3xl font-medium title-font mb-4 dark:text-white text-lightBlack'>
+          <h1 className='sm:text-4xl text-3xl font-medium title-font mb-4 dark:text-white text-lightBlack font-Tourney'>
             Projects I've Built
           </h1>
           <p className='lg:w-2/3 mx-auto leading-relaxed text-xl font-sans dark:text-green-400 text-purple-700'>
@@ -117,7 +117,7 @@ const Projects = ({ onButtonClick }) => {
           ))}
         </div>
       </div>
-    </Box>
+    </section>
   );
 };
 

@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Inconsolata', 'monospace'],
+      Tourney: ['Tourney', 'cursive'],
     },
-    extend: { colors: { lightBlack: '#181818' } },
+    extend: { colors: { lightBlack: '#181818', lightGreen: '#0fb' } },
   },
   variants: {
     extend: {},

@@ -40,56 +40,56 @@ const About = () => {
           <h1 className='title-font sm:text-3xl text-5xl mb-5 font-medium dark:text-black dark:bg-green-100 text-white bg-lightBlack p-4 rounded-lg text-center'>
             Welcome 👋🏼<br></br> I'm Abdulmajeed Kutaibani
           </h1>
-          <div className='primary-sub text-2xl mb-8'>
-            <div className='primary-sub__word'>
+          <div className='primary-sub text-2xl mb-8 '>
+            <div className='primary-sub__word font-Tourney'>
               <div className='primary-sub__top dark:text-green-400 text-purple-700 '>
                 I'm
               </div>
               <div className='primary-sub__bottom'>I'm</div>
             </div>
-            <div className='primary-sub__word'>
+            <div className='primary-sub__word font-Tourney'>
               <div className='primary-sub__top dark:text-green-400 text-purple-700'>
                 a
               </div>
               <div className='primary-sub__bottom'>a</div>
             </div>
-            <div className='primary-sub__word'>
+            <div className='primary-sub__word font-Tourney'>
               <div className='primary-sub__top dark:text-green-400 text-purple-700'>
                 front-end
               </div>
               <div className='primary-sub__bottom'>front-end</div>
             </div>
-            <div className='primary-sub__word'>
+            <div className='primary-sub__word font-Tourney'>
               <div className='primary-sub__top dark:text-green-400 text-purple-700'>
                 web
               </div>
               <div className='primary-sub__bottom'>web</div>
             </div>
-            <div className='primary-sub__word'>
+            <div className='primary-sub__word font-Tourney'>
               <div className='primary-sub__top dark:text-green-400 text-purple-700'>
                 developer
               </div>
               <div className='primary-sub__bottom'>developer</div>
             </div>
-            <div className='primary-sub__word'>
+            <div className='primary-sub__word font-Tourney'>
               <div className='primary-sub__top dark:text-green-400 text-purple-700'>
                 building
               </div>
               <div className='primary-sub__bottom'>building</div>
             </div>
-            <div className='primary-sub__word'>
+            <div className='primary-sub__word font-Tourney'>
               <div className='primary-sub__top dark:text-green-400 text-purple-700'>
                 beautiful
               </div>
               <div className='primary-sub__bottom'>beautiful</div>
             </div>
-            <div className='primary-sub__word'>
+            <div className='primary-sub__word font-Tourney'>
               <div className='primary-sub__top dark:text-green-400 text-purple-700'>
                 web
               </div>
               <div className='primary-sub__bottom'>web</div>
             </div>
-            <div className='primary-sub__word'>
+            <div className='primary-sub__word font-Tourney'>
               <div className='primary-sub__top dark:text-green-400 text-purple-700'>
                 experiences.
               </div>

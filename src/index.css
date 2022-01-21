@@ -345,4 +345,15 @@ html {
   background-image: linear-gradient(to top, #434343 0%, black 100%);
   transition: all 1s ease-out;
   opacity: 2;
-} */ ;
+} */
+.portfolio-photo::before {
+  content: '';
+  position: absolute;
+  top: 6%;
+  left: 8%;
+  border-top: 9px solid #0fb;
+  border-left: 9px solid #0fb;
+  height: 60%;
+  width: 47%;
+  max-width: 380px;
+}

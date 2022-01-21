@@ -4,6 +4,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import CubeModel from './components/CubeModel';
 import Footer from './components/Footer';
+import Me from './components/Me';
 import Navbar from './components/Navbar';
 import ProjectModal from './components/ProjectModal';
 import Projects from './components/Projects';
@@ -21,7 +22,7 @@ function App() {
   return (
     <Box
       id='App'
-      className=' dark:text-gray-400 text-gray-900  body-font` m-0 px-0 w-screen'
+      className=' dark:text-gray-400 text-gray-900  body-font` m-0 px-0 w-screen dark:bg-lightBlack'
     >
       {/* <DroneComponent /> */}
       <ProjectModal
@@ -34,6 +35,7 @@ function App() {
       <About />
       <Projects onButtonClick={onButtonClick} />
       <Skills />
+      <Me />
       <Contact />
       <Footer />
     </Box>
