@@ -287,7 +287,7 @@ html {
 }
 .checkbox:checked + .label .ball {
   /* background: purple; */
-  transform: translateX(-32px);
+  transform: translateX(-24px);
   background: white;
 }
 .checkbox + .label {
@@ -324,6 +324,9 @@ html {
 }
 /* container "the whole button" styles */
 
+.project-card:hover .project-title_underline {
+  width: 50%;
+}
 /*
  {
   transition: background 1s ease-out;
@@ -348,12 +351,18 @@ html {
 } */
 .portfolio-photo::before {
   content: '';
+  top: -30px;
+  left: -30px;
   position: absolute;
-  top: 6%;
-  left: 8%;
   border-top: 9px solid #0fb;
   border-left: 9px solid #0fb;
   height: 60%;
   width: 47%;
   max-width: 380px;
+}
+
+.me-section {
+  background-image: url(./components/images/Animated\ Shapes_dark.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

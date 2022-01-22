@@ -26,11 +26,11 @@ const DarkLightBtn = () => {
       <motion.label
         onClick={() => handleDarkMode()}
         htmlFor='checkbox'
-        className='label w-16 h-8 bg-lightBlack dark:bg-purple-700 flex rounded-3xl items-center justify-between cursor-pointer p-1'
+        className='label w-12 h-6 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-900 flex rounded-3xl items-center justify-between cursor-pointer p-1 ml-2'
       >
-        <FaSun className='text-yellow-300 ml-1 w-4' />
-        <FaMoon className='text-white mr-1 transform rotate-90 w-4' />
-        <div className='ball ml-8 absolute bg-white w-6 h-6 rounded-full transition delay-150 ease-linear'></div>
+        <FaSun className='text-yellow-300 ml-1 w-3' />
+        <FaMoon className='text-white mr-1 transform rotate-90 w-3' />
+        <div className='ball ml-6 absolute bg-white w-4 h-4 rounded-full transition delay-150 ease-linear'></div>
       </motion.label>
     </div>
   );

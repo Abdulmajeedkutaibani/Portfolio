@@ -10,6 +10,7 @@ import ProjectModal from './components/ProjectModal';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import SocialWidgets from './components/SocialWidgets';
+import { SquareModel } from './components/SquareModel';
 
 function App() {
   const [showModal, setShowModal] = useState();

@@ -36,7 +36,7 @@ const About = () => {
       </motion.div>
 
       <div className='container mx-auto h-screen flex  px-10  lg:flex-row flex-col-reverse items-center justify-end lg:justify-start'>
-        <div className='dark:bg-gray-800 bg-green-600 dark:bg-opacity-50 bg-opacity-30 rounded-2xl p-6 w-full lg:w-1/3 flex flex-col md:items-center  md:mb-0 items-center text-center z-20'>
+        <div className='dark:bg-gray-800 bg-green-600 dark:bg-opacity-50 bg-opacity-30 rounded-2xl p-6 w-full lg:w-1/3 flex flex-col md:items-center  md:mb-0 items-center text-center z-20 border-b-4 border-red-500'>
           <h1 className='title-font sm:text-3xl text-5xl mb-5 font-medium dark:text-black dark:bg-green-100 text-white bg-lightBlack p-4 rounded-lg text-center'>
             Welcome 👋🏼<br></br> I'm Abdulmajeed Kutaibani
           </h1>
@@ -97,12 +97,13 @@ const About = () => {
             </div>
           </div>
           <div className='flex justify-center h-12 w-full text-center'>
-            <a
+            <motion.a
+              whileTap={{ scale: 0.75 }}
               href='#projects'
-              className='flex w-full text-white bg-green-500 border-0 p-2 focus:outline-none hover:bg-green-600 rounded text-md justify-center items-center'
+              className='w-full  text-xl hover:text-lightGreen text-lightBlack  font-Tourney bg-gradient-to-t from-red-500  to-blue-400 p-2 rounded-md font-bold ease-linear transition-all'
             >
               See My Past Work
-            </a>
+            </motion.a>
           </div>
         </div>
         <Model3D />

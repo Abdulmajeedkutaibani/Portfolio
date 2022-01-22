@@ -69,12 +69,12 @@ const Projects = ({ onButtonClick }) => {
                   : 'fade-right'
               }
               data-aos-easing='ease-in-out'
-              data-aos-delay='200'
+              data-aos-delay='100'
               data-aos-once='true'
               data-aos-duration='900'
               onClick={() => onButtonClick(true, project.id)}
               key={project.id}
-              className={`${project.className} project-post  w-11/12 md:w-1/2 h-72 lg:h-72 lg:w-1/3 max-w-xl m-auto p-4 cursor-pointer`}
+              className={`${project.className} project-post  w-11/12 md:w-1/2 h-72 lg:h-72 lg:w-1/4 max-w-xl m-auto p-4 cursor-pointer`}
             >
               <div className='flex gap-1 absolute'>
                 {project.id == 0 ? (
@@ -97,11 +97,14 @@ const Projects = ({ onButtonClick }) => {
                   </div>
                 ) : null}
               </div>
-              <div className='flex relative h-full w-full overflow-hidden rounded-lg'>
+              <div className='project-card flex relative h-full w-full overflow-hidden rounded-lg'>
                 <div className='project-info-card flex flex-col justify-center w-full h-full dark:bg-gray-800 bg-white z-10 opacity-0 p-10'>
-                  <h4 className=' text-xl mb-4'>{project.title}</h4>
-                  <p className=' text-lg overflow-hidden'>
-                    {project.subtitle.join(' ')}
+                  <h4 className=' text-xl mb-4 text-lightGreen'>
+                    {project.title}{' '}
+                    <div className='project-title_underline mx-auto bg-gradient-to-r from-blue-500 via-pink-600 to-lightGreen h-1 rounded-full w-0 transition-all delay-500'></div>
+                  </h4>
+                  <p className=' text-lg overflow-hidden text-yellow-300'>
+                    {project.subtitle.join(' / ')}
                   </p>
                 </div>
                 <div className='project-slide-1 w-full h-full  z-20 absolute'></div>

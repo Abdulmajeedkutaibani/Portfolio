@@ -1,5 +1,7 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import CubeModel from './CubeModel';
+import { motion } from 'framer-motion/dist/framer-motion';
 // import { userSchema } from './Validation/UserValidation';
 
 const Contact = () => {
@@ -42,9 +44,13 @@ Thank You For Your Time.`);
   };
 
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
       id='contact'
-      className='dark:bg-gray-800 h-screen bg-green-100 bg-opacity-10'
+      className='dark:bg-gray-800 h-screen bg-green-100 bg-opacity-10 relative overflow-hidden'
     >
       <div className='container px-5 pt-24 pb-20 mx-auto flex justify-center sm:flex-nowrap flex-wrap'>
         <form
@@ -102,7 +108,10 @@ Thank You For Your Time.`);
           </button>
         </form>
       </div>
-    </section>
+      {/* <div className='absolute w-full  bottom-0 w-full flex justify-end items-center'>
+        <CubeModel lightColor={'green'} />
+      </div> */}
+    </motion.section>
   );
 };
 

@@ -28,7 +28,11 @@ import Brackets from './images/brackets.png';
 
 const Skills = () => {
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
       id='skills'
       className='dark:bg-gray-800 bg-green-100 bg-opacity-10  lg:px-12 w-full lg:pb-24 min-h-screen'
     >
@@ -54,7 +58,7 @@ const Skills = () => {
       {/* //////////////////////////////////////// */}
 
       <div className='flex flex-wrap   lg:justify-evenly justify-around items-center w-3/4 mx-auto lg:w-full'>
-        <div className=' flex flex-col justify-center items-center md:w-5/12 max-w-md  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center'>
+        <div className=' flex flex-col justify-center items-center md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center'>
           <div className='dark:bg-purple-100 w-20 h-20 flex justify-center items-center rounded-full bg-opacity-50 mt-4 '>
             <FaReact className=' w-16 h-16 text-blue-500 ' />
           </div>
@@ -67,7 +71,7 @@ const Skills = () => {
 
           <div className='w-full h-5 bg-gradient-to-r to-blue-300 from-blue-500 mt-auto'></div>
         </div>
-        <div className=' flex flex-col justify-center items-center  md:w-5/12 max-w-md  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center'>
+        <div className=' flex flex-col justify-center items-center  md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center'>
           <SiJavascript className=' w-20 h-20 text-yellow-400 mt-6 rounded-lg' />
           <h4 className='text-green-400  mt-6 text-xl'>web development</h4>
           <p className='text-sm p-5 text-gray-200'>
@@ -78,7 +82,7 @@ const Skills = () => {
           <div className='w-full h-5 bg-gradient-to-r from-yellow-300 to-yellow-500 mt-auto'></div>
         </div>
 
-        <div className=' flex flex-col justify-center items-center  md:w-5/12 max-w-md  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center'>
+        <div className=' flex flex-col justify-center items-center  md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center'>
           <div className=' w-20 h-24 flex justify-center items-center rounded-lg bg-opacity-50 mt-4'>
             <img
               src={Brackets}
@@ -94,7 +98,7 @@ const Skills = () => {
           <div className='w-full h-5 bg-gradient-to-r from-red-500 to-purple-500 mt-auto'></div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

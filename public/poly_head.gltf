@@ -1,0 +1,341 @@
+{
+  "accessors": [
+    {
+      "componentType": 5125,
+      "count": 666,
+      "max": [
+        453
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 454,
+      "max": [
+        0.9938455195987925,
+        0.9798271627987132,
+        0.9597240314764135
+      ],
+      "min": [
+        -0.9937153430546031,
+        -1.0077336998546824,
+        -0.9582335324848399
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 454,
+      "max": [
+        0.6372471080795403,
+        0.7438920254700347,
+        0.8402399848191169
+      ],
+      "min": [
+        -0.6377276296608613,
+        -1.3852222676270172,
+        -0.8316706533425019
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 454,
+      "max": [
+        0.8757332422254374,
+        1.0009776364323681
+      ],
+      "min": [
+        0.12402249767808271,
+        -0.0009775172230784845
+      ],
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5125,
+      "count": 330,
+      "max": [
+        217
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 218,
+      "max": [
+        1.0008978976922878,
+        0.9004479436313406,
+        0.9723514248343077
+      ],
+      "min": [
+        -1.0008978976922878,
+        -0.9767224325853235,
+        -0.9827098383623011
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 218,
+      "max": [
+        0.640658463567539,
+        -0.02274512604031842,
+        0.07100262916198752
+      ],
+      "min": [
+        -0.640658463567539,
+        -1.281549896329685,
+        -0.7988420978486974
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 218,
+      "max": [
+        0.5145406598336303,
+        0.6254888778790934
+      ],
+      "min": [
+        0.1245112413301962,
+        0.1245112413301962
+      ],
+      "type": "VEC2"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "MvdE (https://sketchfab.com/MvdE)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/low-poly-head-e869717813844a06ab340feb893a81aa",
+      "title": "Low-poly Head"
+    },
+    "generator": "Sketchfab-9.52.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 1481
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1488,
+      "byteLength": 959
+    }
+  ],
+  "buffers": [
+    {
+      "name": "poly_head",
+      "byteLength": 2448,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": false,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "head",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.41093900000000005,
+          0.1988580000000001,
+          0.10638500000000001,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5118760982312776
+      },
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "hear",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.020351,
+          0.010652,
+          0.00747245,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.19627558992880118
+      },
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "NORMAL": 0,
+                "POSITION": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 6,
+            "TEXCOORD_0": 7
+          },
+          "indices": 4,
+          "material": 1,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 1,
+              "attributes": {
+                "NORMAL": 0,
+                "POSITION": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.6009933352470398,
+        0,
+        0,
+        0,
+        0,
+        0.6009933352470398,
+        0,
+        0,
+        0,
+        0,
+        0.6009933352470398,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "root"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.220446049250313e-16,
+        1,
+        0,
+        0,
+        -1,
+        2.220446049250313e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "GLTF_SceneRootNode"
+    },
+    {
+      "children": [
+        5,
+        6
+      ],
+      "name": "Cube_0"
+    },
+    {
+      "mesh": 0,
+      "name": ""
+    },
+    {
+      "mesh": 1,
+      "name": ""
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}
