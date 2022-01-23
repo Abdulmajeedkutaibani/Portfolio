@@ -18,15 +18,8 @@ const Projects = ({ onButtonClick }) => {
   return (
     <section
       id='projects'
-      className=' text-gray-400  body-font bg-green-100 bg-opacity-10 overflow-hidden pb-24'
+      className=' text-gray-400  body-font bg-green-100 bg-opacity-10 overflow-hidden pb-24 relative'
     >
-      {/* <motion.div
-        animate={{ x: [400, 100, 700, 300], y: [0, 1500, 1800, 3000] }}
-        transition={{ duration: 20, yoyo: Infinity }}
-        className='w-12 h-12 bg-yellow-300 opacity-50 absolute z-0 hidden lg:block'
-      ></motion.div> */}
-      {/* <motion.div className='w-12 h-12 bg-purple-300 opacity-50 absolute'></motion.div>
-      <motion.div className='w-12 h-12 bg-blue-300 opacity-50 absolute'></motion.div> */}
       <div className='   px-5 py-10 mx-auto text-center lg:px-11 relative'>
         <motion.div
           animate={{ rotate: 1080, x: 200, y: 500 }}
@@ -54,7 +47,7 @@ const Projects = ({ onButtonClick }) => {
             around and make sure to hit me up!
           </p>
         </div>
-        <div className='flex flex-wrap'>
+        <div className='flex flex-wrap px-10'>
           {projects.map((project) => (
             <motion.Box
               data-aos={
@@ -101,7 +94,7 @@ const Projects = ({ onButtonClick }) => {
                 <div className='project-info-card flex flex-col justify-center w-full h-full dark:bg-gray-800 bg-white z-10 opacity-0 p-10'>
                   <h4 className=' text-xl mb-4 text-lightGreen'>
                     {project.title}{' '}
-                    <div className='project-title_underline mx-auto bg-gradient-to-r from-blue-500 via-pink-600 to-lightGreen h-1 rounded-full w-0 transition-all delay-500'></div>
+                    <div className='project-title_underline mx-auto bg-gradient-to-r from-red-500 via-pink-600 to-yellow-500 h-1 rounded-full w-0 transition-all delay-500'></div>
                   </h4>
                   <p className=' text-lg overflow-hidden text-yellow-300'>
                     {project.subtitle.join(' / ')}

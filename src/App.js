@@ -11,6 +11,8 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import SocialWidgets from './components/SocialWidgets';
 import { SquareModel } from './components/SquareModel';
+import { BsArrowUpCircle } from 'react-icons/bs';
+import { motion } from 'framer-motion/dist/framer-motion';
 
 function App() {
   const [showModal, setShowModal] = useState();
@@ -19,12 +21,39 @@ function App() {
     setShowModal(opendaModal);
     setProjecttID(selectID);
   };
+  const topFunction = () => {
+    console.log('button pressed');
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
 
+  const scrollFunction = () => {
+    const ScrollUpBtn = document.getElementById('back-to-top-btn');
+    if (
+      document.body.scrollTop > 300 ||
+      document.documentElement.scrollTop > 300
+    ) {
+      ScrollUpBtn.style.opacity = '1';
+    } else {
+      ScrollUpBtn.style.opacity = '0';
+    }
+  };
+  window.onscroll = function () {
+    scrollFunction();
+  };
   return (
     <Box
       id='App'
       className=' dark:text-gray-400 text-gray-900  body-font` m-0 px-0 w-screen dark:bg-lightBlack'
     >
+      <motion.div
+        whileTap={{ scale: 0.75 }}
+        onClick={() => topFunction()}
+        id='back-to-top-btn'
+        className=' w-14 h-14 bg-green-400 rounded-full fixed bottom-10 right-6 z-50 flex justify-center items-center transition-opacity delay-150 ease-linear cursor-pointer '
+      >
+        <BsArrowUpCircle className=' text-lightBlack text-5xl hover:text-yellow-400' />
+      </motion.div>
       {/* <DroneComponent /> */}
       <ProjectModal
         showModal={showModal}

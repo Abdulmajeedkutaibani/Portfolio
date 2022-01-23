@@ -23,8 +23,11 @@ import {
   SiNextdotjs,
 } from 'react-icons/si';
 import { motion } from 'framer-motion/dist/framer-motion';
-import { Model3D } from './Model3D';
 import Brackets from './images/brackets.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Skills = () => {
   return (
@@ -58,7 +61,12 @@ const Skills = () => {
       {/* //////////////////////////////////////// */}
 
       <div className='flex flex-wrap   lg:justify-evenly justify-around items-center w-3/4 mx-auto lg:w-full'>
-        <div className=' flex flex-col justify-center items-center md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center'>
+        <div
+          data-aos='fade-up-right'
+          data-aos-delay='150'
+          data-aos-once='true'
+          className=' flex flex-col justify-center items-center md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center'
+        >
           <div className='dark:bg-purple-100 w-20 h-20 flex justify-center items-center rounded-full bg-opacity-50 mt-4 '>
             <FaReact className=' w-16 h-16 text-blue-500 ' />
           </div>
@@ -71,7 +79,12 @@ const Skills = () => {
 
           <div className='w-full h-5 bg-gradient-to-r to-blue-300 from-blue-500 mt-auto'></div>
         </div>
-        <div className=' flex flex-col justify-center items-center  md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center'>
+        <div
+          data-aos='fade-up'
+          data-aos-once='true'
+          data-aos-delay='400'
+          className=' flex flex-col justify-center items-center  md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center'
+        >
           <SiJavascript className=' w-20 h-20 text-yellow-400 mt-6 rounded-lg' />
           <h4 className='text-green-400  mt-6 text-xl'>web development</h4>
           <p className='text-sm p-5 text-gray-200'>
@@ -82,7 +95,12 @@ const Skills = () => {
           <div className='w-full h-5 bg-gradient-to-r from-yellow-300 to-yellow-500 mt-auto'></div>
         </div>
 
-        <div className=' flex flex-col justify-center items-center  md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center'>
+        <div
+          data-aos='fade-up-left'
+          data-aos-delay='150'
+          data-aos-once='true'
+          className=' flex flex-col justify-center items-center  md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center'
+        >
           <div className=' w-20 h-24 flex justify-center items-center rounded-lg bg-opacity-50 mt-4'>
             <img
               src={Brackets}
