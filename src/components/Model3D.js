@@ -34,7 +34,7 @@ export const Model3D = () => {
       data-aos-delay='200'
       data-aos-duration='1000'
       data-aos-easing='ease-in-out'
-      data-aos-once='false'
+      data-aos-once='true'
       className='canvas-wrapper z-10 lg:cursor-pointer w-screen h-3/5 lg:w-full lg:h-full lg:absolute left-1/4 lg:mb-20'
     >
       <Canvas dpr={[1, 2]} camera={{ position: [0, 0.5, 2.5], fov: 70 }}>
