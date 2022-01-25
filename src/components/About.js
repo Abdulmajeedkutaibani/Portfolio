@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section
       id='about'
-      className='h-screen w-full relative dark:bg-lightBlack bg-white overflow-hidden'
+      className='md:h-screen  w-full relative dark:bg-lightBlack bg-white overflow-hidden lg:mb-0 mb-20'
     >
       <motion.div
         animate={{ y: [-10, 10], rotate: 1080, x: [-20, 20] }}
@@ -35,13 +35,13 @@ const About = () => {
         <div class=' h-24 w-24 bg-gradient-to-t from-green-500 to-blue-500 -rotate-45 transform origin-bottom-left'></div>
       </motion.div>
 
-      <div className='container mx-auto h-screen flex  px-10  lg:flex-row flex-col-reverse items-center justify-end lg:justify-start'>
-        <div className='dark:bg-gray-800 bg-green-600 dark:bg-opacity-50 bg-opacity-30 rounded-2xl p-6 w-full lg:w-1/3 flex flex-col md:items-center  md:mb-0 items-center text-center z-20 border-b-4 border-red-500'>
-          <h1 className='title-font sm:text-3xl text-5xl mb-5 font-medium dark:text-black dark:bg-green-100 text-white bg-lightBlack p-4 rounded-lg text-center'>
-            Hi there 👋🏼<br></br> <h1 className='text-2xl'>I'm</h1> Abdulmajeed
-            Kutaibani
+      <div className='container mx-auto h-screen flex  lg:px-10  lg:flex-row flex-col-reverse items-center justify-start lg:justify-start -mt-20'>
+        <div className='dark:bg-gray-800 bg-green-600 dark:bg-opacity-50 bg-opacity-30 rounded-2xl md:p-6 p-2 w-4/5 lg:w-1/3 flex flex-col md:items-center  md:mb-0 items-center text-center z-20 border-b-4 border-purple-500'>
+          <h1 className='title-font sm:text-3xl text-xl mb-5 font-medium dark:text-black dark:bg-green-100 text-white bg-lightBlack md:p-4 p-2 rounded-lg text-center'>
+            Hi there 👋🏼<br></br> <h1 className='md:text-2xl text-lg'>I'm</h1>{' '}
+            Abdulmajeed Kutaibani
           </h1>
-          <div className='primary-sub text-2xl mb-8 '>
+          <div className='primary-sub md:text-2xl text-sm md:mb-8 mb-2 '>
             <div className='primary-sub__word font-Tourney'>
               <div className='primary-sub__top dark:text-green-400 text-purple-700 '>
                 I'm
@@ -97,11 +97,11 @@ const About = () => {
               <div className='primary-sub__bottom'>experiences.</div>
             </div>
           </div>
-          <div className='flex justify-center h-12 w-full text-center'>
+          <div className='flex justify-center md:h-12 h-10 w-1/2 md:w-full text-center'>
             <motion.a
               whileTap={{ scale: 0.75 }}
               href='#projects'
-              className='w-full  text-xl hover:text-lightGreen text-lightBlack  font-Tourney bg-gradient-to-t from-red-500  to-blue-400 p-2 rounded-md font-bold ease-linear transition-all'
+              className='w-full h-full  md:text-xl text-xs hover:text-purple-500 text-lightBlack  font-Tourney bg-lightGreen md:p-2  rounded-md font-bold ease-linear transition-all flex justify-center items-center'
             >
               See My Past Work
             </motion.a>

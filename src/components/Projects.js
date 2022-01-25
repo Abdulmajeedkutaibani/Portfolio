@@ -18,36 +18,36 @@ const Projects = ({ onButtonClick }) => {
   return (
     <section
       id='projects'
-      className=' text-gray-400  body-font bg-green-100 bg-opacity-10 overflow-hidden pb-24 relative'
+      className=' text-gray-400  body-font bg-green-100 bg-opacity-10 overflow-hidden pb-24 relative '
     >
-      <div className='   px-5 py-10 mx-auto text-center lg:px-11 relative'>
+      <div className='   py-10 mx-auto text-center lg:px-11 relative'>
         <motion.div
           animate={{ rotate: 1080, x: 200, y: 500 }}
           transition={{ yoyo: Infinity, duration: 25, ease: 'InOut' }}
-          className=' w-14 h-14 bg-gradient-to-tl from-green-400 to-yellow-400 absolute  right-32 top-10 p-1.5 rounded-2xl '
+          className=' w-14 h-14 bg-gradient-to-tl from-green-400 via-pink-500 to-yellow-400 absolute  right-32 top-10 p-1.5 rounded-2xl z-10'
         >
-          <div className='w-full h-full bg-white dark:bg-lightBlack rounded-xl'></div>
+          <div className='w-full h-full bg-white dark:bg-purple-700 rounded-xl'></div>
         </motion.div>
         <motion.div
           animate={{ rotate: 1080, x: [200, -200], y: [80, -500] }}
           transition={{ yoyo: Infinity, duration: 25 }}
-          className=' w-14 h-14 bg-gradient-to-tl from-purple-400 to-red-400 absolute  left-32 bottom-0 p-1.5 rounded-2xl'
+          className=' w-14 h-14 bg-gradient-to-tl from-purple-400 to-green-400 via-red-500 absolute  left-32 bottom-0 p-1.5 rounded-2xl z-10'
         >
-          <div className='w-full h-full bg-white dark:bg-lightBlack rounded-xl'></div>
+          <div className='w-full h-full bg-white dark:bg-transparent rounded-xl'></div>
         </motion.div>
 
         {/* /////////////////////////////////////// */}
-        <div className=' projects-header flex flex-col w-full mb-20'>
+        <div className=' projects-header flex flex-col w-full lg:mb-20 mb-6  p-2'>
           <CodeIcon className='mx-auto inline-block w-10 mb-4' />
-          <h1 className='sm:text-4xl text-3xl font-medium title-font mb-4 dark:text-white text-lightBlack font-Tourney'>
+          <h1 className='sm:text-4xl text-2xl font-medium title-font mb-4 dark:text-white text-lightBlack font-Tourney z-40'>
             Projects I've Built
           </h1>
-          <p className='lg:w-2/3 mx-auto leading-relaxed text-xl font-sans dark:text-green-400 text-purple-700'>
+          <p className='lg:w-2/3 mx-auto leading-relaxed md:text-xl text-base font-sans dark:text-green-400 text-purple-700 z-30 px-2'>
             // These are my favorite projects I've worked on so far. Have a look
             around and make sure to hit me up!
           </p>
         </div>
-        <div className='flex flex-wrap px-10'>
+        <div className='flex flex-wrap lg:px-10 '>
           {projects.map((project) => (
             <motion.Box
               data-aos={
@@ -67,7 +67,7 @@ const Projects = ({ onButtonClick }) => {
               data-aos-duration='900'
               onClick={() => onButtonClick(true, project.id)}
               key={project.id}
-              className={`${project.className} project-post  w-11/12 md:w-1/2 h-72 lg:h-72 lg:w-1/4 max-w-xl m-auto p-4 cursor-pointer`}
+              className={`${project.className} project-post  w-11/12 md:w-1/2 h-72 lg:h-72 lg:w-1/4 max-w-xl m-auto p-4 cursor-pointer z-40`}
             >
               <div className='flex gap-1 absolute'>
                 {project.id == 0 ? (

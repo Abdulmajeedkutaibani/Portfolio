@@ -42,15 +42,23 @@ function App() {
     scrollFunction();
   };
   return (
-    <Box
+    <section
       id='App'
-      className=' dark:text-gray-400 text-gray-900  body-font` m-0 px-0 w-screen dark:bg-lightBlack'
+      className=' dark:text-white text-gray-900  body-font` m-0 px-0 w-screen dark:bg-lightBlack overflow-hidden relative'
     >
+      <div
+        onClick={() => {
+          document.getElementById('menu-background').style.width = '0';
+          document.getElementById('menu-background').style.height = '0';
+        }}
+        id='menu-background'
+        className='w-0 h-0 absolute bg-lightBlack opacity-40 z-30 top-0'
+      ></div>
       <motion.div
         whileTap={{ scale: 0.75 }}
         onClick={() => topFunction()}
         id='back-to-top-btn'
-        className=' w-14 h-14 bg-green-400 rounded-full fixed bottom-10 right-6 z-50 flex justify-center items-center transition-opacity delay-150 ease-linear cursor-pointer '
+        className='lg:flex w-14 h-14 bg-green-400 rounded-full fixed bottom-10 opacity-0 right-6 z-50 hidden justify-center items-center transition-opacity delay-150 ease-linear cursor-pointer overflow-hidden'
       >
         <BsArrowUpCircle className=' text-lightBlack text-5xl hover:text-yellow-400' />
       </motion.div>
@@ -61,14 +69,14 @@ function App() {
         projectID={projectID}
       />
       <SocialWidgets />
-      <Navbar />
+      <Navbar onButtonClick={onButtonClick} />
       <About />
       <Projects onButtonClick={onButtonClick} />
       <Skills />
       <Me />
       <Contact />
       <Footer />
-    </Box>
+    </section>
   );
 }
 

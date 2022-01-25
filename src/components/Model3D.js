@@ -33,10 +33,10 @@ export const Model3D = () => {
         duration: 1.5,
         delay: 1,
       }}
-      className='canvas-wrapper z-10 cursor-pointer w-screen h-3/5 lg:w-full lg:h-full lg:absolute left-1/4 lg:mb-20'
+      className='canvas-wrapper z-10 lg:cursor-pointer w-screen h-3/5 lg:w-full lg:h-full lg:absolute left-1/4 lg:mb-20'
     >
       <Canvas dpr={[1, 2]} camera={{ position: [0, 0.5, 2.5], fov: 70 }}>
-        <OrbitControls enableZoom={false} />
+        {window.innerWidth > 700 ? <OrbitControls enableZoom={false} /> : null}
         <spotLight position={[0, 0, 0]} angle={1} intensity={1} />
         {/* <AnimationAction /> */}
         {/* <spotLight position={[50, 50, 50]} angle={180} intensity={0.5} /> */}

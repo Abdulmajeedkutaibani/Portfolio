@@ -4,12 +4,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   font-family: Staatliches, sans-serif;
   word-spacing: 2px;
   letter-spacing: 1px;
-  overflow-x: hidden;
 }
 /* .canvas-wrapper {
   height: 50%;
@@ -351,13 +351,37 @@ body {
 .portfolio-photo::before {
   content: '';
   top: -30px;
-  left: -30px;
+  left: 50px;
   position: absolute;
   border-top: 9px solid #0fb;
   border-left: 9px solid #0fb;
   height: 60%;
   width: 47%;
   max-width: 380px;
+}
+@media screen and (max-width: 480px) {
+  .portfolio-photo::before {
+    content: '';
+    top: -30px;
+    left: 75px;
+    position: absolute;
+    border-top: 9px solid #0fb;
+    border-left: 9px solid #0fb;
+    height: 20%;
+    width: 17%;
+    max-width: 150px;
+  }
+  .portfolio-photo::after {
+    content: '';
+    bottom: -30px;
+    right: 75px;
+    position: absolute;
+    border-bottom: 9px solid #0fb;
+    border-right: 9px solid #0fb;
+    height: 20%;
+    width: 17%;
+    max-width: 150px;
+  }
 }
 
 .me-section {

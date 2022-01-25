@@ -37,22 +37,22 @@ const Skills = () => {
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
       id='skills'
-      className='dark:bg-gray-800 bg-green-100 bg-opacity-10  lg:px-12 w-full lg:pb-24 min-h-screen'
+      className='dark:bg-gray-800 bg-green-100 bg-opacity-10  lg:px-12 w-full lg:pb-24 min-h-screen relative overflow-hidden lg:mb-0 pb-36'
     >
-      <div className=' px-5 py-10 mx-auto relative'>
+      <div className=' lg:px-5 px-3  lg:py-10 py-5 mx-auto '>
         <motion.div
           animate={{ y: [-10, 10] }}
           transition={{ yoyo: Infinity, duration: 3 }}
-          className=' w-14 h-14 bg-gradient-to-tl from-indigo-300 to-pink-600 mt-20 right-0 absolute p-1.5 rounded-full'
+          className=' w-14 h-14 bg-gradient-to-tl from-indigo-300 to-pink-600 mt-20 bottom-20  absolute p-1.5 rounded-full'
         >
-          <div className='w-full h-full bg-transparent rounded-full'></div>
+          <div className='w-full h-full  rounded-full'></div>
         </motion.div>
-        <div className='text-center skills-header -mt-10'>
+        <div className='text-center skills-header lg:-mt-10 mb-4'>
           <ChipIcon className='w-10 inline-block mb-4' />
-          <h1 className='sm:text-4xl text-3xl font-medium title-font text-lightBlack mb-4 dark:text-white font-Tourney'>
+          <h1 className='sm:text-4xl text-2xl font-medium title-font text-lightBlack mb-4 dark:text-white font-Tourney'>
             Skills &amp; Technologies
           </h1>
-          <p className='text-xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto font-sans dark:text-green-400 text-purple-700'>
+          <p className='lg:text-xl text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto font-sans dark:text-green-400 text-purple-700'>
             // I love my coding journey with all of it's ups and downs, and I
             will definetly keep learning and making this list longer.
           </p>
@@ -60,14 +60,15 @@ const Skills = () => {
       </div>
       {/* //////////////////////////////////////// */}
 
-      <div className='flex flex-wrap   lg:justify-evenly justify-around items-center w-3/4 mx-auto lg:w-full'>
+      <div className='flex flex-wrap   lg:justify-evenly justify-around items-center w-11/12 mx-auto lg:w-full'>
         <div
           data-aos='fade-up-right'
           data-aos-delay='150'
           data-aos-once='true'
+          data-aos-duration='1000'
           className=' flex flex-col justify-center items-center md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center'
         >
-          <div className='dark:bg-purple-100 w-20 h-20 flex justify-center items-center rounded-full bg-opacity-50 mt-4 '>
+          <div className='dark:bg-purple-100 w-20 h-20 flex justify-center items-center rounded-full bg-opacity-50 mt-4 z-20'>
             <FaReact className=' w-16 h-16 text-blue-500 ' />
           </div>
           <h4 className='text-green-400  mt-6 text-xl'>web development</h4>
@@ -81,9 +82,10 @@ const Skills = () => {
         </div>
         <div
           data-aos='fade-up'
+          data-aos-duration='1000'
           data-aos-once='true'
           data-aos-delay='400'
-          className=' flex flex-col justify-center items-center  md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center'
+          className=' flex flex-col justify-center items-center  md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center z-20'
         >
           <SiJavascript className=' w-20 h-20 text-yellow-400 mt-6 rounded-lg' />
           <h4 className='text-green-400  mt-6 text-xl'>web development</h4>
@@ -98,8 +100,9 @@ const Skills = () => {
         <div
           data-aos='fade-up-left'
           data-aos-delay='150'
+          data-aos-duration='1000'
           data-aos-once='true'
-          className=' flex flex-col justify-center items-center  md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center'
+          className=' flex flex-col justify-center items-center  md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center z-20'
         >
           <div className=' w-20 h-24 flex justify-center items-center rounded-lg bg-opacity-50 mt-4'>
             <img
