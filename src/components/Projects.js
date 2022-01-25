@@ -22,16 +22,16 @@ const Projects = ({ onButtonClick }) => {
     >
       <div className='   py-10 mx-auto text-center lg:px-11 relative'>
         <motion.div
-          animate={{ rotate: 1080, x: 200, y: 500 }}
+          animate={{ rotate: 1080, x: [0, 200, 0], y: 500 }}
           transition={{ yoyo: Infinity, duration: 25, ease: 'InOut' }}
-          className=' w-14 h-14 bg-gradient-to-tl from-green-400 via-pink-500 to-yellow-400 absolute  right-32 top-10 p-1.5 rounded-2xl z-10'
+          className=' md:w-14 md:h-14 w-6 h-6 bg-gradient-to-tl from-green-400 via-pink-500 to-yellow-400 absolute  right-32 top-10 p-1.5 rounded-2xl z-10'
         >
           <div className='w-full h-full bg-white dark:bg-purple-700 rounded-xl'></div>
         </motion.div>
         <motion.div
           animate={{ rotate: 1080, x: [200, -200], y: [80, -500] }}
           transition={{ yoyo: Infinity, duration: 25 }}
-          className=' w-14 h-14 bg-gradient-to-tl from-purple-400 to-green-400 via-red-500 absolute  left-32 bottom-0 p-1.5 rounded-2xl z-10'
+          className=' md:w-14 md:h-14 w-6 h-6 bg-gradient-to-tl from-purple-400 to-green-400 via-red-500 absolute  left-32 bottom-0 p-1.5 rounded-2xl z-10'
         >
           <div className='w-full h-full bg-white dark:bg-transparent rounded-xl'></div>
         </motion.div>

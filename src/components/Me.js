@@ -119,7 +119,7 @@ const Me = () => {
             whileTap={{ scale: 0.75 }}
             className='lg:w-1/3 w-full lg:h-12 h-10 bg-lightGreen text-black md:text-lg text-xl lg:rounded-2xl rounded font-light md:mt-12 mt-4 tracking-wide flex justify-center items-center gap-1 '
           >
-            <FaFileDownload className='' /> Resume
+            <FaFileDownload /> <span className='pt-0.5'>Resume</span>
           </motion.button>
         </div>
       </div>

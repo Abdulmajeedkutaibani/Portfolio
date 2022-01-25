@@ -60,17 +60,13 @@ body {
 }
 
 .footer {
-  bottom: -7.5rem;
   left: 0;
   width: 100%;
-  padding: 3rem;
   background: #171a1d;
   color: #94a4b4;
-  font-size: 1rem;
   text-align: center;
   font-family: Inconsolata, sans-serif;
   /* border-top: 1px solid #343a41; */
-  user-select: text;
 }
 .footer__item {
   display: inline-block;
