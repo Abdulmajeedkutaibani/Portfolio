@@ -12,6 +12,9 @@ import Robotplay from './Robotplay';
 import { gsap } from 'gsap';
 import { Html, useProgress } from '@react-three/drei';
 import { motion } from 'framer-motion/dist/framer-motion';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 export const Model3D = () => {
   const tl = gsap.timeline();
@@ -19,20 +22,19 @@ export const Model3D = () => {
 
   function Loader() {
     return (
-      <Html center className=' text-red-600'>
-        {progress} % loaded
+      <Html center className=' text-lightGreen text-2xl'>
+        3D Model Is Loading...
       </Html>
     );
   }
 
   return (
-    <motion.div
-      initial={{ x: 600, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{
-        duration: 1.5,
-        delay: 1,
-      }}
+    <div
+      data-aos='fade-in'
+      data-aos-delay='200'
+      data-aos-duration='1000'
+      data-aos-easing='ease-in-out'
+      data-aos-once='false'
       className='canvas-wrapper z-10 lg:cursor-pointer w-screen h-3/5 lg:w-full lg:h-full lg:absolute left-1/4 lg:mb-20'
     >
       <Canvas dpr={[1, 2]} camera={{ position: [0, 0.5, 2.5], fov: 70 }}>
@@ -48,6 +50,6 @@ export const Model3D = () => {
           <Environment preset='warehouse' />
         </Suspense>
       </Canvas>
-    </motion.div>
+    </div>
   );
 };
