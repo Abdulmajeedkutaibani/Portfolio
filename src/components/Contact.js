@@ -111,37 +111,44 @@ Thank You For Your Time.`);
           </div>
           <button
             type='submit'
-            className='text-white bg-gradient-to-br from-pink-600 via-purple-600 to-lightGreen border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-2xl mt-4'
+            className='text-white bg-gradient-to-br from-pink-600 via-purple-600 to-lightGreen border-0 py-2 px-6 focus:outline-none hover:text-lightGreen transition-all ease-linear rounded text-2xl mt-4'
           >
             Submit
           </button>
         </form>
       </div>
-      <div className='flex items-center justify-center gap-6 '>
-        <a
-          href='#'
-          className='w-12 h-12 flex justify-center items-center text-3xl'
+      <div className='flex items-center justify-center gap-6 transition-all ease-linear'>
+        <motion.a
+          whileTap={{ scale: 0.8 }}
+          href='https://github.com/Abdulmajeedkutaibani'
+          target='_blank'
+          className='hover:text-lightGreen w-12 h-12 flex justify-center items-center text-3xl transition-all ease-linear'
         >
           <FaGithub />
-        </a>
-        <a
-          href='#'
-          className='w-12 h-12 flex justify-center items-center text-3xl'
+        </motion.a>
+        <motion.a
+          whileTap={{ scale: 0.8 }}
+          href='https://www.linkedin.com/in/abdulmajeed-kutaibani-a60477153'
+          target='_blank'
+          className='hover:text-lightGreen w-12 h-12 flex justify-center items-center text-3xl transition-all ease-linear'
         >
           <FaLinkedin />
-        </a>
-        <a
-          href='#'
-          className='w-12 h-12 flex justify-center items-center text-3xl'
+        </motion.a>
+        <motion.a
+          whileTap={{ scale: 0.8 }}
+          href='mailto:abodymeo@gmail.com'
+          className='hover:text-lightGreen w-12 h-12 flex justify-center items-center text-3xl transition-all ease-linear'
         >
           <HiOutlineMail />
-        </a>
-        <a
-          href='#'
-          className='w-12 h-12 flex justify-center items-center text-3xl'
+        </motion.a>
+        <motion.a
+          whileTap={{ scale: 0.8 }}
+          href='https://drive.google.com/file/d/1OuEgPdFbvkDiCMsrLYnCcJ0vcIAihuDT/view?usp=sharing'
+          target='_blank'
+          className='hover:text-lightGreen w-12 h-12 flex justify-center items-center text-3xl transition-all ease-linear'
         >
           <FaPortrait />
-        </a>
+        </motion.a>
       </div>
     </motion.section>
   );

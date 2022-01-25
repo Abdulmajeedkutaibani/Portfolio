@@ -1,7 +1,13 @@
 import React from 'react';
 import { ArrowRightIcon } from '@heroicons/react/solid';
 import './socialwidgets.css';
-import { FaGithub, FaPortrait, FaShapes, FaTimes } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaLinkedin,
+  FaPortrait,
+  FaShapes,
+  FaTimes,
+} from 'react-icons/fa';
 
 import { BsCircleFill } from 'react-icons/bs';
 import { BsSquareFill } from 'react-icons/bs';
@@ -19,6 +25,7 @@ const Navbar = () => {
     const menuCloseBtn = document.getElementById('menu-close-btn');
     const menuList = document.getElementById('menu-list');
     const menuBackground = document.getElementById('menu-background');
+    const socialIcons = document.getElementById('social-icons');
 
     menu.style.opacity = '1';
     menu.style.width = '200px';
@@ -32,6 +39,8 @@ const Navbar = () => {
     menuList.style.height = '100%';
     menuBackground.style.height = '100%';
     menuBackground.style.width = '100%';
+    socialIcons.style.opacity = '1';
+    socialIcons.style.marginLeft = '0px';
   };
   const hideMenu = () => {
     const menu = document.getElementById('menu');
@@ -39,6 +48,7 @@ const Navbar = () => {
     const menuCloseBtn = document.getElementById('menu-close-btn');
     const menuList = document.getElementById('menu-list');
     const menuBackground = document.getElementById('menu-background');
+    const socialIcons = document.getElementById('social-icons');
 
     menu.style.opacity = '0';
     menu.style.width = '0';
@@ -52,6 +62,8 @@ const Navbar = () => {
     menuList.style.height = '0';
     menuBackground.style.height = '0';
     menuBackground.style.width = '0';
+    socialIcons.style.opacity = '0';
+    socialIcons.style.marginLeft = '300px';
   };
   return (
     <header
@@ -83,17 +95,42 @@ const Navbar = () => {
           <li>
             <a href='#contact'> Contact</a>
           </li>
-          <li className='flex items-center justify-center gap-4 mt-20'>
-            <div className='w-6 h-6 text-2xl'>
+          <motion.li
+            id='social-icons'
+            className='flex items-center justify-center gap-2 mt-20 transition-all  ease-in-out  duration-700'
+          >
+            <motion.a
+              whileTap={{ scale: 0.8 }}
+              href='https://github.com/Abdulmajeedkutaibani'
+              target='_blank'
+              className='hover:text-lightGreen w-6 h-6 flex justify-center items-center text-3xl transition-all ease-linear -mt-6 ml-4'
+            >
               <FaGithub />
-            </div>
-            <div className='w-6 h-6 text-2xl'>
+            </motion.a>
+            <motion.a
+              whileTap={{ scale: 0.8 }}
+              href='https://www.linkedin.com/in/abdulmajeed-kutaibani-a60477153'
+              target='_blank'
+              className='hover:text-lightGreen w-6 h-6 flex justify-center items-center text-3xl transition-all ease-linear mt-8'
+            >
+              <FaLinkedin />
+            </motion.a>
+            <motion.a
+              whileTap={{ scale: 0.8 }}
+              href='mailto:abodymeo@gmail.com'
+              className='hover:text-lightGreen w-6 h-6 flex justify-center items-center text-3xl transition-all ease-linear mt-20'
+            >
               <HiOutlineMail />
-            </div>
-            <div className='w-6 h-6 text-2xl'>
+            </motion.a>
+            <motion.a
+              whileTap={{ scale: 0.8 }}
+              href='https://drive.google.com/file/d/1OuEgPdFbvkDiCMsrLYnCcJ0vcIAihuDT/view?usp=sharing'
+              target='_blank'
+              className='hover:text-lightGreen w-6 h-6 flex justify-center items-center text-3xl transition-all ease-linear mt-24'
+            >
               <FaPortrait />
-            </div>
-          </li>
+            </motion.a>
+          </motion.li>
         </ul>
       </div>
       <div className=' mx-auto flex md:flex-wrap md:p-5 p-2  items-center'>
@@ -107,7 +144,7 @@ const Navbar = () => {
         <motion.div
           whileTap={{ scale: 0.75 }}
           transition={{ duration: 0.1 }}
-          className='ml-auto rounded-sm z-50'
+          className='ml-auto rounded-sm z-50 md:hidden focus:bg-transparent focus:bg-transparent'
         >
           <HiMenuAlt3
             id='menu-btn'
@@ -117,7 +154,7 @@ const Navbar = () => {
           <IoClose
             id='menu-close-btn'
             onClick={() => hideMenu()}
-            className=' w-0 h-0 text-3xl  text-red-500 cursor-pointer z-50 transition-all ease-in-out duration-150'
+            className=' w-0 h-0 text-3xl  text-lightGreen text-opacity-80 cursor-pointer z-50 transition-all ease-in-out duration-150 '
           />
         </motion.div>
         <nav className='md:ml-auto  md:py-1 	md:flex flex-wrap items-center text-xl justify-center  hidden'>

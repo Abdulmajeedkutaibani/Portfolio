@@ -1,5 +1,5 @@
 import { Box } from '@mui/system';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import About from './components/About';
 import Contact from './components/Contact';
 import CubeModel from './components/CubeModel';
@@ -41,16 +41,36 @@ function App() {
   window.onscroll = function () {
     scrollFunction();
   };
+  const hideMenu = () => {
+    const menu = document.getElementById('menu');
+    const menuBtn = document.getElementById('menu-btn');
+    const menuCloseBtn = document.getElementById('menu-close-btn');
+    const menuList = document.getElementById('menu-list');
+    const menuBackground = document.getElementById('menu-background');
+
+    menu.style.opacity = '0';
+    menu.style.width = '0';
+    menu.style.height = '0';
+    menuBtn.style.width = '24px';
+    menuBtn.style.height = '24px';
+    menuCloseBtn.style.width = '0';
+    menuCloseBtn.style.height = '0';
+    menuList.style.opacity = '0';
+    menuList.style.width = '0';
+    menuList.style.height = '0';
+    menuBackground.style.height = '0';
+    menuBackground.style.width = '0';
+  };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section
       id='App'
       className=' dark:text-white text-gray-900  body-font` m-0 px-0 w-screen dark:bg-lightBlack overflow-hidden relative'
     >
       <div
-        onClick={() => {
-          document.getElementById('menu-background').style.width = '0';
-          document.getElementById('menu-background').style.height = '0';
-        }}
+        onClick={() => hideMenu()}
         id='menu-background'
         className='w-0 h-0 absolute bg-lightBlack opacity-40 z-30 top-0'
       ></div>
