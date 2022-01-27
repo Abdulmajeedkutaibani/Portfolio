@@ -9,14 +9,15 @@ const style = {
   left: '50%',
   height: { xs: '95%', sm: '60%' },
   width: { md: '93%', xs: '90%' },
-  maxWidth: { md: '1000px' },
-  maxHeight: { md: '500px' },
+  maxWidth: { xs: '80%', md: '80%', lg: '1000px' },
+  maxHeight: { xs: '80%', md: '500px' },
   transform: 'translate(-50%, -50%)',
   display: 'flex',
   flexDirection: { xs: 'column', sm: 'row' },
   outline: 'none',
   bgcolor: '#343a41',
   border: '2px solid #000',
+  borderRadius: '8px',
   boxShadow: 24,
 };
 
@@ -40,7 +41,7 @@ const ProjectModal = ({ showModal, setShowModal, projectID }) => {
           <div className='w-full lg:w-1/2 '>
             <img
               alt='gallery'
-              className='inset-0 w-full h-full object-cover  '
+              className='inset-0 w-full h-full object-cover rounded-tl-lg rounded-tr-lg sm:rounded border-b-2 border-purple-500 sm:border-none max-h-72 sm:max-h-full'
               src={projects[projectID].image}
             />
           </div>
@@ -98,7 +99,10 @@ const ProjectModal = ({ showModal, setShowModal, projectID }) => {
               <Box sx={{ mb: 1 }}>
                 {projects[projectID].subtitle.map((subtitles) => {
                   return (
-                    <li className='project__technology' key={projectID}>
+                    <li
+                      className='project__technology border border-lightGreen flex justify-center items-center lg:inline-block lg:mr-2 p-1 text-center'
+                      key={projectID}
+                    >
                       <p>{subtitles}</p>
                     </li>
                   );
@@ -108,35 +112,37 @@ const ProjectModal = ({ showModal, setShowModal, projectID }) => {
                 variant='h6'
                 sx={{
                   fontSize: '16px',
-                  color: '#94a4b4',
+                  color: 'white',
                   letterSpacing: '1px',
                   fontFamily: 'Staatliches,sans-serif',
+                  mt: '20px',
                 }}
               >
-                ABOUT
+                Description
               </Typography>
               <Typography
                 sx={{
-                  fontSize: '16px',
-                  color: '#94a4b4',
+                  fontSize: { xs: '12px', md: '14px', lg: '16px' },
+                  color: '#0fb',
                   letterSpacing: '1px',
                   overflowX: 'auto',
-                  width: '90%',
-                  height: '35%',
+                  width: '100%',
+                  height: { xs: '100px', lg: '400px' },
                   maxHeight: '200px',
                   fontFamily: 'Inconsolata,sans-serif',
-                  mt: '1rem',
                   whiteSpace: 'pre-line',
                   mb: 5,
+                  border: '2px solid lightBlue',
+                  padding: { lg: '10px', xs: '6px' },
                 }}
               >
                 {projects[projectID].description}
               </Typography>
-              <div className='flex gap-3 h-7'>
+              <div className='flex gap-3 h-7 items-center justify-center pb-6'>
                 <a href={projects[projectID].link} target='_blank'>
                   <Button
                     sx={{
-                      '&:hover': { opacity: 1 },
+                      '&:hover': { background: '#DA70D6' },
                       opacity: 0.9,
                       height: 30,
                       width: 100,
@@ -145,6 +151,7 @@ const ProjectModal = ({ showModal, setShowModal, projectID }) => {
                       fontSize: '18px',
                       fontFamily: 'Staatliches,sans-serif',
                       gap: '8px',
+                      background: '#d317fd',
                     }}
                     variant='contained'
                     color='inherit'
@@ -156,7 +163,7 @@ const ProjectModal = ({ showModal, setShowModal, projectID }) => {
                 <a href={projects[projectID].github}>
                   <Button
                     sx={{
-                      '&:hover': { opacity: 1 },
+                      '&:hover': { background: '#DAF7A6' },
                       opacity: 0.9,
                       height: 30,
                       width: 100,
@@ -165,6 +172,7 @@ const ProjectModal = ({ showModal, setShowModal, projectID }) => {
                       fontSize: '18px',
                       fontFamily: 'Staatliches,sans-serif',
                       gap: '8px',
+                      background: '#0fb',
                     }}
                     variant='contained'
                     color='inherit'

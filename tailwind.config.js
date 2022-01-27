@@ -5,6 +5,7 @@ module.exports = {
     fontFamily: {
       sans: ['Inconsolata', 'monospace'],
       Tourney: ['Tourney', 'cursive'],
+      Teko: ['Teko', 'sans-serif'],
     },
     extend: { colors: { lightBlack: '#181818', lightGreen: '#0fb' } },
   },

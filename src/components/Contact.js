@@ -53,7 +53,7 @@ Thank You For Your Time.`);
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
       id='contact'
-      className='dark:bg-lightBlack h-screen bg-green-100 bg-opacity-10  mb-32'
+      className='dark:bg-lightBlack h-screen bg-green-100 bg-opacity-10  lg:mb-32 mb-24'
     >
       <div className='text-center  '>
         <RiMessage2Fill className='w-10 inline-block mb-4 text-4xl' />
@@ -72,7 +72,10 @@ Thank You For Your Time.`);
           className='lg:w-1/3 md:w-1/2 flex flex-col w-full md:py-8 mt-4   md:mt-0'
         >
           <div className=' mb-4'>
-            <label htmlFor='name' className='leading-7 text-lg text-lightGreen'>
+            <label
+              htmlFor='name'
+              className='leading-7 text-lg dark:text-lightGreen text-purple-700'
+            >
               Name
             </label>
             <input
@@ -85,7 +88,7 @@ Thank You For Your Time.`);
           <div className='relative mb-4'>
             <label
               htmlFor='email'
-              className='leading-7 text-lg text-lightGreen'
+              className='leading-7 text-lg dark:text-lightGreen text-purple-700'
             >
               Email
             </label>
@@ -99,7 +102,7 @@ Thank You For Your Time.`);
           <div className='relative mb-4'>
             <label
               htmlFor='message'
-              className='leading-7 text-lg text-lightGreen'
+              className='leading-7 text-lg dark:text-lightGreen text-purple-700'
             >
               Message
             </label>
@@ -116,39 +119,39 @@ Thank You For Your Time.`);
             Submit
           </button>
         </form>
-      </div>
-      <div className='flex items-center justify-center gap-6 transition-all ease-linear'>
-        <motion.a
-          whileTap={{ scale: 0.8 }}
-          href='https://github.com/Abdulmajeedkutaibani'
-          target='_blank'
-          className='hover:text-lightGreen w-12 h-12 flex justify-center items-center text-3xl transition-all ease-linear'
-        >
-          <FaGithub />
-        </motion.a>
-        <motion.a
-          whileTap={{ scale: 0.8 }}
-          href='https://www.linkedin.com/in/abdulmajeed-kutaibani-a60477153'
-          target='_blank'
-          className='hover:text-lightGreen w-12 h-12 flex justify-center items-center text-3xl transition-all ease-linear'
-        >
-          <FaLinkedin />
-        </motion.a>
-        <motion.a
-          whileTap={{ scale: 0.8 }}
-          href='mailto:abodymeo@gmail.com'
-          className='hover:text-lightGreen w-12 h-12 flex justify-center items-center text-3xl transition-all ease-linear'
-        >
-          <HiOutlineMail />
-        </motion.a>
-        <motion.a
-          whileTap={{ scale: 0.8 }}
-          href='https://drive.google.com/file/d/1OuEgPdFbvkDiCMsrLYnCcJ0vcIAihuDT/view?usp=sharing'
-          target='_blank'
-          className='hover:text-lightGreen w-12 h-12 flex justify-center items-center text-3xl transition-all ease-linear'
-        >
-          <FaPortrait />
-        </motion.a>
+        <div className='flex items-center justify-center gap-6 transition-all ease-linear mt-8 lg:mt-0'>
+          <motion.a
+            whileTap={{ scale: 0.8 }}
+            href='https://github.com/Abdulmajeedkutaibani'
+            target='_blank'
+            className='hover:text-lightGreen w-12 h-12 flex justify-center items-center text-3xl transition-all ease-linear'
+          >
+            <FaGithub />
+          </motion.a>
+          <motion.a
+            whileTap={{ scale: 0.8 }}
+            href='https://www.linkedin.com/in/abdulmajeed-kutaibani-a60477153'
+            target='_blank'
+            className='hover:text-lightGreen w-12 h-12 flex justify-center items-center text-3xl transition-all ease-linear'
+          >
+            <FaLinkedin />
+          </motion.a>
+          <motion.a
+            whileTap={{ scale: 0.8 }}
+            href='mailto:abodymeo@gmail.com'
+            className='hover:text-lightGreen w-12 h-12 flex justify-center items-center text-3xl transition-all ease-linear'
+          >
+            <HiOutlineMail />
+          </motion.a>
+          <motion.a
+            whileTap={{ scale: 0.8 }}
+            href='https://drive.google.com/file/d/1OuEgPdFbvkDiCMsrLYnCcJ0vcIAihuDT/view?usp=sharing'
+            target='_blank'
+            className='hover:text-lightGreen w-12 h-12 flex justify-center items-center text-3xl transition-all ease-linear'
+          >
+            <FaPortrait />
+          </motion.a>
+        </div>
       </div>
     </motion.section>
   );

@@ -82,18 +82,24 @@ const Navbar = () => {
           className='  flex flex-col gap-6 transform  text-center mb-10  font-Tourney font-bold relative pt-16 transition-all duration-300  opacity-0'
         >
           <li>
-            <a href='#projects'> My Work</a>
+            <a onClick={() => hideMenu()} href='#projects'>
+              My Work
+            </a>
           </li>
           <li className=''>
-            <a href='#skills' className='ml-2'>
+            <a onClick={() => hideMenu()} href='#skills' className='ml-2'>
               Skills
             </a>
           </li>
           <li>
-            <a href='#me'> About Me</a>
+            <a onClick={() => hideMenu()} href='#me'>
+              About
+            </a>
           </li>
           <li>
-            <a href='#contact'> Contact</a>
+            <a onClick={() => hideMenu()} href='#contact'>
+              Contact
+            </a>
           </li>
           <motion.li
             id='social-icons'
@@ -174,7 +180,7 @@ const Navbar = () => {
             href='#me'
             className='mr-5 text-sm dark:hover:text-lightGreen  dark:text-white text-lightBlack  font-Tourney   p-1.5  font-bold ease-linear transition-all mb-2'
           >
-            About Me
+            About
           </a>
           <a
             href='#contact'

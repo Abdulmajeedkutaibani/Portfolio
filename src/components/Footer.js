@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className='footer text-base p-4 w-full '>
+    <footer className='footer text-base p-4 w-full static '>
       <div className='footer__item'>
         © 2022 Abdulmajeed Kutaibani. All Rights Reserved.
       </div>

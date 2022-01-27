@@ -67,7 +67,7 @@ function App() {
   return (
     <section
       id='App'
-      className=' dark:text-white text-gray-900  body-font` m-0 px-0 w-screen dark:bg-lightBlack overflow-hidden relative'
+      className=' dark:text-white text-gray-900  body-font` m-0 px-0 w-screen dark:bg-lightBlack overflow-x-hidden relative'
     >
       <div
         onClick={() => hideMenu()}
