@@ -6,6 +6,8 @@ module.exports = {
       sans: ['Inconsolata', 'monospace'],
       Tourney: ['Tourney', 'cursive'],
       Teko: ['Teko', 'sans-serif'],
+      PressStart2P: ['Press Start 2P', 'cursive'],
+      Comfortaa: ['Comfortaa', 'cursive'],
     },
     extend: { colors: { lightBlack: '#181818', lightGreen: '#0fb' } },
   },

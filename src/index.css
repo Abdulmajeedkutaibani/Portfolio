@@ -93,7 +93,6 @@ body {
 @media screen and (max-width: 768px) {
   .footer__item:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 1rem;
   }
   .footer__item:last-child {
     text-align: left;
@@ -240,7 +239,7 @@ body {
 #contact {
   background-image: url('./components/images/scattered-forcefields\ \(1\).svg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position-x: 200px;
 }
 .dark #skills,
@@ -355,7 +354,7 @@ body {
   width: 47%;
   max-width: 380px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .dark .portfolio-photo::before {
     content: '';
     top: -30px;
@@ -390,7 +389,7 @@ body {
   width: 47%;
   max-width: 380px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .portfolio-photo::before {
     content: '';
     top: -30px;
