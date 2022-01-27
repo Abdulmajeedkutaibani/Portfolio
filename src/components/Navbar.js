@@ -101,9 +101,10 @@ const Navbar = () => {
               Contact
             </a>
           </li>
+
           <motion.li
             id='social-icons'
-            className='flex items-center justify-center gap-2 mt-20 transition-all  ease-in-out  duration-700'
+            className='flex items-center justify-center gap-2 mt-20 transition-all  ease-in-out  duration-700 relative'
           >
             <motion.a
               whileTap={{ scale: 0.8 }}
@@ -146,7 +147,9 @@ const Navbar = () => {
         >
           AK Portfolio <FaShapes className='w-8 text-lightGreen' />
         </a>
-
+        <div>
+          <DarkLightBtn />
+        </div>
         <motion.div
           whileTap={{ scale: 0.75 }}
           transition={{ duration: 0.1 }}
@@ -163,6 +166,7 @@ const Navbar = () => {
             className=' w-0 h-0 text-3xl  text-lightGreen text-opacity-80 cursor-pointer z-50 transition-all ease-in-out duration-150 '
           />
         </motion.div>
+
         <nav className='md:ml-auto  md:py-1 	md:flex flex-wrap items-center text-xl justify-center  hidden'>
           <a
             href='#projects'

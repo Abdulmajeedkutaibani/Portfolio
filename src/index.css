@@ -281,8 +281,11 @@ body {
 }
 .checkbox:checked + .label .ball {
   /* background: purple; */
-  transform: translateX(-22px);
+  transform: translateX(-24px);
   background: white;
+}
+.ball {
+  margin-left: 22px;
 }
 .checkbox + .label {
   transition: background 0.3s linear;
@@ -354,7 +357,7 @@ body {
   width: 47%;
   max-width: 380px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .dark .portfolio-photo::before {
     content: '';
     top: -30px;
@@ -389,7 +392,7 @@ body {
   width: 47%;
   max-width: 380px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .portfolio-photo::before {
     content: '';
     top: -30px;
