@@ -9,6 +9,9 @@ import {
   FaGitAlt,
   FaGithub,
   FaNpm,
+  FaGit,
+  FaGithubAlt,
+  FaGitSquare,
 } from 'react-icons/fa';
 import { FcMindMap } from 'react-icons/fc';
 import {
@@ -21,6 +24,7 @@ import {
   SiRedux,
   SiTypescript,
   SiNextdotjs,
+  SiFramer,
 } from 'react-icons/si';
 import { motion } from 'framer-motion/dist/framer-motion';
 import Brackets from './images/brackets.png';
@@ -78,12 +82,12 @@ const Skills = () => {
           <h4 className='text-purple-500  mt-6 text-xl font-Tourney font-bold'>
             Web Development
           </h4>
-          <p className='text-xl w-11/12 p-3 text-gray-200 font-Dongle font-normal'>
+          <p className='text-2xl w-11/12 p-3 text-gray-200 font-Dongle font-normal'>
             Having a solid foundation of web development basics and the ability
             to build a website from the ground up and write easy to understant
             code.
           </p>
-          <div className='w-full h-5 bg-gradient-to-r from-red-500 to-purple-500 mt-auto rounded-b-lg'></div>
+          <div className='w-full min-h-5 h-5 bg-gradient-to-r from-red-500 to-purple-500 mt-auto rounded-b-lg'></div>
         </div>
         <div
           data-aos='fade-up'
@@ -96,12 +100,12 @@ const Skills = () => {
           <h4 className='text-yellow-400  mt-6 text-xl font-Tourney font-bold'>
             Javascript
           </h4>
-          <p className='text-xl p-3 text-gray-200 font-Dongle font-normal'>
+          <p className='text-2xl p-3 text-gray-200 font-Dongle font-normal'>
             A good grip of ES6 by building projects and reinforcing the
             fundamentals of javascript and using RESTful APIs and other
             technologies.
           </p>
-          <div className='w-full h-5 bg-gradient-to-r from-yellow-300 to-yellow-500 mt-auto rounded-b-lg'></div>
+          <div className='w-full min-h-5 h-5 bg-gradient-to-r from-yellow-300 to-yellow-500 mt-auto rounded-b-lg'></div>
         </div>
 
         <div
@@ -123,7 +127,33 @@ const Skills = () => {
             experiance.
           </p>
 
-          <div className='w-full h-5 bg-gradient-to-r to-blue-300 from-blue-500 mt-auto rounded-b-lg'></div>
+          <div className='w-full min-h-5 h-5 bg-gradient-to-r to-blue-300 from-blue-500 mt-auto rounded-b-lg'></div>
+        </div>
+        <div
+          data-aos='fade-up-right'
+          data-aos-delay='150'
+          data-aos-once='true'
+          data-aos-duration='1000'
+          className=' flex flex-col  justify-center items-center w-96 md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 skill-post  m-2  text-center '
+        >
+          <div className='flex relative'>
+            <SiRedux className='text-purple-500 w-16 h-16   mt-4   ' />
+            <SiTailwindcss className=' text-green-400 -ml-4 w-16 h-16   mt-4   ' />
+            <SiFramer className='  w-14 h-14  text-pink-500 -ml-3 mt-5 ' />
+            <SiFirebase className='  w-16 h-16  text-yellow-500 -ml-4 mt-4   ' />
+            <FaGitSquare className='  w-16 h-16  text-red-500  mt-4   ' />
+          </div>
+
+          <h4 className='text-green-400  mt-6 text-xl font-Tourney font-bold'>
+            Technologies
+          </h4>
+          <p className='text-2xl p-3 text-gray-200 font-Dongle font-normal'>
+            I like to learn new skills and improve myslef as a developer and
+            keep up with the newewst and most efficient technologies that would
+            serve to better my workflow and data management.
+          </p>
+
+          <div className='w-full h-5 min-h-5 bg-gradient-to-r from-green-300 to-green-500 mt-auto rounded-b-lg'></div>
         </div>
       </div>
     </motion.section>

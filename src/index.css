@@ -419,7 +419,7 @@ body {
 }
 
 .skill-post {
-  min-height: 400px;
+  min-height: 350px;
 }
 @media screen and (max-width: 768px) {
   .skill-post {
