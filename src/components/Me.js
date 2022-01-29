@@ -84,7 +84,7 @@ const Me = () => {
           data-aos-duration='1000'
           data-aos-delay='100'
           data-aos-once='true'
-          className='lg:w-1/2 w-11/12  h-full dark:bg-gray-300 bg-green-300 bg-opacity-30 dark:bg-opacity-80 flex flex-col p-5 rounded-lg mt-14 lg:mt-0 z-20 '
+          className='lg:w-1/2 w-11/12  h-full dark:bg-gray-800 bg-green-300 bg-opacity-30 dark:bg-opacity-80 flex flex-col p-5 rounded-lg mt-14 lg:mt-0 z-20 '
         >
           <span className='dark:text-lightGreen text-purple-600 lg:text-3xl text-xl lg:mb-8 mb-4 font-Tourney font-bold '>
             Get To Know Me
@@ -98,7 +98,7 @@ const Me = () => {
               className=' w-1/2 h-1 dark:bg-purple-600 bg-blue-600'
             ></motion.div>
           </span>
-          <div className='flex flex-col lg:gap-4 gap-3 dark:text-blue-900 text-lightBlack text-lightBlac lg:text-base font-bold text-sm font-Comfortaa tracking-tighter'>
+          <div className='flex flex-col lg:gap-4 gap-3 dark:text-gray-200 text-lightBlack text-lightBlac lg:text-base font-bold text-sm font-Comfortaa tracking-tighter'>
             <p>I'm Abdulmajeed, I'm a self taught Front-end/React Developer.</p>
             <p>
               I was studying medicine and on my way to becoming a doctor then

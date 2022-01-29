@@ -73,18 +73,7 @@ body {
   font-family: Inconsolata, sans-serif;
   /* border-top: 1px solid #343a41; */
 }
-.footer__item {
-  display: inline-block;
-}
-.footer__item:not(:last-child) {
-  margin-right: 8rem;
-}
-.footer__contact {
-  display: inline-block;
-}
-.footer__contact:not(:last-child) {
-  margin-right: 3rem;
-}
+
 .footer__link:link,
 .footer__link:visited {
   color: #fff;
@@ -427,4 +416,14 @@ body {
   background-image: url(./components/images/Animated\ Shapes_light.svg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.skill-post {
+  min-height: 400px;
+}
+@media screen and (max-width: 768px) {
+  .skill-post {
+    min-height: 150px;
+    max-height: 350px;
+  }
 }

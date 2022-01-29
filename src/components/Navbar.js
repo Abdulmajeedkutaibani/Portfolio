@@ -79,32 +79,48 @@ const Navbar = () => {
       >
         <ul
           id='menu-list'
-          className='  flex flex-col gap-6 transform  text-center mb-10  font-Tourney font-bold relative pt-16 transition-all duration-300  opacity-0'
+          className='  flex flex-col gap-6 transform  text-center mb-10  font-Tourney font-bold relative pt-16 transition-all duration-300  opacity-0 text-white '
         >
-          <li>
-            <a onClick={() => hideMenu()} href='#projects'>
+          <motion.li whileTap={{ scale: 0.8 }}>
+            <a
+              className='hover:text-lightGreen transition duration-300'
+              onClick={() => hideMenu()}
+              href='#projects'
+            >
               My Work
             </a>
-          </li>
-          <li className=''>
-            <a onClick={() => hideMenu()} href='#skills' className='ml-2'>
+          </motion.li>
+          <motion.li whileTap={{ scale: 0.8 }} className=''>
+            <a
+              className='hover:text-lightGreen transition duration-300'
+              onClick={() => hideMenu()}
+              href='#skills'
+            >
               Skills
             </a>
-          </li>
-          <li>
-            <a onClick={() => hideMenu()} href='#me'>
+          </motion.li>
+          <motion.li whileTap={{ scale: 0.8 }}>
+            <a
+              className='hover:text-lightGreen transition duration-300'
+              onClick={() => hideMenu()}
+              href='#me'
+            >
               About
             </a>
-          </li>
-          <li>
-            <a onClick={() => hideMenu()} href='#contact'>
+          </motion.li>
+          <motion.li whileTap={{ scale: 0.8 }}>
+            <a
+              className='hover:text-lightGreen transition duration-300'
+              onClick={() => hideMenu()}
+              href='#contact'
+            >
               Contact
             </a>
-          </li>
+          </motion.li>
 
-          <motion.li
+          <li
             id='social-icons'
-            className='flex items-center justify-center gap-2 mt-20 transition-all  ease-in-out  duration-700 relative'
+            className='flex items-center justify-center gap-2 mt-auto mb-5 transition-all  ease-in-out  duration-700 relative'
           >
             <motion.a
               whileTap={{ scale: 0.8 }}
@@ -137,17 +153,17 @@ const Navbar = () => {
             >
               <FaPortrait />
             </motion.a>
-          </motion.li>
+          </li>
         </ul>
       </div>
-      <div className=' mx-auto flex md:flex-wrap md:p-5 p-2  items-center'>
+      <div className=' mx-auto flex  md:p-5 p-2  items-center'>
         <a
           href='#about'
-          className='md:text-3xl text-xl title-font text-lightBlack dark:text-white font-Tourney  p-2 rounded-lg font-bold flex lg:gap-2 md:justify-center items-center'
+          className='md:text-3xl text-xl title-font text-lightBlack dark:text-white font-Tourney  p-2 rounded-lg font-bold flex md:gap-2 md:justify-center items-center'
         >
           AK Portfolio <FaShapes className='w-8 text-lightGreen' />
         </a>
-        <div>
+        <div className='md:hidden'>
           <DarkLightBtn />
         </div>
         <motion.div
@@ -163,26 +179,26 @@ const Navbar = () => {
           <IoClose
             id='menu-close-btn'
             onClick={() => hideMenu()}
-            className=' w-0 h-0 text-3xl  text-lightGreen text-opacity-80 cursor-pointer z-50 transition-all ease-in-out duration-150 '
+            className=' w-0 h-0 text-3xl text-lightGreen hover:text-red-500  text-opacity-80 cursor-pointer z-50 transition-all ease-in-out duration-300 '
           />
         </motion.div>
 
-        <nav className='md:ml-auto  md:py-1 	md:flex flex-wrap items-center text-xl justify-center  hidden'>
+        <nav className='md:ml-auto  md:py-1 	md:flex  items-center text-xl justify-center  hidden'>
           <a
             href='#projects'
-            className='mr-5  text-sm dark:hover:text-lightGreen  dark:text-white text-lightBlack  font-Tourney  p-1.5  font-bold ease-linear transition-all mb-2 border-b'
+            className='mr-5  text-sm dark:hover:text-lightGreen  dark:text-white text-lightBlack  font-Tourney  p-1.5  font-bold ease-linear transition-all mb-2 '
           >
             Projects
           </a>
           <a
             href='#skills'
-            className='mr-5 text-sm dark:hover:text-lightGreen  dark:text-white text-lightBlack  font-Tourney   p-1.5  font-bold ease-linear transition-all mb-2'
+            className='mr-5 text-sm dark:hover:text-lightGreen  dark:text-white text-lightBlack  font-Tourney   p-1.5  font-bold ease-linear transition-all mb-2 '
           >
             Skills
           </a>
           <a
             href='#me'
-            className='mr-5 text-sm dark:hover:text-lightGreen  dark:text-white text-lightBlack  font-Tourney   p-1.5  font-bold ease-linear transition-all mb-2'
+            className='mr-5 text-sm dark:hover:text-lightGreen  dark:text-white text-lightBlack  font-Tourney   p-1.5  font-bold ease-linear transition-all mb-2 '
           >
             About
           </a>
@@ -198,8 +214,10 @@ const Navbar = () => {
               <ArrowRightIcon className='w-6 h-6 ml-1 transform rotate-90' />
             </motion.div>
           </a>
-          <DarkLightBtn />
         </nav>
+        <div className='hidden md:block mb-2'>
+          <DarkLightBtn />
+        </div>
       </div>
     </header>
   );

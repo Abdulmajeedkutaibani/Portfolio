@@ -50,11 +50,12 @@ const Skills = () => {
         <div className='text-center skills-header lg:-mt-10 mb-4'>
           <ChipIcon className='w-10 inline-block mb-4' />
           <h1 className='sm:text-4xl text-2xl font-medium title-font text-lightBlack mb-4 dark:text-white font-Tourney'>
-            Skills &amp; Technologies
+            Skills &amp; Services
           </h1>
           <p className='lg:text-xl text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto font-sans dark:text-green-400 text-purple-700'>
             // I love my coding journey with all of it's ups and downs, and I
-            will definetly keep learning and making this list longer.
+            will definetly keep learning and increase my knowledge and
+            experiance.
           </p>
         </div>
       </div>
@@ -62,61 +63,67 @@ const Skills = () => {
 
       <div className='flex flex-wrap   lg:justify-evenly justify-around items-center w-11/12 mx-auto lg:w-full'>
         <div
-          data-aos='fade-up-right'
+          data-aos='fade-up-left'
           data-aos-delay='150'
-          data-aos-once='true'
           data-aos-duration='1000'
-          className=' flex flex-col justify-center items-center md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center'
+          data-aos-once='true'
+          className=' flex flex-col justify-center items-center w-96  md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50  m-2 skill-post text-center z-20'
         >
-          <div className='dark:bg-purple-100 w-20 h-20 flex justify-center items-center rounded-full bg-opacity-50 mt-4 z-20'>
-            <FaReact className=' w-16 h-16 text-blue-500 ' />
+          <div className=' flex justify-center items-center rounded-lg bg-opacity-50 mt-4'>
+            <img
+              src={Brackets}
+              className=' w-20 h-20  bg-gradient-to-r from-red-500 to-purple-500 rounded-lg'
+            />
           </div>
-          <h4 className='text-green-400  mt-6 text-xl'>web development</h4>
-          <p className='text-sm p-5 text-gray-200'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            hic error quam magni asperiores atque tempore adipisci odio veniam
-            libero.
+          <h4 className='text-purple-500  mt-6 text-xl font-Tourney font-bold'>
+            Web Development
+          </h4>
+          <p className='text-xl w-11/12 p-3 text-gray-200 font-Dongle font-normal'>
+            Having a solid foundation of web development basics and the ability
+            to build a website from the ground up and write easy to understant
+            code.
           </p>
-
-          <div className='w-full h-5 bg-gradient-to-r to-blue-300 from-blue-500 mt-auto'></div>
+          <div className='w-full h-5 bg-gradient-to-r from-red-500 to-purple-500 mt-auto rounded-b-lg'></div>
         </div>
         <div
           data-aos='fade-up'
           data-aos-duration='1000'
           data-aos-once='true'
           data-aos-delay='400'
-          className=' flex flex-col justify-center items-center  md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center z-20'
+          className=' flex flex-col  justify-center items-center w-96  md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50  m-2 skill-post text-center z-20'
         >
           <SiJavascript className=' w-20 h-20 text-yellow-400 mt-6 rounded-lg' />
-          <h4 className='text-green-400  mt-6 text-xl'>web development</h4>
-          <p className='text-sm p-5 text-gray-200'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            hic error quam magni asperiores atque tempore adipisci odio veniam
-            libero.
+          <h4 className='text-yellow-400  mt-6 text-xl font-Tourney font-bold'>
+            Javascript
+          </h4>
+          <p className='text-xl p-3 text-gray-200 font-Dongle font-normal'>
+            A good grip of ES6 by building projects and reinforcing the
+            fundamentals of javascript and using RESTful APIs and other
+            technologies.
           </p>
-          <div className='w-full h-5 bg-gradient-to-r from-yellow-300 to-yellow-500 mt-auto'></div>
+          <div className='w-full h-5 bg-gradient-to-r from-yellow-300 to-yellow-500 mt-auto rounded-b-lg'></div>
         </div>
 
         <div
-          data-aos='fade-up-left'
+          data-aos='fade-up-right'
           data-aos-delay='150'
-          data-aos-duration='1000'
           data-aos-once='true'
-          className=' flex flex-col justify-center items-center  md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 overflow-hidden m-2 h-72 text-center z-20'
+          data-aos-duration='1000'
+          className=' flex flex-col  justify-center items-center w-96 md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 skill-post  m-2  text-center '
         >
-          <div className=' w-20 h-24 flex justify-center items-center rounded-lg bg-opacity-50 mt-4'>
-            <img
-              src={Brackets}
-              className=' w-full h-full  bg-gradient-to-r from-red-500 to-purple-500 rounded-lg'
-            />
-          </div>
-          <h4 className='text-green-400  mt-6 text-xl'>web development</h4>
-          <p className='text-sm p-5 text-gray-200'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            hic error quam magni asperiores atque tempore adipisci odio veniam
-            libero.
+          <FaReact className=' w-20 h-20  text-blue-500 mt-4   ' />
+
+          <h4 className='text-blue-400  mt-6 text-xl font-Tourney font-bold'>
+            React
+          </h4>
+          <p className='text-xl p-3 text-gray-200 font-Dongle font-normal'>
+            All my favorite projects are built with React and I love it, I have
+            a strong understanding of react concepts like hooks, JSX, seperation
+            of concerns, and component oriented thinking through practical
+            experiance.
           </p>
-          <div className='w-full h-5 bg-gradient-to-r from-red-500 to-purple-500 mt-auto'></div>
+
+          <div className='w-full h-5 bg-gradient-to-r to-blue-300 from-blue-500 mt-auto rounded-b-lg'></div>
         </div>
       </div>
     </motion.section>

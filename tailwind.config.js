@@ -8,6 +8,7 @@ module.exports = {
       Teko: ['Teko', 'sans-serif'],
       PressStart2P: ['Press Start 2P', 'cursive'],
       Comfortaa: ['Comfortaa', 'cursive'],
+      Dongle: ['Dongle', 'sans-serif'],
     },
     extend: { colors: { lightBlack: '#181818', lightGreen: '#0fb' } },
   },
