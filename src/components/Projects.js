@@ -77,13 +77,13 @@ const Projects = ({ onButtonClick }) => {
                   </div>
                 ) : null}
 
-                {project.id == 2 ? (
+                {project.id == 3 ? (
                   <div className='best-badge bg-yellow-300 pl-1'>
                     <MdOutlineFavorite className='w-15 mr-1 text-red-600' />
                     <span>favorite</span>
                   </div>
                 ) : null}
-                {project.id == 1 ? (
+                {project.id == 2 ? (
                   <div className='advanced-badge bg-yellow-300 pl-1'>
                     <FaTools className='mr-2 text-blue-600' />
                     <span>Advanced</span>
@@ -96,7 +96,7 @@ const Projects = ({ onButtonClick }) => {
                     {project.title}{' '}
                     <div className='project-title_underline mx-auto bg-gradient-to-r from-red-500 via-pink-600 to-yellow-500 h-1 rounded-full w-0 transition-all delay-500'></div>
                   </h4>
-                  <p className=' text-lg overflow-hidden text-yellow-300'>
+                  <p className=' text-base overflow-hidden text-yellow-300'>
                     {project.subtitle.join(' / ')}
                   </p>
                 </div>

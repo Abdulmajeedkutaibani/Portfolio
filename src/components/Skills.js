@@ -82,10 +82,10 @@ const Skills = () => {
           <h4 className='text-purple-500  mt-6 text-xl font-Tourney font-bold'>
             Web Development
           </h4>
-          <p className='text-2xl w-11/12 p-3 text-gray-200 font-Dongle font-normal'>
+          <p className='text-2xl w-11/12 p-3 text-gray-200 font-Dongle font-normal leading-6'>
             Having a solid foundation of web development basics and the ability
-            to build a website from the ground up and write easy to understant
-            code.
+            to build an elegant responsive website from scratch and write easy
+            to understant code.
           </p>
           <div className='w-full min-h-5 h-5 bg-gradient-to-r from-red-500 to-purple-500 mt-auto rounded-b-lg'></div>
         </div>
@@ -100,7 +100,7 @@ const Skills = () => {
           <h4 className='text-yellow-400  mt-6 text-xl font-Tourney font-bold'>
             Javascript
           </h4>
-          <p className='text-2xl p-3 text-gray-200 font-Dongle font-normal'>
+          <p className='text-2xl leading-6 p-3 text-gray-200 font-Dongle font-normal '>
             A good grip of ES6 by building projects and reinforcing the
             fundamentals of javascript and using RESTful APIs and other
             technologies.
@@ -117,10 +117,10 @@ const Skills = () => {
         >
           <FaReact className=' w-20 h-20  text-blue-500 mt-4   ' />
 
-          <h4 className='text-blue-400  mt-6 text-xl font-Tourney font-bold'>
+          <h4 className='text-blue-400  mt-2 text-xl font-Tourney font-bold'>
             React
           </h4>
-          <p className='text-xl p-3 text-gray-200 font-Dongle font-normal'>
+          <p className='text-2xl p-3 text-gray-200 font-Dongle font-normal leading-6 '>
             All my favorite projects are built with React and I love it, I have
             a strong understanding of react concepts like hooks, JSX, seperation
             of concerns, and component oriented thinking through practical
@@ -138,16 +138,16 @@ const Skills = () => {
         >
           <div className='flex relative'>
             <SiRedux className='text-purple-500 w-16 h-16   mt-4   ' />
-            <SiTailwindcss className=' text-green-400 -ml-4 w-16 h-16   mt-4   ' />
+            <SiTailwindcss className=' text-green-400 -ml-2 w-16 h-16   mt-4   ' />
             <SiFramer className='  w-14 h-14  text-pink-500 -ml-3 mt-5 ' />
             <SiFirebase className='  w-16 h-16  text-yellow-500 -ml-4 mt-4   ' />
-            <FaGitSquare className='  w-16 h-16  text-red-500  mt-4   ' />
+            <FaGitSquare className='  w-16 h-16  text-red-500  mt-4  -ml-2 ' />
           </div>
 
           <h4 className='text-green-400  mt-6 text-xl font-Tourney font-bold'>
             Technologies
           </h4>
-          <p className='text-2xl p-3 text-gray-200 font-Dongle font-normal'>
+          <p className='text-2xl leading-6 p-3 text-gray-200 font-Dongle font-normal'>
             I like to learn new skills and improve myslef as a developer and
             keep up with the newewst and most efficient technologies that would
             serve to better my workflow and data management.
