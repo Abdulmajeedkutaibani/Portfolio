@@ -1,8 +1,8 @@
 export const projects = [
   {
     id: 0,
-    className: 'product-page',
-    title: 'Product Page',
+
+    title: 'AK Portfolio',
     subtitle: [
       'React.js',
       'Tailwind CSS',
@@ -13,14 +13,14 @@ export const projects = [
       'yup',
       'THREE.js',
     ],
-    description: ``,
+    description: `This portfolio. tadaaa! 🎉 `,
     image: './AKPORTFOLIO-LOGO.png',
     link: 'https://www.abdulmajeedk.com/',
-    // github: 'https://github.com/Abdulmajeedkutaibani/Product-page',
+    github: 'https://github.com/Abdulmajeedkutaibani/Portfolio',
   },
   {
     id: 1,
-    className: 'product-page',
+
     title: 'Product Page',
     subtitle: ['React.js', 'Styled Components', 'Redux Toolkit', 'React-icons'],
     description: `This is a small product webpage that I've built to practice my knowledge of Redux toolkit and styled components.
@@ -44,7 +44,7 @@ check it out! and any feedback is much appreciated.`,
   },
   {
     id: 2,
-    className: 'Ak-notes',
+
     title: 'AK Notes',
     subtitle: [
       'React.js',
@@ -90,7 +90,7 @@ check it out! and any feedback is much appreciated.`,
   },
   {
     id: 3,
-    className: 'AKAudio',
+
     title: 'AKAudio',
     subtitle: ['React.js', 'Tailwind CSS', 'React-hooks', 'React-router'],
     description: `AKAudio is an all-in-one stop to fulfill your audio needs.
@@ -107,7 +107,7 @@ check it out! and any feedback is much appreciated. 😁 👍🏼`,
   {
     id: 4,
     title: 'Planets',
-    className: 'Planets',
+
     subtitle: ['React.js', 'SASS'],
     description: `This is an 8-page planets fact site that is fun for everyone to visit. 
     The user is able to:
@@ -121,7 +121,6 @@ check it out! and any feedback is much appreciated. 😁 👍🏼`,
   {
     id: 5,
     title: 'Clock-App',
-    className: 'Clock-App',
 
     subtitle: ['React.js', 'CSS', 'API'],
     description: `I challenged myself to build a clock application. it looks simple but it has a lot of details. I used React.js and React Custom Hooks to build this application, and I used external APIs to set the data based on the visitor's location and generate random programming quotes.`,
@@ -132,7 +131,6 @@ check it out! and any feedback is much appreciated. 😁 👍🏼`,
   {
     id: 5,
     title: 'MajeedPay',
-    className: 'MajeedPay',
 
     subtitle: ['React.js', 'CSS'],
     description: `This project is a 4-page website built with HTML, CSS, JavaScript, React.Js.
