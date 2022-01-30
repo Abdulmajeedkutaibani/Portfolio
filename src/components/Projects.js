@@ -59,6 +59,8 @@ const Projects = ({ onButtonClick }) => {
                   ? 'fade-left'
                   : project.id == 5
                   ? 'fade-left'
+                  : project.id == 7
+                  ? 'fade-left'
                   : 'fade-right'
               }
               data-aos-easing='ease-in-out'
