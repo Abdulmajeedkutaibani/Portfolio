@@ -61,8 +61,8 @@ Thank You For Your Time.`);
           Work With Me
         </h1>
         <p className='lg:text-xl text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto font-sans dark:text-green-400 text-purple-700 p-2'>
-          // Leave me a message with your contact information and I will be in
-          touch with you as soon as possible.
+          // I am available to work on your projects and bring your ideas to
+          life. I am just a click away.
         </p>
       </div>
       <div className=' px-5 pb-20  mx-auto flex justify-center sm:flex-nowrap flex-col items-center'>

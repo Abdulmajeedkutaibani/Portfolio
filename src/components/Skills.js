@@ -71,7 +71,7 @@ const Skills = () => {
           data-aos-delay='150'
           data-aos-duration='1000'
           data-aos-once='true'
-          className=' flex flex-col justify-center items-center w-96  md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50  m-2 skill-post text-center z-20'
+          className=' flex flex-col justify-center items-center w-96  md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-black bg-opacity-80  dark:bg-gray-800 dark:bg-opacity-50  m-2 skill-post text-center z-20'
         >
           <div className=' flex justify-center items-center rounded-lg bg-opacity-50 mt-4'>
             <img
@@ -79,10 +79,10 @@ const Skills = () => {
               className=' w-20 h-20  bg-gradient-to-r from-red-500 to-purple-500 rounded-lg'
             />
           </div>
-          <h4 className='text-purple-500  mt-6 text-xl font-Tourney font-bold'>
+          <h4 className='dark:text-purple-500 text-green-300  mt-6 text-xl font-Tourney font-bold'>
             Web Development
           </h4>
-          <p className='text-2xl w-11/12 p-3 text-gray-200 font-Dongle font-normal leading-6'>
+          <p className='text-2xl w-11/12 p-3 dark:text-gray-200 text-white font-Dongle font-normal leading-6'>
             Having a solid foundation of web development basics and the ability
             to build an elegant responsive website from scratch and write easy
             to understant code.
@@ -94,13 +94,13 @@ const Skills = () => {
           data-aos-duration='1000'
           data-aos-once='true'
           data-aos-delay='400'
-          className=' flex flex-col  justify-center items-center w-96  md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50  m-2 skill-post text-center z-20'
+          className=' flex flex-col  justify-center items-center w-96  md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-black bg-opacity-80  dark:bg-gray-800 dark:bg-opacity-50  m-2 skill-post text-center z-20'
         >
           <SiJavascript className=' w-20 h-20 text-yellow-400 mt-6 rounded-lg' />
           <h4 className='text-yellow-400  mt-6 text-xl font-Tourney font-bold'>
             Javascript
           </h4>
-          <p className='text-2xl leading-6 p-3 text-gray-200 font-Dongle font-normal '>
+          <p className='text-2xl leading-6 p-3 dark:text-gray-200 text-white font-Dongle font-normal '>
             A good grip of ES6 by building projects and reinforcing the
             fundamentals of javascript and using RESTful APIs and other
             technologies.
@@ -113,14 +113,14 @@ const Skills = () => {
           data-aos-delay='150'
           data-aos-once='true'
           data-aos-duration='1000'
-          className=' flex flex-col  justify-center items-center w-96 md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 skill-post  m-2  text-center '
+          className=' flex flex-col  justify-center items-center w-96 md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-black bg-opacity-80  dark:bg-gray-800 dark:bg-opacity-50 skill-post  m-2  text-center '
         >
           <FaReact className=' w-20 h-20  text-blue-500 mt-4   ' />
 
           <h4 className='text-blue-400  mt-2 text-xl font-Tourney font-bold'>
             React
           </h4>
-          <p className='text-2xl p-3 text-gray-200 font-Dongle font-normal leading-6 '>
+          <p className='text-2xl p-3 dark:text-gray-200 text-white font-Dongle font-normal leading-6 '>
             All my favorite projects are built with React and I love it, I have
             a strong understanding of react concepts like hooks, JSX, seperation
             of concerns, and component oriented thinking through practical
@@ -134,7 +134,7 @@ const Skills = () => {
           data-aos-delay='150'
           data-aos-once='true'
           data-aos-duration='1000'
-          className=' flex flex-col  justify-center items-center w-96 md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-green-400 dark:bg-gray-800 dark:bg-opacity-50 skill-post  m-2  text-center '
+          className=' flex flex-col  justify-center items-center w-96 md:w-5/12 max-w-sm  lg:w-1/3 mb-6 rounded-xl bg-black bg-opacity-80  dark:bg-gray-800 dark:bg-opacity-50 skill-post  m-2  text-center '
         >
           <div className='flex relative'>
             <SiRedux className='text-purple-500 w-16 h-16   mt-4   ' />
@@ -147,7 +147,7 @@ const Skills = () => {
           <h4 className='text-green-400  mt-6 text-xl font-Tourney font-bold'>
             Technologies
           </h4>
-          <p className='text-2xl leading-6 p-3 text-gray-200 font-Dongle font-normal'>
+          <p className='text-2xl leading-6 p-3 dark:text-gray-200 text-white font-Dongle font-normal'>
             I like to learn new skills and improve myslef as a developer and
             keep up with the newewst and most efficient technologies that would
             serve to better my workflow and data management.
