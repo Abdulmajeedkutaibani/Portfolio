@@ -163,13 +163,11 @@ const Navbar = () => {
         >
           AK Portfolio <FaShapes className='w-8 text-lightGreen' />
         </a>
-        <div className='md:hidden'>
-          <DarkLightBtn />
-        </div>
+
         <motion.div
           whileTap={{ scale: 0.75 }}
           transition={{ duration: 0.1 }}
-          className='ml-auto rounded-sm z-50 md:hidden focus:bg-transparent focus:bg-transparent'
+          className='ml-auto rounded-sm z-50 md:hidden focus:bg-transparent'
         >
           <HiMenuAlt3
             id='menu-btn'
@@ -215,7 +213,7 @@ const Navbar = () => {
             </motion.div>
           </a>
         </nav>
-        <div className='hidden md:block mb-2'>
+        <div className='absolute md:static right-12 mt-0.5 md:mb-2'>
           <DarkLightBtn />
         </div>
       </div>
