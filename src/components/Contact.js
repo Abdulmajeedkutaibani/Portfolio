@@ -53,7 +53,7 @@ Thank You For Your Time.`);
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
       id='contact'
-      className='dark:bg-lightBlack h-screen bg-green-100 bg-opacity-10  lg:mb-32 mb-24'
+      className='dark:bg-lightBlack h-screen bg-green-100 bg-opacity-10  lg:pb-32 pb-24'
     >
       <div className='text-center  '>
         <RiMessage2Fill className='w-10 inline-block mb-4 text-4xl' />

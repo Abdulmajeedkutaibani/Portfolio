@@ -18,7 +18,7 @@ const Projects = ({ onButtonClick }) => {
   return (
     <section
       id='projects'
-      className=' text-gray-400  body-font bg-green-100 bg-opacity-10 overflow-hidden pb-24 relative '
+      className=' text-gray-400  body-font bg-gradient-to-b from-white  via-green-100 to-white bg-opacity-10 overflow-hidden pb-24 relative '
     >
       <div className='   py-10 mx-auto text-center lg:px-11 relative'>
         <motion.div
@@ -69,7 +69,7 @@ const Projects = ({ onButtonClick }) => {
               data-aos-duration='900'
               onClick={() => onButtonClick(true, project.id)}
               key={project.id}
-              className={`${project.className} project-post  w-11/12 md:w-1/2 h-72 lg:h-72 lg:w-1/4 max-w-xl m-auto p-4 cursor-pointer z-40`}
+              className={`${project.className} project-post  w-11/12 md:w-1/2 h-72 lg:h-72 lg:w-1/4 max-w-xl m-auto p-4 cursor-pointer z-40 filter drop-shadow-2xl`}
             >
               <div className='flex gap-1 absolute'>
                 {project.id == 0 ? (
@@ -98,7 +98,7 @@ const Projects = ({ onButtonClick }) => {
                     {project.title}{' '}
                     <div className='project-title_underline mx-auto bg-gradient-to-r from-red-500 via-pink-600 to-yellow-500 h-1 rounded-full w-0 transition-all delay-500'></div>
                   </h4>
-                  <p className=' text-base overflow-hidden text-yellow-300'>
+                  <p className=' text-base overflow-hidden text-lightBlack dark:text-yellow-300'>
                     {project.subtitle.join(' / ')}
                   </p>
                 </div>

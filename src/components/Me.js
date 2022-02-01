@@ -71,7 +71,7 @@ const Me = () => {
           data-aos-once='true'
           className='lg:w-1/2 h-full flex items-center relative  '
         >
-          <div className='portfolio-photo lg:w-7/12 w-1/2 h-4/5  mx-auto before:left-2'>
+          <div className='portfolio-photo max-w-md lg:w-7/12 w-1/2 h-4/5  mx-auto before:left-2'>
             <img
               className='w-3/4 mx-auto lg:mx-0'
               src={ProfilePhoto}
@@ -84,7 +84,7 @@ const Me = () => {
           data-aos-duration='1000'
           data-aos-delay='100'
           data-aos-once='true'
-          className='lg:w-1/2 w-11/12  h-full dark:bg-gray-800 bg-green-300 bg-opacity-30 dark:bg-opacity-80 flex flex-col p-5 rounded-lg mt-14 lg:mt-0 z-20 '
+          className='lg:w-1/2 w-11/12  h-full dark:bg-gray-800 bg-green-400 bg-opacity-30 dark:bg-opacity-80 flex flex-col p-5 rounded-lg mt-14 lg:mt-0 z-20 '
         >
           <span className='dark:text-lightGreen text-purple-600 lg:text-3xl text-xl lg:mb-8 mb-4 font-Tourney font-bold '>
             Get To Know Me

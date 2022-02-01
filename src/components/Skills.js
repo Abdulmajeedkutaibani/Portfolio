@@ -41,7 +41,7 @@ const Skills = () => {
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
       id='skills'
-      className='dark:bg-gray-800 bg-green-100 bg-opacity-10  lg:px-12 w-full lg:pb-24 min-h-screen relative overflow-hidden lg:mb-0 pb-36'
+      className='dark:bg-gray-800 bg-gradient-to-b from-white  via-green-100 to-white bg-opacity-10  lg:px-12 w-full lg:pb-24 min-h-screen relative overflow-hidden lg:mb-0 pb-36'
     >
       <div className=' lg:px-5 px-3  lg:py-10 py-5 mx-auto '>
         <motion.div
@@ -130,7 +130,7 @@ const Skills = () => {
           <div className='w-full min-h-5 h-5 bg-gradient-to-r to-blue-300 from-blue-500 mt-auto rounded-b-lg'></div>
         </div>
         <div
-          data-aos='fade-up-right'
+          data-aos='fade-in'
           data-aos-delay='150'
           data-aos-once='true'
           data-aos-duration='1000'

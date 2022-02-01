@@ -226,7 +226,7 @@ body {
   background-size: cover;
 }
 #contact {
-  background-image: url('./components/images/scattered-forcefields\ \(1\).svg');
+  /* background-image: url('./components/images/scattered-forcefields\ \(1\).svg'); */
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 200px;
@@ -235,6 +235,7 @@ body {
 .dark #projects {
   background: #181818;
 }
+
 .dark #skills {
   background-image: url(./components//images//pluse-bg-addup.png);
 }
