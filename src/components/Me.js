@@ -103,7 +103,7 @@ const Me = () => {
             <p>
               I was studying medicine and on my way to becoming a doctor then
               BOOOOOM! <br /> a Pandemic <br /> Which honesly was scary at first
-              but then turned out to be a blessing in desguise for me, I got
+              but then turned out to be a blessing in disguise for me, I got
               married to my amazing wife and I got to teach myself something
               that I've always wanted to study...Coding.
             </p>
