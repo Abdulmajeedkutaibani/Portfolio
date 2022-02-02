@@ -94,15 +94,15 @@ const Projects = ({ onButtonClick }) => {
               </div>
               <div className='project-card flex relative h-full w-full overflow-hidden rounded-lg'>
                 <div className='project-info-card flex flex-col justify-center w-full h-full dark:bg-gray-800 bg-white z-10 opacity-0 p-10'>
-                  <h4 className=' text-xl mb-4 text-lightGreen'>
+                  <h4 className=' text-xl mb-4 text-white'>
                     {project.title}{' '}
-                    <div className='project-title_underline mx-auto bg-gradient-to-r from-red-500 via-pink-600 to-yellow-500 h-1 rounded-full w-0 transition-all delay-500'></div>
+                    <div className='project-title_underline mx-auto bg-gradient-to-r from-pink-500 via-pink-600 to-red-500 h-1 rounded-full w-0 transition-all duration-300 delay-500'></div>
                   </h4>
-                  <p className=' text-base overflow-hidden text-lightBlack dark:text-yellow-300'>
+                  <p className=' text-base overflow-hidden text-lightBlack dark:text-green-400 xl:px-10'>
                     {project.subtitle.join(' / ')}
                   </p>
                 </div>
-                <div className='project-slide-1 w-full h-full  z-20 absolute'></div>
+                <div className='project-slide-1 w-full  h-full  z-20 absolute'></div>
                 <div className='project-slide-2 w-full h-full z-20 absolute '></div>
 
                 <img

@@ -296,6 +296,7 @@ body {
   background: linear-gradient(45deg, #42dd2d 20%, #d317fd);
   transition: all 0.4s ease-in-out;
 }
+
 .project-post:hover .project-slide-1 {
   transform: translate(14rem, -14rem) rotate(45deg) scale(1.4);
   transition: transform 0.5s ease-in-out;
@@ -312,7 +313,22 @@ body {
 /* container "the whole button" styles */
 
 .project-card:hover .project-title_underline {
-  width: 50%;
+  width: 130px;
+}
+
+@media screen and (min-width: 2000px) {
+  .project-slide-1 {
+    transform: translate(-14rem, 14rem) rotate(45deg) scale(1);
+  }
+  .project-post:hover .project-slide-1 {
+    transform: translate(14rem, -14rem) rotate(45deg) scale(1);
+  }
+  .project-slide-2 {
+    transform: translate(14rem, -14rem) rotate(45deg) scale(1);
+  }
+  .project-post:hover .project-slide-2 {
+    transform: translate(-14rem, 14rem) rotate(45deg) scale(1);
+  }
 }
 /*
  {
