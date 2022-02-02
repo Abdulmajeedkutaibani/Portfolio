@@ -128,7 +128,7 @@ const Me = () => {
             <ArrowRightIcon className='w-8 h-8 dark:text-lightGreen text-purple-600 lg:ml-10  transform rotate-90 ' />
           </motion.div>
           <motion.a
-            href='https://doc-08-00-docs.googleusercontent.com/docs/securesc/f63snjtb0sghk05l7vi57thu1sf8qm72/apl08bllcodngs6s40dbbbv6cqueuqsf/1643231700000/14301234417981488882/14301234417981488882/1OuEgPdFbvkDiCMsrLYnCcJ0vcIAihuDT?e=download&authuser=0&nonce=r065qp94q4uqc&user=14301234417981488882&hash=ul2i8h1fsjs3s8lekcavvdbbtn12ga5i'
+            href='https://drive.google.com/file/d/1OuEgPdFbvkDiCMsrLYnCcJ0vcIAihuDT/view?usp=sharing'
             whileTap={{ scale: 0.75 }}
             className='lg:w-1/3 w-full lg:h-12 h-10 dark:bg-lightGreen bg-purple-600 dark:text-black text-white md:text-lg text-xl lg:rounded-2xl rounded font-light md:mt-6 mt-4 tracking-wide flex justify-center items-center gap-1 '
           >
