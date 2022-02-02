@@ -55,7 +55,7 @@ const Me = () => {
       <div className='w-1/4 h-1/2 flex justify-between items-center absolute z-20'></div>
       <div className=' px-5 py-10 mx-auto relative z-10'>
         <div className='text-center  -mt-10'>
-          <span className='w-16 text-yellow-400 text-6xl inline-block mb-2'>
+          <span className='w-16 text-yellow-400 md:text-6xl text-4xl inline-block mb-2'>
             👨🏻‍💻
           </span>
           <h1 className='sm:text-4xl text-2xl font-medium title-font text-lightBlack mb-4 dark:text-white font-Tourney'>
