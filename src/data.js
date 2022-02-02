@@ -14,7 +14,7 @@ export const projects = [
       'yup form verification',
       'THREE.js',
     ],
-    description: `This portfolio. tadaaa! 🎉 `,
+    description: `This portfolio 😁`,
     image: './AKPORTFOLIO-LOGO.png',
     link: 'https://www.abdulmajeedk.com/',
     github: 'https://github.com/Abdulmajeedkutaibani/Portfolio',
