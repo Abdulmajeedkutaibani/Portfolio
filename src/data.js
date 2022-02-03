@@ -56,7 +56,7 @@ check it out! and any feedback is much appreciated.`,
     ],
     description: `AK Notes is a Full-Stack Web-App for taking and saving Notes and Reminders that everyone can benefit from.
 
-This project helped me solidify my Material UI and Firebase learning and practice Form building and validation.
+This project helped me solidify my Material UI and Firebase knowledge and practice Form building and validation.
 
 To build this project I used:
 -React.js
