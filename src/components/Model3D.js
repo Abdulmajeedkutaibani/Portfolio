@@ -31,7 +31,6 @@ export const Model3D = () => {
   return (
     <div
       data-aos='fade-in'
-      data-aos-delay='200'
       data-aos-duration='1000'
       data-aos-easing='ease-in-out'
       data-aos-once='true'

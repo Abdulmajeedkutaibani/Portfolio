@@ -94,7 +94,7 @@ const Projects = ({ onButtonClick }) => {
               </div>
               <div className='project-card flex relative h-full w-full overflow-hidden rounded-lg'>
                 <div className='project-info-card flex flex-col justify-center w-full h-full dark:bg-gray-800 bg-white z-10 opacity-0 p-10'>
-                  <h4 className=' text-xl mb-4 text-white'>
+                  <h4 className=' text-xl mb-4 dark:text-white text-green-500'>
                     {project.title}{' '}
                     <div className='project-title_underline mx-auto bg-gradient-to-r from-pink-500 via-pink-600 to-red-500 h-1 rounded-full w-0 transition-all duration-300 delay-500'></div>
                   </h4>
