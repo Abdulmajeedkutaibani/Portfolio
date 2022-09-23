@@ -86,7 +86,7 @@ Users are able to:
 
 check it out! and any feedback is much appreciated.`,
     image: './AKNotes.png',
-    link: 'https://aknotes-app.netlify.app/',
+    link: 'https://aknotes.vercel.app/',
     github: 'https://github.com/Abdulmajeedkutaibani/Notes-app',
   },
   {
