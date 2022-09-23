@@ -102,7 +102,7 @@ I feel that after building this website my confidence in my coding ability and i
 
 check it out! and any feedback is much appreciated. 😁 👍🏼`,
     image: './AKAudio.png',
-    link: 'https://akaudio.netlify.app/',
+    link: 'https://akaaudio-ecommerce.vercel.app/',
     github: 'https://github.com/Abdulmajeedkutaibani/AKAudio',
   },
   {
