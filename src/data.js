@@ -40,7 +40,7 @@ What I learned:
 
 check it out! and any feedback is much appreciated.`,
     image: './desktop-preview.jpg',
-    link: 'https://sneakers-product-page.netlify.app/',
+    link: 'https://product-page-alpha-coral.vercel.app/',
     github: 'https://github.com/Abdulmajeedkutaibani/Product-page',
   },
   {
@@ -98,8 +98,6 @@ check it out! and any feedback is much appreciated.`,
 
 This website has been my biggest project so far. I had to solve many problems that I had'nt encountered before and also needed to pay much attention to the smallest of details.
 
-I feel that after building this website my confidence in my coding ability and in my ability to learn and apply has skyrocketed! 🚀 😃
-
 check it out! and any feedback is much appreciated. 😁 👍🏼`,
     image: './AKAudio.png',
     link: 'https://akaaudio-ecommerce.vercel.app/',
@@ -116,19 +114,19 @@ check it out! and any feedback is much appreciated. 😁 👍🏼`,
 -See hover states for all interactive elements on the page
 -View each planet page and toggle between the "Overview", "Internal Structure", and "Surface Geology" tabs.`,
     image: './planets-image.jpeg',
-    link: 'https://our-planets.netlify.app',
+    link: 'https://planets-dusky.vercel.app/',
     github: 'https://github.com/Abdulmajeedkutaibani/planets',
   },
-  {
-    id: 5,
-    title: 'Clock-App',
+//   {
+//     id: 5,
+//     title: 'Clock-App',
 
-    subtitle: ['React.js', 'CSS', 'API'],
-    description: `I challenged myself to build a clock application. it looks simple but it has a lot of details. I used React.js and React Custom Hooks to build this application, and I used external APIs to set the data based on the visitor's location and generate random programming quotes.`,
-    image: './clock-app-home.jpeg',
-    link: 'https://majeed-clock-app.netlify.app',
-    github: 'https://github.com/Abdulmajeedkutaibani/Clock-App',
-  },
+//     subtitle: ['React.js', 'CSS', 'API'],
+//     description: `I challenged myself to build a clock application. it looks simple but it has a lot of details. I used React.js and React Custom Hooks to build this application, and I used external APIs to set the data based on the visitor's location and generate random programming quotes.`,
+//     image: './clock-app-home.jpeg',
+//     link: 'https://majeed-clock-app.netlify.app',
+//     github: 'https://github.com/Abdulmajeedkutaibani/Clock-App',
+//   },
   {
     id: 5,
     title: 'MajeedPay',
@@ -137,27 +135,12 @@ check it out! and any feedback is much appreciated. 😁 👍🏼`,
     description: `This project is a 4-page website built with HTML, CSS, JavaScript, React.Js.
 I used React.js for rendering the view and creating the #UI and I used #react_router for routing and I also used #Yup for form building and form validation.`,
     image: './majeedpay-image.webp',
-    link: 'https://majeedpay.netlify.app',
+    link: 'https://majeed-pay.vercel.app/',
     github: 'https://github.com/Abdulmajeedkutaibani/Majeed-Pay',
   },
 ];
 
-export const testimonials = [
-  {
-    quote:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.',
-    image: 'https://randomuser.me/api/portraits/men/1.jpg',
-    name: 'Jesse Hicks',
-    company: 'Zoozle',
-  },
-  {
-    quote:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.',
-    image: 'https://randomuser.me/api/portraits/men/94.jpg',
-    name: 'Ruben Alvarez',
-    company: 'Dooble.io',
-  },
-];
+
 
 export const skills = [
   'HTML/CSS',
