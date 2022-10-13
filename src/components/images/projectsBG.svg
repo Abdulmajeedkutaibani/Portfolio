@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1920" height="1080" preserveAspectRatio="none" viewBox="0 0 1920 1080">
+    <g mask="url(&quot;#SvgjsMask5470&quot;)" fill="none">
+        <rect width="1920" height="1080" x="0" y="0" fill="url(#SvgjsLinearGradient5471)"></rect>
+        <path d="M0 0L898.8 0L0 262.14z" fill="rgba(255, 255, 255, .1)"></path>
+        <path d="M0 262.14L898.8 0L1434.88 0L0 578.8199999999999z" fill="rgba(255, 255, 255, .075)"></path>
+        <path d="M0 578.8199999999999L1434.88 0L1510.0800000000002 0L0 696.6899999999999z" fill="rgba(255, 255, 255, .05)"></path>
+        <path d="M0 696.6899999999999L1510.0800000000002 0L1669.4 0L0 871.0699999999999z" fill="rgba(255, 255, 255, .025)"></path>
+        <path d="M1920 1080L1895.42 1080L1920 643.4100000000001z" fill="rgba(0, 0, 0, .1)"></path>
+        <path d="M1920 643.4100000000001L1895.42 1080L980.2700000000001 1080L1920 464.31000000000006z" fill="rgba(0, 0, 0, .075)"></path>
+        <path d="M1920 464.31000000000006L980.27 1080L484.38 1080L1920 303.93000000000006z" fill="rgba(0, 0, 0, .05)"></path>
+        <path d="M1920 303.93000000000006L484.3800000000001 1080L216.6300000000001 1080L1920 294.74000000000007z" fill="rgba(0, 0, 0, .025)"></path>
+    </g>
+    <defs>
+        <mask id="SvgjsMask5470">
+            <rect width="1920" height="1080" fill="#ffffff"></rect>
+        </mask>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient5471">
+            <stop stop-color="rgba(209, 250, 229, 0.1)" offset="0.2"></stop>
+            <stop stop-color="rgba(79, 48, 156, 0.2)" offset="0.27"></stop>
+            <stop stop-color="rgba(15, 234, 0, 0.15)" offset="0.5"></stop>
+            <stop stop-color="rgba(234, 0, 167, 0.06)" offset="0.78"></stop>
+            <stop stop-color="rgba(209, 250, 229, 0.1)" offset="0.81"></stop>
+        </linearGradient>
+    </defs>
+</svg>
