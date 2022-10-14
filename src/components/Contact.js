@@ -81,7 +81,7 @@ Thank You For Your Time.`);
               type='text'
               id='name'
               name='name'
-              className='w-full bg-gray-800 rounded border border-green-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out font-sans'
+              className='w-full bg-gray-800 rounded border border-green-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-yellow-300 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out font-sans hover:border-yellow-300'
             />
           </div>
           <div className='relative mb-4'>
@@ -95,7 +95,7 @@ Thank You For Your Time.`);
               type='email'
               id='email'
               name='email'
-              className='w-full bg-gray-800 rounded border border-green-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out font-sans'
+              className='w-full bg-gray-800 rounded border border-green-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-yellow-300 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out font-sans hover:border-yellow-300'
             />
           </div>
           <div className='relative mb-4'>
@@ -108,12 +108,12 @@ Thank You For Your Time.`);
             <textarea
               id='message'
               name='message'
-              className='w-full bg-gray-800 rounded border border-green-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out font-sans'
+              className='w-full bg-gray-800 rounded border border-green-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-yellow-300 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out font-sans hover:border-yellow-300'
             />
           </div>
           <button
             type='submit'
-            className='text-white bg-gradient-to-br from-pink-600 via-purple-600 to-lightGreen border-0 py-2 px-6 focus:outline-none hover:text-lightGreen transition-all ease-linear rounded text-2xl mt-4'
+            className='text-white bg-gradient-to-br from-pink-600 via-purple-600 to-lightGreen border-0 py-2 px-6 focus:outline-none hover:text-yellow-300 transition-all ease-linear rounded text-2xl mt-4'
           >
             Submit
           </button>

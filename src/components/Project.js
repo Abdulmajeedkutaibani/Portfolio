@@ -10,13 +10,13 @@ const Project = ({ project, onButtonClick }) => {
       data-aos={
         project.id === 4
           ? 'fade-right'
-          : project.id === 1
+          : project.id === 0
           ? 'fade-left'
-          : project.id === 3
+          : project.id === 2
           ? 'fade-left'
-          : project.id === 5
+          : project.id === 4
           ? 'fade-left'
-          : project.id === 7
+          : project.id === 6
           ? 'fade-left'
           : 'fade-right'
       }
