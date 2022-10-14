@@ -64,7 +64,7 @@ function App() {
   return (
     <section
       id='App'
-      className=' dark:text-white text-gray-900  body-font` m-0 px-0 w-screen dark:bg-lightBlack overflow-x-hidden relative'
+      className=' dark:text-white text-gray-900  body-font m-0 px-0 w-screen dark:bg-lightBlack overflow-x-hidden relative'
     >
       <div
         onClick={() => hideMenu()}
@@ -75,7 +75,7 @@ function App() {
         whileTap={{ scale: 0.75 }}
         onClick={() => topFunction()}
         id='back-to-top-btn'
-        className='flex lg:w-14 lg:h-14 w-10 h-10 bg-green-400 rounded-full fixed lg:bottom-10 bottom-5 opacity-0 right-0 z-50  justify-center items-center transition-opacity delay-150 ease-linear cursor-pointer overflow-hidden'
+        className='flex lg:w-14 lg:h-14 w-10 h-10 bg-green-400 rounded-full fixed lg:bottom-10 bottom-5 opacity-0 right-6 z-50  justify-center items-center transition-opacity delay-150 ease-linear cursor-pointer overflow-hidden'
       >
         <BsArrowUpCircle className=' text-lightBlack lg:text-5xl text-4xl hover:text-yellow-400' />
       </motion.div>

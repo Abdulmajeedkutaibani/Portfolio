@@ -33,10 +33,13 @@ const About = () => {
 
       <div className='container mx-auto h-screen flex  lg:px-10  lg:flex-row flex-col-reverse items-center justify-start lg:justify-start -mt-20'>
         <div className='dark:bg-gray-800 bg-green-600 dark:bg-opacity-50 bg-opacity-30 rounded-2xl md:p-6 p-2 w-10/12 lg:w-1/3 flex flex-col md:items-center  md:mb-0 items-center text-center z-20 border-b-4 border-purple-500 -mt-12 mb-6'>
-          <h1 className='title-font sm:text-3xl text-2xl mb-5 font-medium dark:text-black dark:bg-green-100 text-white bg-lightBlack md:p-4 p-2 rounded-lg text-center w-4/5'>
-            Hi there 👋🏼<br></br> <h1 className='md:text-2xl text-xl'>I'm</h1>
+          <p className='title-font sm:text-3xl text-2xl mb-5 font-medium dark:text-black dark:bg-green-100 text-white bg-lightBlack md:p-4 p-2 rounded-lg text-center w-4/5'>
+            Hi there 👋🏼
+            <br />
+            <span className='md:text-2xl text-xl'>I'm</span>
+            {` `}
             Abdulmajeed Kutaibani
-          </h1>
+          </p>
           <div className='primary-sub md:text-2xl text-base md:mb-8 mb-2 '>
             <div className='primary-sub__word font-Tourney'>
               <div className='primary-sub__top dark:text-green-400 text-purple-700 '>

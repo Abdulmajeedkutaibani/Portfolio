@@ -29,7 +29,7 @@ export const projects = [
   {
     id: 1,
     category: 'Featured',
-    title: 'AK Portfolio',
+    title: 'AK-Portfolio',
     subtitle: [
       'React.js',
       'Tailwind CSS',
@@ -73,7 +73,7 @@ check it out! and any feedback is much appreciated.`,
   {
     id: 3,
     category: 'Learning Milestones',
-    title: 'AKNotes',
+    title: 'AK-Notes',
     subtitle: [
       'React.js',
       'Material UI',
@@ -120,7 +120,7 @@ check it out! and any feedback is much appreciated.`,
     id: 4,
     category: 'Featured',
 
-    title: 'AKAudio',
+    title: 'AK-Audio',
     subtitle: ['React.js', 'Tailwind CSS', 'React-hooks', 'React-router'],
     description: `AKAudio is an all-in-one stop to fulfill your audio needs.
 
@@ -171,13 +171,16 @@ I used React.js for rendering the view and creating the #UI and I used #react_ro
 // projects navigation
 export const projectsNav = [
   {
-    name: 'Featured',
+    name: 'all',
   },
   {
-    name: 'Freelancing Projects',
+    name: 'featured',
   },
   {
-    name: 'Learning Milestones',
+    name: 'freelancing projects',
+  },
+  {
+    name: 'learning milestones',
   },
 ];
 

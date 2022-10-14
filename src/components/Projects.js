@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { CodeIcon } from '@heroicons/react/solid';
 
 import { projects, projectsNav } from '../data';
@@ -9,25 +9,43 @@ import Project from './Project';
 import { ProjectsNav } from './ProjectsNav';
 // ..
 AOS.init();
-const allCategories = [
-  'All',
-  ...new Set(projectsNav.map((category) => category.name)),
-];
+// const allCategories = [
+//   'All',
+//   ...new Set(projectsNav.map((category) => category.name)),
+// ];
 
 const Projects = ({ onButtonClick }) => {
-  const [projectsList, setProjectsList] = useState(projects);
-  const [buttons] = useState(allCategories);
+  const [item, setItem] = useState({ name: 'all' });
+  const [projectsList, setProjectsList] = useState([]);
+  const [active, setActive] = useState(0);
+  // const [buttons] = useState(projectsNav);
 
-  const filter = (button) => {
-    if (button === 'All') {
-      setProjectsList(projects);
-      return;
-    }
-    const filteredData = projects.filter(
-      (project) => project.category === button
-    );
-    setProjectsList(filteredData);
+  // const filter = (button) => {
+  //   if (button === 'All') {
+  //     return setProjectsList(projects);
+  //   }
+  //   const filteredData = projects.filter(
+  //     (project) => project.category === button
+  //   );
+  //   setProjectsList(filteredData);
+  // };
+
+  const handleClick = (e, index) => {
+    setItem({ name: e.target.textContent.toLowerCase() });
+    setActive(index);
   };
+
+  useEffect(() => {
+    // get projects based on item
+    if (item.name === 'all') {
+      setProjectsList(projects);
+    } else {
+      const newProjects = projects.filter((project) => {
+        return project.category.toLowerCase() === item.name;
+      });
+      setProjectsList(newProjects);
+    }
+  }, [item]);
 
   return (
     <section
@@ -59,7 +77,23 @@ const Projects = ({ onButtonClick }) => {
 
           {/* projects navigation */}
 
-          <ProjectsNav button={buttons} filter={filter} />
+          {/* <ProjectsNav button={buttons} filter={filter} /> */}
+          <ul className='flex flex-wrap md:flex-nowrap gap-8 justify-evenly  w-full max-w-[1000px] font-PressStart2P capitalize  text-green-400 mt-4 mb-8'>
+            {projectsNav.map((item, i) => (
+              <li
+                onClick={(e) => {
+                  handleClick(e, i);
+                }}
+                key={i}
+                className={`${
+                  active === i ? 'active' : ''
+                }  cursor-pointer lg:text-2xl md:text-xl text-lg transform hover:scale-105 hover:text-yellow-300 flex justify-center items-center lg:w-40 md:w-32 w-24 h-20 rounded-xl transition-colors tracking-wider border-2 border-lightGreen hover:border-yellow-300`}
+              >
+                {item.name}
+              </li>
+            ))}
+          </ul>
+
           <p className='lg:w-2/3 mx-auto leading-relaxed md:text-xl text-base font-sans dark:text-green-400 text-purple-700 z-30 px-2'>
             // These are my favorite projects I've worked on so far. Have a look
             around and make sure to hit me up!

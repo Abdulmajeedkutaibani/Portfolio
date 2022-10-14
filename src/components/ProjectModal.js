@@ -21,7 +21,7 @@ const style = {
   boxShadow: 24,
 };
 
-const ProjectModal = ({ showModal, setShowModal, projectID }) => {
+const ProjectModal = ({ showModal = false, setShowModal, projectID }) => {
   const handleClose = () => setShowModal(false);
 
   return (
