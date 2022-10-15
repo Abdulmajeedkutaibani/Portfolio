@@ -87,7 +87,7 @@ const Projects = ({ onButtonClick }) => {
                 key={i}
                 className={`${
                   active === i ? 'active' : ''
-                }  cursor-pointer lg:text-2xl md:text-xl text-lg transform hover:scale-105 hover:text-yellow-300 flex justify-center items-center lg:w-40 md:w-32 w-24 h-20 rounded-xl transition-colors tracking-wider border-2 border-lightGreen hover:border-yellow-300`}
+                }  cursor-pointer lg:text-2xl md:text-xl text-lg transform hover:scale-105 hover:text-yellow-300 flex justify-center items-center lg:w-36 md:w-32 w-24 h-20  transition-colors tracking-wider border-b-4 border-lightGreen hover:border-yellow-300`}
               >
                 {item.name}
               </li>

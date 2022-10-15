@@ -465,5 +465,4 @@ body {
 .active {
   color: rgba(139, 92, 246);
   border-color: rgba(139, 92, 246);
-  text-decoration: underline;
 }

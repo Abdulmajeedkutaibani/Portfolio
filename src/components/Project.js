@@ -7,23 +7,23 @@ import { motion } from 'framer-motion/dist/framer-motion';
 const Project = ({ project, onButtonClick }) => {
   return (
     <motion.div
-      data-aos={
-        project.id === 4
-          ? 'fade-right'
-          : project.id === 0
-          ? 'fade-left'
-          : project.id === 2
-          ? 'fade-left'
-          : project.id === 4
-          ? 'fade-left'
-          : project.id === 6
-          ? 'fade-left'
-          : 'fade-right'
-      }
-      data-aos-easing='ease-in-out'
-      data-aos-delay='100'
-      data-aos-once='true'
-      data-aos-duration='900'
+      // data-aos={
+      //   project.id === 4
+      //     ? 'fade-right'
+      //     : project.id === 0
+      //     ? 'fade-left'
+      //     : project.id === 2
+      //     ? 'fade-left'
+      //     : project.id === 4
+      //     ? 'fade-left'
+      //     : project.id === 6
+      //     ? 'fade-left'
+      //     : 'fade-right'
+      // }
+      // data-aos-easing='ease-in-out'
+      // data-aos-delay='100'
+      // data-aos-once='true'
+      // data-aos-duration='900'
       onClick={() => onButtonClick(true, project.id)}
       className={`${project.className} project-post  w-11/12 md:w-1/2 h-72 lg:h-72 lg:w-1/3 max-w-2xl m-auto p-4 cursor-pointer z-40 filter drop-shadow-2xl`}
     >
