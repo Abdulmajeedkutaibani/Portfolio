@@ -69,7 +69,7 @@ const Projects = ({ onButtonClick }) => {
         </motion.div> */}
 
         {/* /////////////////////////////////////// */}
-        <div className=' projects-header flex flex-col w-full lg:mb-20 mb-6  p-2 items-center'>
+        <div className=' projects-header flex flex-col w-full lg:mb-6 mb-6  p-2 items-center'>
           <CodeIcon className='mx-auto inline-block w-10 mb-4' />
           <h1 className='sm:text-4xl text-2xl font-medium title-font mb-4 dark:text-white text-lightBlack font-Tourney z-40'>
             Projects I've Built
