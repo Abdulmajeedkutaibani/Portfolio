@@ -24,8 +24,13 @@ const Project = ({ project, onButtonClick }) => {
       // data-aos-delay='100'
       // data-aos-once='true'
       // data-aos-duration='900'
+      layout
+      animate={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 0, scale: 0 }}
+      transition={{ duration: 0.3 }}
+      exit={{ opacity: 0 }}
       onClick={() => onButtonClick(true, project.id)}
-      className={`${project.className} project-post  w-11/12 md:w-1/2 h-72 lg:h-72 lg:w-1/3 max-w-2xl m-auto p-4 cursor-pointer z-40 filter drop-shadow-2xl`}
+      className={`${project.className} project-post w-1/2 md:w-1/3 h-72 lg:h-60 lg:w-1/4 max-w-2xl m-auto p-2 cursor-pointer z-40 filter drop-shadow-2xl`}
     >
       <div className='flex gap-1 absolute'>
         {project.id === 0 ? (
@@ -48,7 +53,10 @@ const Project = ({ project, onButtonClick }) => {
           </div>
         ) : null}
       </div>
-      <div className='project-card flex relative h-full w-full overflow-hidden rounded-lg'>
+      <motion.div
+        layout
+        className='project-card flex relative h-full w-full overflow-hidden rounded-lg'
+      >
         <div className='project-info-card flex flex-col justify-center w-full h-full dark:bg-gray-800 bg-white z-10 opacity-0 p-10'>
           <h4 className=' text-xl mb-4 dark:text-white text-green-500'>
             {project.title}
@@ -66,7 +74,7 @@ const Project = ({ project, onButtonClick }) => {
           className='absolute inset-0 w-full h-full object-cover shadow-lg  object-center rounded-lg hover:opacity-60 transform scale-100  duration-200 '
           src={project.image}
         />
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

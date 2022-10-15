@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { CodeIcon } from '@heroicons/react/solid';
 
 import { projects, projectsNav } from '../data';
-import { motion } from 'framer-motion/dist/framer-motion';
+import { motion, AnimatePresence } from 'framer-motion/dist/framer-motion';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Project from './Project';
@@ -99,11 +99,17 @@ const Projects = ({ onButtonClick }) => {
             around and make sure to hit me up!
           </p>
         </div>
-        <div className='flex flex-wrap lg:px-10 '>
-          {projectsList.map((project, i) => (
-            <Project key={i} project={project} onButtonClick={onButtonClick} />
-          ))}
-        </div>
+        <motion.div layout className='flex flex-wrap lg:px-10 '>
+          <AnimatePresence>
+            {projectsList.map((project, i) => (
+              <Project
+                key={i}
+                project={project}
+                onButtonClick={onButtonClick}
+              />
+            ))}
+          </AnimatePresence>
+        </motion.div>
       </div>
     </section>
   );
