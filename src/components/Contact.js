@@ -137,7 +137,7 @@ Thank You For Your Time.`);
           </motion.a>
           <motion.a
             whileTap={{ scale: 0.8 }}
-            href='mailto:abodymeo@gmail.com'
+            href='mailto:realabdulmajeedk@gmail.com'
             className='hover:text-lightGreen w-12 h-12 flex justify-center items-center text-3xl transition-all ease-linear'
           >
             <HiOutlineMail />

@@ -30,7 +30,7 @@ const SocialWidgets = () => {
           </a>
         </li>
         <li>
-          <a href='mailto:abodymeo@gmail.com'>
+          <a href='mailto:realabdulmajeedk@gmail.com'>
             <HiOutlineMail className='text-2xl' />
             <span>Email</span>
           </a>

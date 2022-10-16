@@ -30,7 +30,7 @@ const Project = ({ project, onButtonClick }) => {
       transition={{ duration: 0.3 }}
       exit={{ opacity: 0 }}
       onClick={() => onButtonClick(true, project.id)}
-      className={`${project.className} project-post w-1/2 md:w-1/3 h-72 lg:h-60 lg:w-1/4 max-w-2xl mx-auto p-2 cursor-pointer z-40 filter drop-shadow-2xl`}
+      className={`${project.className} project-post w-1/2 md:w-1/3 h-40 lg:h-60 lg:w-1/4 max-w-2xl mx-auto p-2 cursor-pointer z-40 filter drop-shadow-2xl`}
     >
       <div className='flex gap-1 absolute'>
         {project.id === 0 ? (

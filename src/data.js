@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 0,
     title: 'Diamonds Group',
-    category: 'Featured',
+    category: 'Freelancing Projects',
     subtitle: [
       'React.js',
       'Tailwind CSS',
@@ -72,7 +72,7 @@ check it out! and any feedback is much appreciated.`,
   },
   {
     id: 3,
-    category: 'Learning Milestones',
+    category: 'Featured',
     title: 'AK-Notes',
     subtitle: [
       'React.js',
@@ -158,7 +158,7 @@ check it out! and any feedback is much appreciated. 😁 👍🏼`,
   {
     id: 6,
     title: 'MajeedPay',
-    category: 'Freelancing Projects',
+    category: 'Learning Milestones',
     subtitle: ['React.js', 'CSS'],
     description: `This project is a 4-page website built with HTML, CSS, JavaScript, React.Js.
 I used React.js for rendering the view and creating the #UI and I used #react_router for routing and I also used #Yup for form building and form validation.`,

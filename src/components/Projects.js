@@ -69,7 +69,7 @@ const Projects = ({ onButtonClick }) => {
         </motion.div> */}
 
         {/* /////////////////////////////////////// */}
-        <div className=' projects-header flex flex-col w-full lg:mb-6 mb-6  p-2 items-center'>
+        <div className=' projects-header flex flex-col w-full lg:mb-6 mb-2  p-2 items-center'>
           <CodeIcon className='mx-auto inline-block w-10 mb-4' />
           <h1 className='sm:text-4xl text-2xl font-medium title-font mb-4 dark:text-white text-lightBlack font-Tourney z-40'>
             Projects I've Built
@@ -87,14 +87,14 @@ const Projects = ({ onButtonClick }) => {
                 key={i}
                 className={`${
                   active === i ? 'active' : ''
-                }  cursor-pointer lg:text-2xl md:text-xl text-lg transform hover:scale-105 hover:text-yellow-300 flex justify-center items-center lg:w-36 md:w-32 w-24 h-20  transition-colors tracking-wider border-b-4 border-lightGreen hover:border-yellow-300`}
+                }  cursor-pointer lg:text-2xl md:text-xl text-lg transform hover:scale-105 hover:text-yellow-300 flex justify-center items-center lg:w-36 md:w-32 w-16 h-20  transition-colors tracking-wider border-b-4 border-lightGreen hover:border-yellow-300`}
               >
                 {item.name}
               </li>
             ))}
           </ul>
 
-          <p className='lg:w-2/3 mx-auto leading-relaxed md:text-xl text-base font-sans dark:text-green-400 text-purple-700 z-30 px-2'>
+          <p className='lg:w-2/3 mx-auto leading-relaxed md:text-xl text-sm font-sans dark:text-green-400 text-purple-700 z-30 px-2'>
             // These are my favorite projects I've worked on so far. Have a look
             around and make sure to hit me up!
           </p>
