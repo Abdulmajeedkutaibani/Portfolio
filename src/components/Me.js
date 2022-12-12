@@ -98,24 +98,17 @@ const Me = () => {
           <div className='flex flex-col lg:gap-4 gap-3 dark:text-gray-200 text-lightBlack text-lightBlac lg:text-base font-bold text-sm font-Comfortaa tracking-tighter'>
             <p>I'm Abdulmajeed, I'm a self taught Front-end/React Developer.</p>
             <p>
-              I was studying medicine and on my way to becoming a doctor then
-              BOOOOOM! <br /> a Pandemic <br /> Which honesly was scary at first
-              but then turned out to be a blessing in disguise for me, I got
-              married to my amazing wife and I got to teach myself something
-              that I've always wanted to study...Coding.
+              The covid-19 pandemic hit us all hard but it gave me the opportunity to do something i've always been interested in. 
+              My medical studies in China where put on hold and instead of sitting still I made the decicion to start coding. 
+              It has been a great experience and I am eager to continue developing my skills and assets.
+              If you are just as excited about coding as I am or if you are in the need of a website that stands out from the competition
+              then click the link below. 
+              
             </p>
             <p>
-              I've come so far since I started learnig how to code back in
-              1/1/2021, from coding my first ugly looking website which gave me
-              the 'Oh My God I Created This!!' feeling, to building functional
-              websites with purpose and amazing features.
+              
             </p>
-            <p>
-              Now I feel very confident in my ability to start building the web
-              with other creators and contribute to this fascinating invention
-              we call the internet.
-            </p>
-            <p>So download my Resume and let's work together!</p>
+            <p></p>
           </div>
           <motion.div
             animate={{ y: [5, -5] }}
