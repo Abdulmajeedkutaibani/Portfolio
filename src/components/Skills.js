@@ -102,7 +102,7 @@ const Skills = () => {
             React
           </h4>
           <p className='text-2xl p-3 dark:text-gray-200 text-white font-Dongle font-normal leading-6 '>
-            All my favorite projects are built with React and I love it, I have
+            All my favorite projects are built with React, I have
             a strong understanding of react concepts like hooks, JSX, seperation
             of concerns, and component oriented thinking through practical
             experience.
@@ -129,9 +129,7 @@ const Skills = () => {
             Technologies
           </h4>
           <p className='text-2xl leading-6 p-3 dark:text-gray-200 text-white font-Dongle font-normal'>
-            I like to learn new skills and improve myself as a developer and
-            keep up with the newest and most efficient technologies that would
-            serve to better my workflow and data management.
+            Learning new skills, improving myself as a developer and keeping up with the newest and most efficient technologies motivates me and is what I am passionate about.
           </p>
 
           <div className='w-full h-5 min-h-5 bg-gradient-to-r from-green-300 to-green-500 mt-auto rounded-b-lg'></div>
