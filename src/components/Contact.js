@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useRef} from 'react';
 import emailjs from 'emailjs-com';
 import { motion } from 'framer-motion/dist/framer-motion';
 import { RiMessage2Fill } from 'react-icons/ri';
@@ -21,6 +21,7 @@ const Contact = () => {
   //     return sendEmail();
   //   }
   // };
+  const form= useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -60,7 +61,7 @@ Thank You For Your Time.`);
       </div>
       <div className=' px-5 pb-20  mx-auto flex justify-center sm:flex-nowrap flex-col items-center'>
         <form
-          onSubmit={sendEmail}
+          onSubmit={sendEmail} ref={form}
           name='contact'
           className='lg:w-1/3 md:w-1/2 flex flex-col w-full md:py-8 mt-4   md:mt-0'
         >
