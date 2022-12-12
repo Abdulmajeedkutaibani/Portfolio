@@ -26,13 +26,7 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        'gmail',
-        'template_483jufz',
-        e.target,
-        'user_NNzRSU120RVW9ClfzQCnr'
-      )
-      .then(
+      .sendForm('service_vtw7umq', 'template_x8pxegb', form.current, '2UJHZIqtmrmVHDrmF').then(
         (result) => {
           console.log(result.text);
           window.alert(`Message Sent.
