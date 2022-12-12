@@ -75,7 +75,7 @@ Thank You For Your Time.`);
             <input
               type='text'
               id='name'
-              name='name'
+              name='user_name'
               className='w-full bg-gray-800 rounded border border-green-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-yellow-300 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out font-sans hover:border-yellow-300'
             />
           </div>
@@ -89,7 +89,7 @@ Thank You For Your Time.`);
             <input
               type='email'
               id='email'
-              name='email'
+              name='user_email'
               className='w-full bg-gray-800 rounded border border-green-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-yellow-300 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out font-sans hover:border-yellow-300'
             />
           </div>
