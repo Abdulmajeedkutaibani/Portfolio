@@ -70,7 +70,7 @@ const Me = () => {
         >
           <div className='portfolio-photo max-w-md lg:w-7/12 w-1/2 h-4/5  mx-auto before:left-2'>
             <img
-              className='w-3/4 mx-auto lg:mx-0'
+              className=' mx-auto lg:mx-0'
               src={ProfilePhoto}
               alt='profileImage'
             />
