@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion/dist/framer-motion';
 import React from 'react';
-import ProfilePhoto from './images/portfolio photo.jpg';
+import ProfilePhoto from './images/avatar (1).png';
 import { ArrowRightIcon } from '@heroicons/react/solid';
 import { BsTriangleFill, BsSquareFill } from 'react-icons/bs';
 import AOS from 'aos';
