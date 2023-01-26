@@ -98,9 +98,9 @@ const Me = () => {
           <div className='flex flex-col lg:gap-4 gap-3 dark:text-gray-200 text-lightBlack text-lightBlac lg:text-base font-bold text-sm font-Comfortaa tracking-tighter'>
             <p>My name is Abdulmajeed, I'm a self taught Front-end/React Developer.</p>
             <p>
-              The covid-19 pandemic hit us all hard but it gave me the opportunity to do something i've always been interested in.
+              The covid-19 pandemic hit us all hard but it gave me the opportunity to do something I've always been interested in.
               <br/>
-              My medical studies in China where put on hold and instead of sitting still I made the decicion to start coding. 
+              My medical studies in China were put on hold and instead of sitting still I made the decicion to start coding. 
               It has been a great experience and I am eager to continue developing my skills and assets.
               <br/>
               <br/>
